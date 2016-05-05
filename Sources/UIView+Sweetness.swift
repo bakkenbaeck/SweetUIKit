@@ -1,10 +1,10 @@
 import UIKit
 
-extension UIView {
+public extension UIView {
     /**
      Shakes the view. Useful for displaying failures to users.
      */
-    func shake() {
+    public func shake() {
         let animation = CABasicAnimation(keyPath: "position")
         animation.duration = 0.1
         animation.repeatCount = 2

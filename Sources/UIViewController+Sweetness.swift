@@ -1,10 +1,10 @@
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     /**
      Returns the main application window.
      */
-    func applicationWindow() -> UIWindow {
+    public func applicationWindow() -> UIWindow {
         return UIApplication.sharedApplication().keyWindow!
     }
 }

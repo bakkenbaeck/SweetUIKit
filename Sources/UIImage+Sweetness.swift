@@ -1,10 +1,10 @@
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     /**
      Returns the perfect frame to center a UIImage in the screen.
      */
-    func centeredFrame() -> CGRect {
+    public func centeredFrame() -> CGRect {
         let screenBounds = UIScreen.mainScreen().bounds
         let widthScaleFactor = self.size.width / screenBounds.size.width
         let heightScaleFactor = self.size.height / screenBounds.size.height
