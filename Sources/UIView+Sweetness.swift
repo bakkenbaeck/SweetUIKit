@@ -1,6 +1,9 @@
 import UIKit
 
 extension UIView {
+    /**
+     Drops the elements in an entity.
+     */
     func shake() {
         let animation = CABasicAnimation(keyPath: "position")
         animation.duration = 0.1

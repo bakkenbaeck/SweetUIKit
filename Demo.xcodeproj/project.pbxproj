@@ -10,6 +10,8 @@
 		14314F291CDB75B600B3B541 /* UIAlertController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */; };
 		14314F2A1CDB75B600B3B541 /* UILabel+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */; };
 		14314F2B1CDB75B600B3B541 /* UIView+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */; };
+		146022DD1CDB7DE800D8F266 /* UIImage+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146022DA1CDB7DE800D8F266 /* UIImage+Sweetness.swift */; };
+		146022DF1CDB7DE800D8F266 /* UIViewController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */; };
 		14A139B41AEFC72B00AD732F /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A139B31AEFC72B00AD732F /* Tests.swift */; };
 		14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14C47E0D1CD2AE5F004A48DF /* Info.plist */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,8 @@
 		14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Sweetness.swift"; sourceTree = "<group>"; };
 		14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Sweetness.swift"; sourceTree = "<group>"; };
 		14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Sweetness.swift"; sourceTree = "<group>"; };
+		146022DA1CDB7DE800D8F266 /* UIImage+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Sweetness.swift"; sourceTree = "<group>"; };
+		146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Sweetness.swift"; sourceTree = "<group>"; };
 		146D72AC1AB782920058798C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		146D72B11AB782920058798C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A139B31AEFC72B00AD732F /* Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 				14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */,
 				14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */,
 				14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */,
+				146022DA1CDB7DE800D8F266 /* UIImage+Sweetness.swift */,
+				146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -200,6 +206,8 @@
 				14314F2A1CDB75B600B3B541 /* UILabel+Sweetness.swift in Sources */,
 				14314F291CDB75B600B3B541 /* UIAlertController+Sweetness.swift in Sources */,
 				14314F2B1CDB75B600B3B541 /* UIView+Sweetness.swift in Sources */,
+				146022DF1CDB7DE800D8F266 /* UIViewController+Sweetness.swift in Sources */,
+				146022DD1CDB7DE800D8F266 /* UIImage+Sweetness.swift in Sources */,
 				14A139B41AEFC72B00AD732F /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
