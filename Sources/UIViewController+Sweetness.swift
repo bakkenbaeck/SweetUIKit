@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
 
 public extension UIViewController {
@@ -8,3 +9,4 @@ public extension UIViewController {
         return UIApplication.sharedApplication().keyWindow!
     }
 }
+#endif

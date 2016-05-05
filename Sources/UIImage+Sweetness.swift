@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
 
 public extension UIImage {
@@ -22,3 +23,4 @@ public extension UIImage {
         return centeredFrame
     }
 }
+#endif

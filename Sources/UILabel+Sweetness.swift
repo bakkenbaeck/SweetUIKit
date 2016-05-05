@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
 
 public extension UILabel {
@@ -12,3 +13,4 @@ public extension UILabel {
         return rect.width
     }
 }
+#endif

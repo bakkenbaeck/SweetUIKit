@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
 
 public extension UIAlertController {
@@ -63,3 +64,4 @@ public extension UIAlertController {
         return controller
     }
 }
+#endif

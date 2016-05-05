@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
 
 public extension UIView {
@@ -15,3 +16,4 @@ public extension UIView {
         self.layer.addAnimation(animation, forKey: "position")
     }
 }
+#endif
