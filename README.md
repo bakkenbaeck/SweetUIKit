@@ -9,7 +9,7 @@
 ### Dismissable alert
 
 ```swift
-let alertController = UIAlertController.dismissableAlert(title: "Not allowed access", message: "Your account doesn't seem to have been whitelisted to be used with this app. Please contact roland@jottacloud.com to get access.")
+let alertController = UIAlertController.dismissableAlert(title: "Not allowed access", message: "Please contact your admin to get access.")
 self.presentViewController(alertController, animated: true, completion: nil)
 ```
 
@@ -34,13 +34,13 @@ self.presentViewController(alertController, animated: true, completion: nil)
 ```swift
 let progressAlert = UIAlertController.progressAlert("Creating album...")
 self.presentViewController(progressAlert, animated: true, completion: nil)
-self.fetcher.createAlbum(self.titleTextField.text ?? "", photos: Array(self.selectedPhotos.values)) { error in
+self.fetcher.createAlbum(title: self.titleTextField.text, photos: self.selectedPhotos) { error in
     progressAlert.dismissViewControllerAnimated(true) {
         if let error = error {
             let alertController = UIAlertController.errorAlert(error)
             self.presentViewController(alertController, animated: true, completion: nil)
         } else {
-            self.presentationControllerDelegate?.photosController(self, didCreateAlbumWithTitle: self.titleTextField.text ?? "", andPhotos: Array(self.selectedPhotos.values))
+            // Success
         }
     }
 }
