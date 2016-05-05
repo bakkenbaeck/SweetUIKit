@@ -2,7 +2,7 @@ import UIKit
 
 extension UIImage {
     /**
-     Drops the elements in an entity.
+     Returns the perfect frame to center a UIImage in the screen.
      */
     func centeredFrame() -> CGRect {
         let screenBounds = UIScreen.mainScreen().bounds

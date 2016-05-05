@@ -2,8 +2,8 @@ import UIKit
 
 extension UILabel {
     /**
-     Drops the elements in an entity.
-     - returns: The predicate to be used to filter out removed objects (optional).
+     Calculates the width of the text.
+     - returns: The width of the text.
      */
     func width() -> CGFloat {
         let attributes = [NSFontAttributeName : self.font]

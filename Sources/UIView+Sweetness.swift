@@ -2,7 +2,7 @@ import UIKit
 
 extension UIView {
     /**
-     Drops the elements in an entity.
+     Shakes the view. Useful for displaying failures to users.
      */
     func shake() {
         let animation = CABasicAnimation(keyPath: "position")
