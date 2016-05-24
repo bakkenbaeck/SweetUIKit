@@ -10,7 +10,7 @@ public extension UIAlertController {
      */
     public static func dismissableAlert(title title: String, message: String? = nil) -> UIAlertController {
         let controller = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        controller.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: .Default, handler: nil))
+        controller.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: .Cancel, handler: nil))
 
         return controller
     }
@@ -43,7 +43,7 @@ public extension UIAlertController {
      */
     public static func errorAlert(error: NSError) -> UIAlertController {
         let controller = UIAlertController(title: NSLocalizedString("Oops, something went wrong", comment: ""), message: error.localizedDescription, preferredStyle: .Alert)
-        controller.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: .Default, handler: nil))
+        controller.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: .Cancel, handler: nil))
 
         return controller
     }
