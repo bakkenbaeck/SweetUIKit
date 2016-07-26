@@ -22,12 +22,12 @@ extension UICollectionViewCell: Identifiable {
 
 extension UITableView {
     func register(_ cellClass: UITableViewCell.Type) {
-        self.register(cellClass.self, forCellReuseIdentifier: cellClass.identifier)
+        self.registerClass(cellClass.self, forCellReuseIdentifier: cellClass.identifier)
     }
 }
 
 extension UICollectionView {
     func register(_ cellClass: UICollectionViewCell.Type) {
-        self.register(cellClass.self, forCellWithReuseIdentifier: cellClass.identifier)
+        self.registerClass(cellClass.self, forCellWithReuseIdentifier: cellClass.identifier)
     }
 }
