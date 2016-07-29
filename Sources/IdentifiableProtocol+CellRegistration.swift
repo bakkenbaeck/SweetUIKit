@@ -1,10 +1,10 @@
 import UIKit
 
-protocol Identifiable {
+public protocol Identifiable {
     static var identifier: String { get }
 }
 
-extension Identifiable {
+public extension Identifiable {
     static var identifier: String {
         get {
             return String(self)
@@ -20,14 +20,14 @@ extension UICollectionViewCell: Identifiable {
 
 }
 
-extension UITableView {
-    func register(_ cellClass: UITableViewCell.Type) {
+public extension UITableView {
+    func register(cellClass: UITableViewCell.Type) {
         self.registerClass(cellClass.self, forCellReuseIdentifier: cellClass.identifier)
     }
 }
 
-extension UICollectionView {
-    func register(_ cellClass: UICollectionViewCell.Type) {
+public extension UICollectionView {
+    func register(cellClass: UICollectionViewCell.Type) {
         self.registerClass(cellClass.self, forCellWithReuseIdentifier: cellClass.identifier)
     }
 }
