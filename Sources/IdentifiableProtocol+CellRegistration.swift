@@ -1,11 +1,11 @@
 import UIKit
 
 public protocol Identifiable {
-    static var identifier: String { get }
+    static var reuseIdentifier: String { get }
 }
 
 public extension Identifiable {
-    static var identifier: String {
+    public static var reuseIdentifier: String {
         get {
             return String(self)
         }
@@ -21,13 +21,13 @@ extension UICollectionViewCell: Identifiable {
 }
 
 public extension UITableView {
-    func register(cellClass: UITableViewCell.Type) {
-        self.registerClass(cellClass.self, forCellReuseIdentifier: cellClass.identifier)
+    public func register(cellClass: UITableViewCell.Type) {
+        self.registerClass(cellClass.self, forCellReuseIdentifier: cellClass.reuseIdentifier)
     }
 }
 
 public extension UICollectionView {
-    func register(cellClass: UICollectionViewCell.Type) {
-        self.registerClass(cellClass.self, forCellWithReuseIdentifier: cellClass.identifier)
+    public func register(cellClass: UICollectionViewCell.Type) {
+        self.registerClass(cellClass.self, forCellWithReuseIdentifier: cellClass.reuseIdentifier)
     }
 }
