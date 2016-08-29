@@ -8,8 +8,6 @@ public class SweetCollectionViewController: UIViewController {
         view.delegate = self
         view.dataSource = self
 
-        self.view.addSubview(view)
-
         return view
     }()
 
@@ -21,8 +19,6 @@ public class SweetCollectionViewController: UIViewController {
         self.collectionView.translatesAutoresizingMaskIntoConstraints = false
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-
-        self.view.addSubview(self.collectionView)
     }
 
     public init() {
@@ -31,6 +27,22 @@ public class SweetCollectionViewController: UIViewController {
 
     public required init?(coder aDecoder: NSCoder) {
         fatalError("!")
+    }
+
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.view.addSubview(self.collectionView)
+        
+        self.addConstraints()
+    }
+
+    func addConstraints() {
+        let anchors = [self.collectionView.topAnchor.constraintEqualToAnchor(self.view.topAnchor), self.collectionView.leftAnchor.constraintEqualToAnchor(self.view.leftAnchor), self.collectionView.rightAnchor.constraintEqualToAnchor(self.view.rightAnchor), self.collectionView.bottomAnchor.constraintEqualToAnchor(self.view.bottomAnchor)]
+        for anchor in anchors {
+            anchor.priority = UILayoutPriorityDefaultLow
+            anchor.active = true
+        }
     }
 }
 
