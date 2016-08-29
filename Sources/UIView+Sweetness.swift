@@ -16,4 +16,12 @@ public extension UIView {
         self.layer.addAnimation(animation, forKey: "position")
     }
 }
+
+public extension UIView {
+    public convenience init(withAutoLayout autoLayout: Bool) {
+        self.init()
+        self.translatesAutoresizingMaskIntoConstraints = !autoLayout
+    }
+}
+
 #endif
