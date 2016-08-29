@@ -15,5 +15,11 @@ public extension UIView {
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         self.layer.addAnimation(animation, forKey: "position")
     }
+
+    public convenience init(withAutoLayout autoLayout: Bool) {
+        self.init()
+        self.translatesAutoresizingMaskIntoConstraints = !autoLayout
+    }
 }
+
 #endif
