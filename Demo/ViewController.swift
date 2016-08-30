@@ -1,9 +1,7 @@
 import UIKit
 
 class ViewController: SweetCollectionViewController {
-    lazy var data: [String] = {
-        return ["123", "321", "lol"]
-    }()
+    let data: [String] = ["123", "321", "lol"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

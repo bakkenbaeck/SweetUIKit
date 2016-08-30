@@ -1,9 +1,7 @@
 import UIKit
 
 class TableViewController: SweetTableViewController {
-    lazy var data: [String] = {
-        return ["Some", "Stringing", "Going", "On"]
-    }()
+    let data: [String] = ["Some", "Stringing", "Going", "On"]
 
     override init(with tableViewStyle: UITableViewStyle = .Plain) {
         super.init(with: tableViewStyle)
