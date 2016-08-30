@@ -4,6 +4,20 @@
 [![License](https://img.shields.io/cocoapods/l/SweetUIKit.svg?style=flat)](https://cocoapods.org/pods/SweetUIKit)
 [![Platform](https://img.shields.io/cocoapods/p/SweetUIKit.svg?style=flat)](https://cocoapods.org/pods/SweetUIKit)
 
+## Registering Cells
+
+Simple protocol extensions to simplify registering a cell in UITableViewController and UICollectionViewController.
+
+**Before**: 
+```
+self.tableView.registerClass(ItemCell.self, forCellReuseIdentifier: "ItemCell")
+```
+
+**After**: 
+```
+self.tableView.register(ItemCell)
+```
+
 ## UIAlertController
 
 ### Dismissable alert
