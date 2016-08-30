@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import UIKit
 
 public protocol Identifiable {
@@ -31,3 +32,4 @@ public extension UICollectionView {
         self.registerClass(cellClass.self, forCellWithReuseIdentifier: cellClass.reuseIdentifier)
     }
 }
+#endif
