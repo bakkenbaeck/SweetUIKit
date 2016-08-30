@@ -10,6 +10,7 @@ class CollectionCell: UICollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: .zero)
+
         self.contentView.addSubview(self.label)
         self.label.topAnchor.constraintEqualToAnchor(self.contentView.topAnchor).active = true
         self.label.leftAnchor.constraintEqualToAnchor(self.contentView.leftAnchor).active = true

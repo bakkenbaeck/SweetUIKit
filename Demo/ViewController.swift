@@ -7,6 +7,7 @@ class ViewController: SweetCollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.view.backgroundColor = .magentaColor()
 
         self.collectionView.register(CollectionCell.self)
