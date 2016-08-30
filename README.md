@@ -18,6 +18,9 @@ self.tableView.registerClass(ItemCell.self, forCellReuseIdentifier: "ItemCell")
 self.tableView.register(ItemCell)
 ```
 
+Also, accessing the cell identifier is as easy as using `ItemCell.reuseIdentifier`.
+
+
 ## UIAlertController
 
 ### Dismissable alert
