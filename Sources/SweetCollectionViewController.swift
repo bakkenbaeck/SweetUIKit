@@ -1,28 +1,23 @@
 import UIKit
 
 public class SweetCollectionViewController: UIViewController {
-    public lazy var collectionView: UICollectionView = {
-        let view = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.dataSource = self
-
-        return view
-    }()
+    let collectionView: UICollectionView
 
     public var data: [AnyObject] = [AnyObject]()
 
-    public convenience init(withCollectionViewLayout collectionViewLayout: UICollectionViewLayout) {
-        self.init()
-        self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
-        self.collectionView.translatesAutoresizingMaskIntoConstraints = false
-    }
+    public init(withCollectionViewLayout collectionViewLayout: UICollectionViewLayout? = nil) {
+        let layout = collectionViewLayout ?? UICollectionViewFlowLayout()
+        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        self.collectionView = view
 
-    public init() {
         super.init(nibName: nil, bundle: nil)
+
+        self.collectionView.dataSource = self
     }
 
     public required init?(coder aDecoder: NSCoder) {
-        fatalError("!")
+        fatalError("Interface Builder support not implemented")
     }
 
     public override func viewDidLoad() {
