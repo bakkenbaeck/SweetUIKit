@@ -4,8 +4,6 @@ public class SweetCollectionViewController: UIViewController {
     public lazy var collectionView: UICollectionView = {
         let view = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         view.translatesAutoresizingMaskIntoConstraints = false
-
-        view.delegate = self
         view.dataSource = self
 
         return view
@@ -17,8 +15,6 @@ public class SweetCollectionViewController: UIViewController {
         self.init()
         self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
         self.collectionView.translatesAutoresizingMaskIntoConstraints = false
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
     }
 
     public init() {
@@ -44,10 +40,6 @@ public class SweetCollectionViewController: UIViewController {
             anchor.active = true
         }
     }
-}
-
-extension SweetCollectionViewController: UICollectionViewDelegate {
-
 }
 
 extension SweetCollectionViewController: UICollectionViewDataSource {
