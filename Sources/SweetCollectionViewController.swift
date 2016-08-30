@@ -26,7 +26,7 @@ public class SweetCollectionViewController: UIViewController {
     }
 
     public required init?(coder aDecoder: NSCoder) {
-        fatalError("!")
+        fatalError("The method `init?(coder)` is not implemented for this class.")
     }
 
     public override func viewDidLoad() {
