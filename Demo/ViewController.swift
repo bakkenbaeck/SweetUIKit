@@ -10,7 +10,7 @@ class ViewController: SweetCollectionViewController {
         
         self.view.backgroundColor = .magentaColor()
 
-        self.collectionView.register(CollectionCell)
+        self.collectionView.register(CollectionViewCell)
         self.collectionView.backgroundColor = .lightGrayColor()
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
@@ -19,7 +19,7 @@ class ViewController: SweetCollectionViewController {
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CollectionCell.reuseIdentifier, forIndexPath: indexPath) as! CollectionCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CollectionViewCell.reuseIdentifier, forIndexPath: indexPath) as! CollectionViewCell
         cell.backgroundColor = .whiteColor()
         cell.label.text = self.data[indexPath.row]
 

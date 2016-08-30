@@ -28,10 +28,11 @@
 		9F62AF911D74663600AADDB2 /* UIImage+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146022DA1CDB7DE800D8F266 /* UIImage+Sweetness.swift */; };
 		9F62AF921D74663600AADDB2 /* UIViewController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */; };
 		9F62AF931D74663600AADDB2 /* IdentifiableProtocol+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F659FFF1D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift */; };
-		9F62E2ED1D7572FE00C45767 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62E2EC1D7572FE00C45767 /* CollectionCell.swift */; };
-		9F62E2EE1D7572FE00C45767 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62E2EC1D7572FE00C45767 /* CollectionCell.swift */; };
+		9F62E2ED1D7572FE00C45767 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62E2EC1D7572FE00C45767 /* CollectionViewCell.swift */; };
+		9F62E2EE1D7572FE00C45767 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62E2EC1D7572FE00C45767 /* CollectionViewCell.swift */; };
 		9F65A0001D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F659FFF1D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift */; };
 		9FBD1D9C1D75AB1C000039E1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD1D9B1D75AB1C000039E1 /* TableViewController.swift */; };
+		9FBD1D9E1D75B17B000039E1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD1D9D1D75B17B000039E1 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,9 +73,10 @@
 		9F62AF851D7461C700AADDB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F62AF871D7461C700AADDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F62AF8B1D7461DA00AADDB2 /* SweetCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetCollectionViewController.swift; sourceTree = "<group>"; };
-		9F62E2EC1D7572FE00C45767 /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		9F62E2EC1D7572FE00C45767 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		9F659FFF1D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IdentifiableProtocol+CellRegistration.swift"; sourceTree = "<group>"; };
 		9FBD1D9B1D75AB1C000039E1 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9FBD1D9D1D75B17B000039E1 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				9F62AF7B1D7461C700AADDB2 /* AppDelegate.swift */,
-				9F62E2EC1D7572FE00C45767 /* CollectionCell.swift */,
+				9F62E2EC1D7572FE00C45767 /* CollectionViewCell.swift */,
+				9FBD1D9D1D75B17B000039E1 /* TableViewCell.swift */,
 				9F62AF7D1D7461C700AADDB2 /* ViewController.swift */,
 				9FBD1D9B1D75AB1C000039E1 /* TableViewController.swift */,
 				9F62AF821D7461C700AADDB2 /* Assets.xcassets */,
@@ -290,7 +293,7 @@
 			files = (
 				14314F2A1CDB75B600B3B541 /* UILabel+Sweetness.swift in Sources */,
 				9F62AF8C1D7461DA00AADDB2 /* SweetCollectionViewController.swift in Sources */,
-				9F62E2ED1D7572FE00C45767 /* CollectionCell.swift in Sources */,
+				9F62E2ED1D7572FE00C45767 /* CollectionViewCell.swift in Sources */,
 				14314F291CDB75B600B3B541 /* UIAlertController+Sweetness.swift in Sources */,
 				14314F2B1CDB75B600B3B541 /* UIView+Sweetness.swift in Sources */,
 				146022DF1CDB7DE800D8F266 /* UIViewController+Sweetness.swift in Sources */,
@@ -308,6 +311,7 @@
 				9F62AF8E1D74663600AADDB2 /* UIAlertController+Sweetness.swift in Sources */,
 				9F62AF8F1D74663600AADDB2 /* UILabel+Sweetness.swift in Sources */,
 				9F62AF901D74663600AADDB2 /* UIView+Sweetness.swift in Sources */,
+				9FBD1D9E1D75B17B000039E1 /* TableViewCell.swift in Sources */,
 				9F62AF911D74663600AADDB2 /* UIImage+Sweetness.swift in Sources */,
 				9F28874B1D75A81D00E7E970 /* SweetTableViewController.swift in Sources */,
 				9F62AF921D74663600AADDB2 /* UIViewController+Sweetness.swift in Sources */,
@@ -316,7 +320,7 @@
 				9F62AF7E1D7461C700AADDB2 /* ViewController.swift in Sources */,
 				9F62AF8D1D7461DA00AADDB2 /* SweetCollectionViewController.swift in Sources */,
 				9F62AF7C1D7461C700AADDB2 /* AppDelegate.swift in Sources */,
-				9F62E2EE1D7572FE00C45767 /* CollectionCell.swift in Sources */,
+				9F62E2EE1D7572FE00C45767 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
