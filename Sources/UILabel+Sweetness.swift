@@ -20,6 +20,7 @@ public extension UILabel {
      */
     public func height(forWidth width: CGFloat) -> CGFloat {
         let size = self.sizeThatFits(CGSize(width: width, height: CGFloat.max))
+        
         return size.height
     }
     
