@@ -21,6 +21,7 @@ extension ViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CollectionCell.reuseIdentifier, forIndexPath: indexPath) as! CollectionCell
         cell.backgroundColor = .whiteColor()
         cell.label.text = self.data[indexPath.row]
+
         return cell
     }
 
