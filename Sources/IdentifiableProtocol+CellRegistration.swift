@@ -21,6 +21,10 @@ extension UICollectionViewCell: Identifiable {
 
 }
 
+extension UITableViewHeaderFooterView: Identifiable {
+
+}
+
 public extension UITableView {
     public func register(cellClass: UITableViewCell.Type) {
         self.registerClass(cellClass.self, forCellReuseIdentifier: cellClass.reuseIdentifier)
@@ -28,6 +32,10 @@ public extension UITableView {
 
     public func registerNib(cellClass: UITableViewCell.Type) {
         self.registerNib(UINib.init(nibName: String(cellClass), bundle: nil), forCellReuseIdentifier: cellClass.reuseIdentifier)
+    }
+    
+    public func registerHeaderFooter(viewClass: UITableViewHeaderFooterView.Type) {
+        self.registerClass(viewClass.self, forHeaderFooterViewReuseIdentifier: viewClass.reuseIdentifier)
     }
 }
 
