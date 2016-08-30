@@ -9,12 +9,12 @@
 Simple protocol extensions to simplify registering a cell in UITableViewController and UICollectionViewController.
 
 **Before**: 
-```
+```swift
 self.tableView.registerClass(ItemCell.self, forCellReuseIdentifier: "ItemCell")
 ```
 
 **After**: 
-```
+```swift
 self.tableView.register(ItemCell)
 ```
 
