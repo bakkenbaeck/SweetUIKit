@@ -1,27 +1,13 @@
 import UIKit
 
 public class SweetCollectionViewController: UIViewController {
-    public lazy var collectionView: UICollectionView = {
-        let view = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+    public var collectionView: UICollectionView
+
+    public init(withCollectionViewLayout collectionViewLayout: UICollectionViewLayout = UICollectionViewFlowLayout()) {
+        let view = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
         view.translatesAutoresizingMaskIntoConstraints = false
+        self.collectionView = view
 
-        return view
-    }()
-
-    public convenience init(withCollectionViewLayout collectionViewLayout: UICollectionViewLayout) {
-        self.init()
-        /*
-         If we want to have a collection view with a specific layout, we have to overrided the lazy-loaded one.
-         Because of that, we have to reconfigure it to use auto-layout.
-         This extra "complication" is probably the main reason the UICollectionViewController has an optional collection view.
-         I prefer the approach of having a default collection view that covers most cases and an option to 
-         configure it further.
-         */
-        self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
-        self.collectionView.translatesAutoresizingMaskIntoConstraints = false
-    }
-
-    public init() {
         super.init(nibName: nil, bundle: nil)
     }
 
