@@ -1,14 +1,12 @@
 import UIKit
 
 class ViewController: SweetCollectionViewController {
-
     lazy var data: [String] = {
         return ["123", "321", "lol"]
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = .magentaColor()
 
         self.collectionView.register(CollectionCell.self)
