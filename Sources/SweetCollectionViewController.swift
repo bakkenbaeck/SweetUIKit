@@ -5,20 +5,20 @@ public class SweetCollectionViewController: UIViewController {
         let view = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         view.translatesAutoresizingMaskIntoConstraints = false
 
-        view.delegate = self
-        view.dataSource = self
-
         return view
     }()
 
-    public var data: [AnyObject] = [AnyObject]()
-
     public convenience init(withCollectionViewLayout collectionViewLayout: UICollectionViewLayout) {
         self.init()
+        /*
+         If we want to have a collection view with a specific layout, we have to overrided the lazy-loaded one.
+         Because of that, we have to reconfigure it to use auto-layout.
+         This extra "complication" is probably the main reason the UICollectionViewController has an optional collection view.
+         I prefer the approach of having a default collection view that covers most cases and an option to 
+         configure it further.
+         */
         self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
         self.collectionView.translatesAutoresizingMaskIntoConstraints = false
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
     }
 
     public init() {
@@ -43,19 +43,5 @@ public class SweetCollectionViewController: UIViewController {
             anchor.priority = UILayoutPriorityDefaultLow
             anchor.active = true
         }
-    }
-}
-
-extension SweetCollectionViewController: UICollectionViewDelegate {
-
-}
-
-extension SweetCollectionViewController: UICollectionViewDataSource {
-    public func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.data.count
-    }
-
-    public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
     }
 }
