@@ -10,8 +10,9 @@ class ViewController: SweetCollectionViewController {
         
         self.view.backgroundColor = .magentaColor()
 
-        self.collectionView.register(CollectionCell.self)
+        self.collectionView.register(CollectionCell)
         self.collectionView.backgroundColor = .lightGrayColor()
+        self.collectionView.delegate = self
         self.collectionView.dataSource = self
     }
 }
@@ -27,5 +28,12 @@ extension ViewController: UICollectionViewDataSource {
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.data.count
+    }
+}
+
+extension ViewController: UICollectionViewDelegate {
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let viewController = TableViewController()
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

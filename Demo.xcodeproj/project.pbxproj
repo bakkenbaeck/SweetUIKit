@@ -14,6 +14,8 @@
 		146022DF1CDB7DE800D8F266 /* UIViewController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */; };
 		14A139B41AEFC72B00AD732F /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A139B31AEFC72B00AD732F /* Tests.swift */; };
 		14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14C47E0D1CD2AE5F004A48DF /* Info.plist */; };
+		9F28874A1D75A81D00E7E970 /* SweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2887491D75A81D00E7E970 /* SweetTableViewController.swift */; };
+		9F28874B1D75A81D00E7E970 /* SweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2887491D75A81D00E7E970 /* SweetTableViewController.swift */; };
 		9F62AF7C1D7461C700AADDB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62AF7B1D7461C700AADDB2 /* AppDelegate.swift */; };
 		9F62AF7E1D7461C700AADDB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62AF7D1D7461C700AADDB2 /* ViewController.swift */; };
 		9F62AF831D7461C700AADDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F62AF821D7461C700AADDB2 /* Assets.xcassets */; };
@@ -29,6 +31,7 @@
 		9F62E2ED1D7572FE00C45767 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62E2EC1D7572FE00C45767 /* CollectionCell.swift */; };
 		9F62E2EE1D7572FE00C45767 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62E2EC1D7572FE00C45767 /* CollectionCell.swift */; };
 		9F65A0001D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F659FFF1D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift */; };
+		9FBD1D9C1D75AB1C000039E1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD1D9B1D75AB1C000039E1 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +64,7 @@
 		14C47E0D1CD2AE5F004A48DF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14F393951CC6512400616696 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		14F393961CC6517E00616696 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		9F2887491D75A81D00E7E970 /* SweetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetTableViewController.swift; sourceTree = "<group>"; };
 		9F62AF791D7461C700AADDB2 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F62AF7B1D7461C700AADDB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F62AF7D1D7461C700AADDB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 		9F62AF8B1D7461DA00AADDB2 /* SweetCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetCollectionViewController.swift; sourceTree = "<group>"; };
 		9F62E2EC1D7572FE00C45767 /* CollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		9F659FFF1D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IdentifiableProtocol+CellRegistration.swift"; sourceTree = "<group>"; };
+		9FBD1D9B1D75AB1C000039E1 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +162,7 @@
 			children = (
 				14314F251CDB75B600B3B541 /* SweetUIKit.h */,
 				9F62AF8B1D7461DA00AADDB2 /* SweetCollectionViewController.swift */,
+				9F2887491D75A81D00E7E970 /* SweetTableViewController.swift */,
 				14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */,
 				14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */,
 				14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */,
@@ -173,6 +179,7 @@
 				9F62AF7B1D7461C700AADDB2 /* AppDelegate.swift */,
 				9F62E2EC1D7572FE00C45767 /* CollectionCell.swift */,
 				9F62AF7D1D7461C700AADDB2 /* ViewController.swift */,
+				9FBD1D9B1D75AB1C000039E1 /* TableViewController.swift */,
 				9F62AF821D7461C700AADDB2 /* Assets.xcassets */,
 				9F62AF841D7461C700AADDB2 /* LaunchScreen.storyboard */,
 				9F62AF871D7461C700AADDB2 /* Info.plist */,
@@ -289,6 +296,7 @@
 				146022DF1CDB7DE800D8F266 /* UIViewController+Sweetness.swift in Sources */,
 				9F65A0001D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift in Sources */,
 				146022DD1CDB7DE800D8F266 /* UIImage+Sweetness.swift in Sources */,
+				9F28874A1D75A81D00E7E970 /* SweetTableViewController.swift in Sources */,
 				14A139B41AEFC72B00AD732F /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,8 +309,10 @@
 				9F62AF8F1D74663600AADDB2 /* UILabel+Sweetness.swift in Sources */,
 				9F62AF901D74663600AADDB2 /* UIView+Sweetness.swift in Sources */,
 				9F62AF911D74663600AADDB2 /* UIImage+Sweetness.swift in Sources */,
+				9F28874B1D75A81D00E7E970 /* SweetTableViewController.swift in Sources */,
 				9F62AF921D74663600AADDB2 /* UIViewController+Sweetness.swift in Sources */,
 				9F62AF931D74663600AADDB2 /* IdentifiableProtocol+CellRegistration.swift in Sources */,
+				9FBD1D9C1D75AB1C000039E1 /* TableViewController.swift in Sources */,
 				9F62AF7E1D7461C700AADDB2 /* ViewController.swift in Sources */,
 				9F62AF8D1D7461DA00AADDB2 /* SweetCollectionViewController.swift in Sources */,
 				9F62AF7C1D7461C700AADDB2 /* AppDelegate.swift in Sources */,
