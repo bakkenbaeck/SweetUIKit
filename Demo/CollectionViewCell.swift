@@ -1,6 +1,6 @@
 import UIKit
 
-class CollectionCell: UICollectionViewCell {
+class CollectionViewCell: UICollectionViewCell {
     lazy var label: UILabel = {
         let view = UILabel(withAutoLayout: true)
         view.textAlignment = .Center
