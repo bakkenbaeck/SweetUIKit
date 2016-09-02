@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: SweetCollectionViewController {
+class ViewController: SweetCollectionController {
     let data: [String] = ["123", "321", "lol"]
 
     override func viewDidLoad() {

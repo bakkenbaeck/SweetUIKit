@@ -1,6 +1,6 @@
 import UIKit
 
-class TableViewController: SweetTableViewController {
+class TableViewController: SweetTableController {
     let data: [String] = ["Some", "Stringing", "Going", "On"]
 
     override init(with tableViewStyle: UITableViewStyle = .Plain) {

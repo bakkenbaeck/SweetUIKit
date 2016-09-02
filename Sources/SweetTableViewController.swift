@@ -1,7 +1,7 @@
 #if os(iOS) || os(tvOS)
 import UIKit
 
-public class SweetTableViewController: UIViewController {
+public class SweetTableController: UIViewController {
     public var tableView: UITableView
 
     public init(with tableViewStyle: UITableViewStyle = .Plain) {

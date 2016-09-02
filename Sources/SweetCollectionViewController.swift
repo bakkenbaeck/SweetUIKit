@@ -1,7 +1,7 @@
 #if os(iOS) || os(tvOS)
 import UIKit
 
-public class SweetCollectionViewController: UIViewController {
+public class SweetCollectionController: UIViewController {
     public var collectionView: UICollectionView
 
     public init(withCollectionViewLayout collectionViewLayout: UICollectionViewLayout = UICollectionViewFlowLayout()) {
