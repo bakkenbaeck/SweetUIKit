@@ -21,7 +21,7 @@ public extension UIView {
         self.translatesAutoresizingMaskIntoConstraints = !autoLayout
     }
 
-    public func fillSuperview(with insets: UIEdgeInsets) {
+    public func fillSuperview(with insets: UIEdgeInsets = UIEdgeInsetsZero) {
         guard let superview = self.superview else { return }
 
         self.topAnchor.constraintEqualToAnchor(superview.topAnchor, constant: insets.top).active = true
