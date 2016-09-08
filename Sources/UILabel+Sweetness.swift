@@ -29,7 +29,7 @@ public extension UILabel {
      - parameter text: The text.
      - parameter lineSpacing: The line spacing (as used in Sketch).
      */
-    func setSpacedOutText(text: String, lineSpacing: CGFloat) {
+    public func setSpacedOutText(text: String, lineSpacing: CGFloat) {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = lineSpacing - self.font.pointSize
         paragraphStyle.alignment = self.textAlignment
