@@ -8,9 +8,9 @@ public extension UIAlertController {
      - parameter message: The message.
      - returns: The alert controller.
      */
-    public static func dismissableAlert(title title: String, message: String? = nil) -> UIAlertController {
-        let controller = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        controller.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: .Cancel, handler: nil))
+    public static func dismissableAlert(title: String, message: String? = nil) -> UIAlertController {
+        let controller = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        controller.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: .cancel, handler: nil))
 
         return controller
     }
@@ -23,12 +23,12 @@ public extension UIAlertController {
      - parameter destructiveBlock: The block to be run when the destructive action gets triggered.
      - returns: The alert controller.
      */
-    public static func destructiveConfirmationAlert(title title: String? = nil, message: String, destructiveActionTitle: String? = nil, destructiveBlock: (Void -> Void)? = nil) -> UIAlertController {
-        let controller = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        controller.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .Cancel, handler: nil))
+    public static func destructiveConfirmationAlert(title: String? = nil, message: String, destructiveActionTitle: String? = nil, destructiveBlock: ((Void) -> Void)? = nil) -> UIAlertController {
+        let controller = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        controller.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: nil))
 
         if let destructiveBlock = destructiveBlock {
-            controller.addAction(UIAlertAction(title: destructiveActionTitle ?? NSLocalizedString("Delete", comment: ""), style: .Destructive, handler: { _ in
+            controller.addAction(UIAlertAction(title: destructiveActionTitle ?? NSLocalizedString("Delete", comment: ""), style: .destructive, handler: { _ in
                 destructiveBlock()
             }))
         }
@@ -41,9 +41,9 @@ public extension UIAlertController {
      - parameter error: The error.
      - returns: The alert controller.
      */
-    public static func errorAlert(error: NSError) -> UIAlertController {
-        let controller = UIAlertController(title: NSLocalizedString("Oops, something went wrong", comment: ""), message: error.localizedDescription, preferredStyle: .Alert)
-        controller.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: .Cancel, handler: nil))
+    public static func errorAlert(_ error: NSError) -> UIAlertController {
+        let controller = UIAlertController(title: NSLocalizedString("Oops, something went wrong", comment: ""), message: error.localizedDescription, preferredStyle: .alert)
+        controller.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: .cancel, handler: nil))
 
         return controller
     }
@@ -53,10 +53,10 @@ public extension UIAlertController {
      - parameter title: The title.
      - returns: The alert controller.
      */
-    public static func progressAlert(title: String) -> UIAlertController {
-        let controller = UIAlertController(title: title + "\n\n", message: nil, preferredStyle: .Alert)
-        let indicator = UIActivityIndicatorView(activityIndicatorStyle: .White)
-        indicator.color = UIColor.grayColor()
+    public static func progressAlert(_ title: String) -> UIAlertController {
+        let controller = UIAlertController(title: title + "\n\n", message: nil, preferredStyle: .alert)
+        let indicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
+        indicator.color = UIColor.gray
         indicator.center = CGPoint(x: 135, y: 65.5)
         indicator.startAnimating()
         controller.view.addSubview(indicator)

@@ -8,7 +8,7 @@ public extension UILabel {
      */
     public func width() -> CGFloat {
         let attributes = [NSFontAttributeName : self.font]
-        let rect = (self.text ?? "" as NSString).boundingRectWithSize(CGSize(width: CGFloat.max, height: CGFloat.max), options: .UsesLineFragmentOrigin, attributes: attributes, context: nil)
+        let rect = (self.text ?? ("" as NSString) as String).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
 
         return rect.width
     }
@@ -19,7 +19,7 @@ public extension UILabel {
      - returns: The height of the text
      */
     public func height(forWidth width: CGFloat) -> CGFloat {
-        let size = self.sizeThatFits(CGSize(width: width, height: CGFloat.max))
+        let size = self.sizeThatFits(CGSize(width: width, height: CGFloat.greatestFiniteMagnitude))
         
         return size.height
     }
@@ -29,7 +29,7 @@ public extension UILabel {
      - parameter text: The text.
      - parameter lineSpacing: The line spacing (as used in Sketch).
      */
-    public func setSpacedOutText(text: String, lineSpacing: CGFloat) {
+    public func setSpacedOutText(_ text: String, lineSpacing: CGFloat) {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineSpacing = lineSpacing - self.font.pointSize
         paragraphStyle.alignment = self.textAlignment

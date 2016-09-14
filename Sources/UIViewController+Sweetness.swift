@@ -6,7 +6,7 @@ public extension UIViewController {
      Returns the main application window.
      */
     public func applicationWindow() -> UIWindow {
-        return UIApplication.sharedApplication().keyWindow!
+        return UIApplication.shared.keyWindow!
     }
 }
 #endif

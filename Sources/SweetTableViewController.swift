@@ -1,10 +1,10 @@
 #if os(iOS) || os(tvOS)
 import UIKit
 
-public class SweetTableController: UIViewController {
-    public var tableView: UITableView
+open class SweetTableController: UIViewController {
+    open var tableView: UITableView
 
-    public init(with tableViewStyle: UITableViewStyle = .Plain) {
+    public init(with tableViewStyle: UITableViewStyle = .plain) {
         let view = UITableView(frame: .zero, style: tableViewStyle)
         view.translatesAutoresizingMaskIntoConstraints = false
         self.tableView = view
@@ -16,7 +16,7 @@ public class SweetTableController: UIViewController {
         fatalError("The method `init?(coder)` is not implemented for this class.")
     }
 
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.addSubview(self.tableView)
@@ -25,10 +25,10 @@ public class SweetTableController: UIViewController {
     }
 
     func addConstraints() {
-        let anchors = [self.tableView.topAnchor.constraintEqualToAnchor(self.view.topAnchor), self.tableView.leftAnchor.constraintEqualToAnchor(self.view.leftAnchor), self.tableView.rightAnchor.constraintEqualToAnchor(self.view.rightAnchor), self.tableView.bottomAnchor.constraintEqualToAnchor(self.view.bottomAnchor)]
+        let anchors = [self.tableView.topAnchor.constraint(equalTo: self.view.topAnchor), self.tableView.leftAnchor.constraint(equalTo: self.view.leftAnchor), self.tableView.rightAnchor.constraint(equalTo: self.view.rightAnchor), self.tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)]
         for anchor in anchors {
             anchor.priority = UILayoutPriorityDefaultLow
-            anchor.active = true
+            anchor.isActive = true
         }
     }
 }
