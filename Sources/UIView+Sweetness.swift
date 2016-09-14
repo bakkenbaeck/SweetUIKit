@@ -10,10 +10,10 @@ public extension UIView {
         animation.duration = 0.1
         animation.repeatCount = 2
         animation.autoreverses = true
-        animation.fromValue = NSValue(CGPoint: CGPointMake(self.center.x - 10.0, self.center.y))
-        animation.toValue = NSValue(CGPoint: CGPointMake(self.center.x + 10.0, self.center.y))
+        animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x - 10.0, y: self.center.y))
+        animation.toValue = NSValue(cgPoint: CGPoint(x: self.center.x + 10.0, y: self.center.y))
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        self.layer.addAnimation(animation, forKey: "position")
+        self.layer.add(animation, forKey: "position")
     }
 
     public convenience init(withAutoLayout autoLayout: Bool) {
@@ -21,13 +21,13 @@ public extension UIView {
         self.translatesAutoresizingMaskIntoConstraints = !autoLayout
     }
 
-    public func fillSuperview(with insets: UIEdgeInsets = UIEdgeInsetsZero) {
+    public func fillSuperview(with insets: UIEdgeInsets = UIEdgeInsets.zero) {
         guard let superview = self.superview else { return }
 
-        self.topAnchor.constraintEqualToAnchor(superview.topAnchor, constant: insets.top).active = true
-        self.leftAnchor.constraintEqualToAnchor(superview.leftAnchor, constant: insets.left).active = true
-        self.rightAnchor.constraintEqualToAnchor(superview.rightAnchor, constant: -insets.right).active = true
-        self.bottomAnchor.constraintEqualToAnchor(superview.bottomAnchor, constant: -insets.bottom).active = true
+        self.topAnchor.constraint(equalTo: superview.topAnchor, constant: insets.top).isActive = true
+        self.leftAnchor.constraint(equalTo: superview.leftAnchor, constant: insets.left).isActive = true
+        self.rightAnchor.constraint(equalTo: superview.rightAnchor, constant: -insets.right).isActive = true
+        self.bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -insets.bottom).isActive = true
     }
 }
 

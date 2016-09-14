@@ -8,7 +8,7 @@ public protocol Identifiable {
 public extension Identifiable {
     public static var reuseIdentifier: String {
         get {
-            return String(self)
+            return String(describing: self)
         }
     }
 }
@@ -26,26 +26,26 @@ extension UITableViewHeaderFooterView: Identifiable {
 }
 
 public extension UITableView {
-    public func register(cellClass: UITableViewCell.Type) {
-        self.registerClass(cellClass.self, forCellReuseIdentifier: cellClass.reuseIdentifier)
+    public func register(_ cellClass: UITableViewCell.Type) {
+        self.register(cellClass.self, forCellReuseIdentifier: cellClass.reuseIdentifier)
     }
 
-    public func registerNib(cellClass: UITableViewCell.Type) {
-        self.registerNib(UINib.init(nibName: String(cellClass), bundle: nil), forCellReuseIdentifier: cellClass.reuseIdentifier)
+    public func registerNib(_ cellClass: UITableViewCell.Type) {
+        self.register(UINib.init(nibName: String(describing: cellClass), bundle: nil), forCellReuseIdentifier: cellClass.reuseIdentifier)
     }
     
-    public func registerHeaderFooter(viewClass: UITableViewHeaderFooterView.Type) {
-        self.registerClass(viewClass.self, forHeaderFooterViewReuseIdentifier: viewClass.reuseIdentifier)
+    public func registerHeaderFooter(_ viewClass: UITableViewHeaderFooterView.Type) {
+        self.register(viewClass.self, forHeaderFooterViewReuseIdentifier: viewClass.reuseIdentifier)
     }
 }
 
 public extension UICollectionView {
-    public func register(cellClass: UICollectionViewCell.Type) {
-        self.registerClass(cellClass.self, forCellWithReuseIdentifier: cellClass.reuseIdentifier)
+    public func register(_ cellClass: UICollectionViewCell.Type) {
+        self.register(cellClass.self, forCellWithReuseIdentifier: cellClass.reuseIdentifier)
     }
 
-    public func registerNib(cellClass: UICollectionViewCell.Type) {
-        self.registerNib(UINib.init(nibName: String(cellClass), bundle: nil), forCellWithReuseIdentifier: cellClass.reuseIdentifier)
+    public func registerNib(_ cellClass: UICollectionViewCell.Type) {
+        self.register(UINib.init(nibName: String(describing: cellClass), bundle: nil), forCellWithReuseIdentifier: cellClass.reuseIdentifier)
     }
 }
 #endif

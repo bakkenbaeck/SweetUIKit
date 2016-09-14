@@ -1,8 +1,8 @@
 #if os(iOS) || os(tvOS)
 import UIKit
 
-public class SweetCollectionController: UIViewController {
-    public var collectionView: UICollectionView
+open class SweetCollectionController: UIViewController {
+    open var collectionView: UICollectionView
 
     public init(withCollectionViewLayout collectionViewLayout: UICollectionViewLayout = UICollectionViewFlowLayout()) {
         let view = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
@@ -16,7 +16,7 @@ public class SweetCollectionController: UIViewController {
         fatalError("The method `init?(coder)` is not implemented for this class.")
     }
 
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.addSubview(self.collectionView)
@@ -25,10 +25,10 @@ public class SweetCollectionController: UIViewController {
     }
 
     func addConstraints() {
-        let anchors = [self.collectionView.topAnchor.constraintEqualToAnchor(self.view.topAnchor), self.collectionView.leftAnchor.constraintEqualToAnchor(self.view.leftAnchor), self.collectionView.rightAnchor.constraintEqualToAnchor(self.view.rightAnchor), self.collectionView.bottomAnchor.constraintEqualToAnchor(self.view.bottomAnchor)]
+        let anchors = [self.collectionView.topAnchor.constraint(equalTo: self.view.topAnchor), self.collectionView.leftAnchor.constraint(equalTo: self.view.leftAnchor), self.collectionView.rightAnchor.constraint(equalTo: self.view.rightAnchor), self.collectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)]
         for anchor in anchors {
             anchor.priority = UILayoutPriorityDefaultLow
-            anchor.active = true
+            anchor.isActive = true
         }
     }
 }

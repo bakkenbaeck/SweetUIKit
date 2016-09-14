@@ -3,7 +3,7 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     lazy var label: UILabel = {
         let view = UILabel(withAutoLayout: true)
-        view.textAlignment = .Center
+        view.textAlignment = .center
 
         return view
     }()
@@ -12,10 +12,10 @@ class CollectionViewCell: UICollectionViewCell {
         super.init(frame: .zero)
 
         self.contentView.addSubview(self.label)
-        self.label.topAnchor.constraintEqualToAnchor(self.contentView.topAnchor).active = true
-        self.label.leftAnchor.constraintEqualToAnchor(self.contentView.leftAnchor).active = true
-        self.label.rightAnchor.constraintEqualToAnchor(self.contentView.rightAnchor).active = true
-        self.label.bottomAnchor.constraintEqualToAnchor(self.contentView.bottomAnchor).active = true
+        self.label.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
+        self.label.leftAnchor.constraint(equalTo: self.contentView.leftAnchor).isActive = true
+        self.label.rightAnchor.constraint(equalTo: self.contentView.rightAnchor).isActive = true
+        self.label.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
     }
 
     required init?(coder aDecoder: NSCoder) {
