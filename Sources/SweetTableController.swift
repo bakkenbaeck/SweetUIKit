@@ -4,8 +4,8 @@ import UIKit
 open class SweetTableController: UIViewController {
     open var tableView: UITableView
 
-    public init(with tableViewStyle: UITableViewStyle = .plain) {
-        let view = UITableView(frame: .zero, style: tableViewStyle)
+    public init(style: UITableViewStyle = .plain) {
+        let view = UITableView(frame: .zero, style: style)
         view.translatesAutoresizingMaskIntoConstraints = false
         self.tableView = view
 

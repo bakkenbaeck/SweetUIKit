@@ -4,8 +4,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let navigationController = UINavigationController(rootViewController: ViewController())
+    private func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        let layout = UICollectionViewFlowLayout()
+        let navigationController = UINavigationController(rootViewController: CollectionController(collectionViewLayout: layout))
         let window = UIWindow()
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
