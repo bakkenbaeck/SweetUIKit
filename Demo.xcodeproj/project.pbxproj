@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142A77251D8993300095A252 /* IndexPath+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A77241D8993300095A252 /* IndexPath+Sweetness.swift */; };
 		14314F291CDB75B600B3B541 /* UIAlertController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */; };
 		14314F2A1CDB75B600B3B541 /* UILabel+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */; };
 		14314F2B1CDB75B600B3B541 /* UIView+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		142A77241D8993300095A252 /* IndexPath+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexPath+Sweetness.swift"; sourceTree = "<group>"; };
 		14314F251CDB75B600B3B541 /* SweetUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SweetUIKit.h; sourceTree = "<group>"; };
 		14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Sweetness.swift"; sourceTree = "<group>"; };
 		14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Sweetness.swift"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				146022DA1CDB7DE800D8F266 /* UIImage+Sweetness.swift */,
 				146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */,
 				9F659FFF1D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift */,
+				142A77241D8993300095A252 /* IndexPath+Sweetness.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14314F2A1CDB75B600B3B541 /* UILabel+Sweetness.swift in Sources */,
+				142A77251D8993300095A252 /* IndexPath+Sweetness.swift in Sources */,
 				9F62AF8C1D7461DA00AADDB2 /* SweetCollectionController.swift in Sources */,
 				9F62E2ED1D7572FE00C45767 /* CollectionViewCell.swift in Sources */,
 				14314F291CDB75B600B3B541 /* UIAlertController+Sweetness.swift in Sources */,
