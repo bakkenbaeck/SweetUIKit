@@ -1,7 +1,7 @@
 import UIKit
 
 class TableController: SweetTableController {
-    let data: [String] = ["Some", "Stringing", "Going", "On"]
+    let data = ["Some", "Stringing", "Going", "On"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

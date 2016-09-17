@@ -5,8 +5,6 @@ class CollectionController: SweetCollectionController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = .magenta
 
         self.collectionView.register(CollectionViewCell.self)
         self.collectionView.backgroundColor = .lightGray
