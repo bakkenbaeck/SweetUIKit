@@ -4,25 +4,7 @@ import UIKit
 open class SweetCollectionController: UIViewController {
     open var collectionView: UICollectionView
 
-    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        let layout = UICollectionViewFlowLayout()
-        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        self.collectionView = view
-
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    public init() {
-        let layout = UICollectionViewFlowLayout()
-        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        self.collectionView = view
-
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    public init(collectionViewLayout layout: UICollectionViewLayout) {
+    public init(collectionViewLayout layout: UICollectionViewLayout = UICollectionViewFlowLayout()) {
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.translatesAutoresizingMaskIntoConstraints = false
         self.collectionView = view

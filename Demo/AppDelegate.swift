@@ -1,17 +1,20 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder {
     var window: UIWindow?
+}
 
-    private func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let layout = UICollectionViewFlowLayout()
-        let navigationController = UINavigationController(rootViewController: CollectionController(collectionViewLayout: layout))
-        let window = UIWindow()
+extension AppDelegate: UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        guard let window = self.window else { fatalError("Window not found") }
+
+        let navigationController = UINavigationController(rootViewController: CollectionController())
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window
-        
+
         return true
     }
 }
