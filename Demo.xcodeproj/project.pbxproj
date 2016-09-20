@@ -11,6 +11,7 @@
 		14314F291CDB75B600B3B541 /* UIAlertController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */; };
 		14314F2A1CDB75B600B3B541 /* UILabel+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */; };
 		14314F2B1CDB75B600B3B541 /* UIView+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */; };
+		1448386E1D919098009D4C4D /* UIToolbar+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1448386D1D919098009D4C4D /* UIToolbar+Sweetness.swift */; };
 		146022DD1CDB7DE800D8F266 /* UIImage+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146022DA1CDB7DE800D8F266 /* UIImage+Sweetness.swift */; };
 		146022DF1CDB7DE800D8F266 /* UIViewController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */; };
 		14A139B41AEFC72B00AD732F /* UILabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A139B31AEFC72B00AD732F /* UILabelTests.swift */; };
@@ -54,6 +55,7 @@
 		14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Sweetness.swift"; sourceTree = "<group>"; };
 		14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Sweetness.swift"; sourceTree = "<group>"; };
 		14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Sweetness.swift"; sourceTree = "<group>"; };
+		1448386D1D919098009D4C4D /* UIToolbar+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIToolbar+Sweetness.swift"; sourceTree = "<group>"; };
 		146022DA1CDB7DE800D8F266 /* UIImage+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Sweetness.swift"; sourceTree = "<group>"; };
 		146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Sweetness.swift"; sourceTree = "<group>"; };
 		146D72AC1AB782920058798C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 				146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */,
 				9F659FFF1D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift */,
 				142A77241D8993300095A252 /* IndexPath+Sweetness.swift */,
+				1448386D1D919098009D4C4D /* UIToolbar+Sweetness.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				9F62AF8C1D7461DA00AADDB2 /* SweetCollectionController.swift in Sources */,
 				9F62E2ED1D7572FE00C45767 /* CollectionViewCell.swift in Sources */,
 				14314F291CDB75B600B3B541 /* UIAlertController+Sweetness.swift in Sources */,
+				1448386E1D919098009D4C4D /* UIToolbar+Sweetness.swift in Sources */,
 				14314F2B1CDB75B600B3B541 /* UIView+Sweetness.swift in Sources */,
 				146022DF1CDB7DE800D8F266 /* UIViewController+Sweetness.swift in Sources */,
 				9F65A0001D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift in Sources */,
