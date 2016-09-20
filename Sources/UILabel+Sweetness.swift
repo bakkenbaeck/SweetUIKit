@@ -3,16 +3,14 @@ import UIKit
 
 public extension UILabel {
     /**
-     Calculates the width of the text.
+     Calculates the width of the text. Because of a crash in Swift 3, it uses self.attributedText instead of self.text.
      - returns: The width of the text.
      */
     public func width() -> CGFloat {
-        let attributes = [NSFontAttributeName : self.font]
-        let rect = (self.text ?? ("" as NSString) as String).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
-
+        let rect = (self.attributedText ?? NSAttributedString()).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, context: nil)
         return rect.width
     }
-    
+
     /**
      Calculates the height of the text.
      - parameter width: The width of the Label.
