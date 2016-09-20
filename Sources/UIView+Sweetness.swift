@@ -37,6 +37,14 @@ public extension UIView {
     public func set(width: CGFloat) {
         self.widthAnchor.constraint(equalToConstant: width).isActive = true
     }
+
+    public func attachToTop() {
+        guard let superview = self.superview else { return }
+
+        self.topAnchor.constraint(equalTo: superview.topAnchor).isActive = true
+        self.leftAnchor.constraint(equalTo: superview.leftAnchor).isActive = true
+        self.rightAnchor.constraint(equalTo: superview.rightAnchor).isActive = true
+    }
 }
 
 #endif
