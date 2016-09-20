@@ -3,8 +3,15 @@ import XCTest
 
 class UILabelTests: XCTestCase {
     func testWidth() {
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 500, height: 500))
-        label.text = "Hi mom"
-        XCTAssertEqual(label.width(), 199)
+        let label = UILabel(frame: .zero)
+
+        label.text = ""
+        XCTAssertEqual(label.width(), 0)
+
+        label.text = "a"
+        XCTAssertEqual(floor(label.width()), 8)
+
+        label.font = UIFont.boldSystemFont(ofSize: 30)
+        XCTAssertEqual(floor(label.width()), 16)
     }
 }
