@@ -64,12 +64,12 @@ public extension IndexPath {
         var count = 0
         let sections = collectionView.numberOfSections
         for section in 0..<sections {
-            if section < (self as NSIndexPath).section {
+            if section < self.section {
                 let rows = collectionView.numberOfItems(inSection: section)
                 count += rows
             }
         }
         
-        return count + (self as NSIndexPath).row
+        return count + self.row
     }
 }
