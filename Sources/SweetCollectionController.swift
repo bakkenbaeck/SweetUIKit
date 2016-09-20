@@ -4,8 +4,8 @@ import UIKit
 open class SweetCollectionController: UIViewController {
     open var collectionView: UICollectionView
 
-    public init(withCollectionViewLayout collectionViewLayout: UICollectionViewLayout = UICollectionViewFlowLayout()) {
-        let view = UICollectionView(frame: .zero, collectionViewLayout: collectionViewLayout)
+    public init(collectionViewLayout layout: UICollectionViewLayout = UICollectionViewFlowLayout()) {
+        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.translatesAutoresizingMaskIntoConstraints = false
         self.collectionView = view
 
