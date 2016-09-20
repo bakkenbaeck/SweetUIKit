@@ -15,7 +15,7 @@ self.tableView.registerClass(ItemCell.self, forCellReuseIdentifier: "ItemCell")
 
 **After**: 
 ```swift
-self.tableView.register(ItemCell)
+self.tableView.register(ItemCell.self)
 ```
 
 Also, accessing the cell identifier is as easy as using `ItemCell.reuseIdentifier`.
