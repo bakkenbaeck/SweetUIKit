@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140800C31D97DB8100F27594 /* String+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140800C21D97DB8100F27594 /* String+Sweetness.swift */; };
+		140800C51D97DB9800F27594 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140800C41D97DB9800F27594 /* StringTests.swift */; };
 		142A77251D8993300095A252 /* IndexPath+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A77241D8993300095A252 /* IndexPath+Sweetness.swift */; };
 		14314F291CDB75B600B3B541 /* UIAlertController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */; };
 		14314F2A1CDB75B600B3B541 /* UILabel+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		140800C21D97DB8100F27594 /* String+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Sweetness.swift"; sourceTree = "<group>"; };
+		140800C41D97DB9800F27594 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		142A77241D8993300095A252 /* IndexPath+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexPath+Sweetness.swift"; sourceTree = "<group>"; };
 		14314F251CDB75B600B3B541 /* SweetUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SweetUIKit.h; sourceTree = "<group>"; };
 		14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Sweetness.swift"; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				14A139B31AEFC72B00AD732F /* UILabelTests.swift */,
+				140800C41D97DB9800F27594 /* StringTests.swift */,
 				146D72B01AB782920058798C /* Supporting Files */,
 			);
 			path = Tests;
@@ -164,16 +169,17 @@
 		14C31A8C1CD294C70056A33F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				14314F251CDB75B600B3B541 /* SweetUIKit.h */,
-				9F62AF8B1D7461DA00AADDB2 /* SweetCollectionController.swift */,
-				9F2887491D75A81D00E7E970 /* SweetTableController.swift */,
-				14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */,
-				14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */,
-				14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */,
-				146022DA1CDB7DE800D8F266 /* UIImage+Sweetness.swift */,
-				146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */,
 				9F659FFF1D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift */,
 				142A77241D8993300095A252 /* IndexPath+Sweetness.swift */,
+				140800C21D97DB8100F27594 /* String+Sweetness.swift */,
+				9F62AF8B1D7461DA00AADDB2 /* SweetCollectionController.swift */,
+				9F2887491D75A81D00E7E970 /* SweetTableController.swift */,
+				14314F251CDB75B600B3B541 /* SweetUIKit.h */,
+				14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */,
+				146022DA1CDB7DE800D8F266 /* UIImage+Sweetness.swift */,
+				14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */,
+				14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */,
+				146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -298,7 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140800C31D97DB8100F27594 /* String+Sweetness.swift in Sources */,
 				14314F2A1CDB75B600B3B541 /* UILabel+Sweetness.swift in Sources */,
+				140800C51D97DB9800F27594 /* StringTests.swift in Sources */,
 				142A77251D8993300095A252 /* IndexPath+Sweetness.swift in Sources */,
 				9F62AF8C1D7461DA00AADDB2 /* SweetCollectionController.swift in Sources */,
 				9F62E2ED1D7572FE00C45767 /* CollectionViewCell.swift in Sources */,
