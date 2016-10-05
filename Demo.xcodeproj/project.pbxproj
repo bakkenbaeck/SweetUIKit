@@ -32,9 +32,22 @@
 		9F62E2ED1D7572FE00C45767 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62E2EC1D7572FE00C45767 /* CollectionViewCell.swift */; };
 		9F62E2EE1D7572FE00C45767 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62E2EC1D7572FE00C45767 /* CollectionViewCell.swift */; };
 		9F65A0001D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F659FFF1D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift */; };
+		9F8199551DA5346E0035E5A8 /* SweetUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8199531DA5346E0035E5A8 /* SweetUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F8199581DA5346E0035E5A8 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8199511DA5346E0035E5A8 /* SweetUIKit.framework */; };
+		9F8199591DA5346E0035E5A8 /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8199511DA5346E0035E5A8 /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FBD1D9C1D75AB1C000039E1 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD1D9B1D75AB1C000039E1 /* TableController.swift */; };
 		9FBD1D9E1D75B17B000039E1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD1D9D1D75B17B000039E1 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F8199561DA5346E0035E5A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146D728B1AB782920058798C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F8199501DA5346E0035E5A8;
+			remoteInfo = SweetUIKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		141001141CD298F200C01F60 /* CopyFiles */ = {
@@ -44,6 +57,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F81995D1DA5346E0035E5A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9F8199591DA5346E0035E5A8 /* SweetUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -77,6 +101,9 @@
 		9F62AF8B1D7461DA00AADDB2 /* SweetCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetCollectionController.swift; sourceTree = "<group>"; };
 		9F62E2EC1D7572FE00C45767 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		9F659FFF1D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IdentifiableProtocol+CellRegistration.swift"; sourceTree = "<group>"; };
+		9F8199511DA5346E0035E5A8 /* SweetUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F8199531DA5346E0035E5A8 /* SweetUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SweetUIKit.h; sourceTree = "<group>"; };
+		9F8199541DA5346E0035E5A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FBD1D9B1D75AB1C000039E1 /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		9FBD1D9D1D75B17B000039E1 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +117,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9F62AF761D7461C700AADDB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8199581DA5346E0035E5A8 /* SweetUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F81994D1DA5346E0035E5A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -113,6 +148,7 @@
 				14C31A8C1CD294C70056A33F /* Sources */,
 				146D72AF1AB782920058798C /* Tests */,
 				9F62AF7A1D7461C700AADDB2 /* Demo */,
+				9F8199521DA5346E0035E5A8 /* SweetUIKit */,
 				146D72941AB782920058798C /* Products */,
 				141001131CD298D800C01F60 /* Frameworks */,
 			);
@@ -125,6 +161,7 @@
 			children = (
 				146D72AC1AB782920058798C /* Tests.xctest */,
 				9F62AF791D7461C700AADDB2 /* Demo.app */,
+				9F8199511DA5346E0035E5A8 /* SweetUIKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,7 +230,27 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		9F8199521DA5346E0035E5A8 /* SweetUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9F8199531DA5346E0035E5A8 /* SweetUIKit.h */,
+				9F8199541DA5346E0035E5A8 /* Info.plist */,
+			);
+			path = SweetUIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9F81994E1DA5346E0035E5A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F8199551DA5346E0035E5A8 /* SweetUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		146D72AB1AB782920058798C /* Tests */ = {
@@ -221,15 +278,35 @@
 				9F62AF751D7461C700AADDB2 /* Sources */,
 				9F62AF761D7461C700AADDB2 /* Frameworks */,
 				9F62AF771D7461C700AADDB2 /* Resources */,
+				9F81995D1DA5346E0035E5A8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9F8199571DA5346E0035E5A8 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demo;
 			productReference = 9F62AF791D7461C700AADDB2 /* Demo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9F8199501DA5346E0035E5A8 /* SweetUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F81995C1DA5346E0035E5A8 /* Build configuration list for PBXNativeTarget "SweetUIKit" */;
+			buildPhases = (
+				9F81994C1DA5346E0035E5A8 /* Sources */,
+				9F81994D1DA5346E0035E5A8 /* Frameworks */,
+				9F81994E1DA5346E0035E5A8 /* Headers */,
+				9F81994F1DA5346E0035E5A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SweetUIKit;
+			productName = SweetUIKit;
+			productReference = 9F8199511DA5346E0035E5A8 /* SweetUIKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -252,6 +329,11 @@
 						DevelopmentTeam = 29X3GG489T;
 						LastSwiftMigration = 0800;
 					};
+					9F8199501DA5346E0035E5A8 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 29X3GG489T;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 146D728E1AB782920058798C /* Build configuration list for PBXProject "Demo" */;
@@ -269,6 +351,7 @@
 			targets = (
 				146D72AB1AB782920058798C /* Tests */,
 				9F62AF781D7461C700AADDB2 /* Demo */,
+				9F8199501DA5346E0035E5A8 /* SweetUIKit */,
 			);
 		};
 /* End PBXProject section */
@@ -288,6 +371,13 @@
 			files = (
 				9F62AF861D7461C700AADDB2 /* LaunchScreen.storyboard in Resources */,
 				9F62AF831D7461C700AADDB2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F81994F1DA5346E0035E5A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +422,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F81994C1DA5346E0035E5A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F8199571DA5346E0035E5A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F8199501DA5346E0035E5A8 /* SweetUIKit */;
+			targetProxy = 9F8199561DA5346E0035E5A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9F62AF841D7461C700AADDB2 /* LaunchScreen.storyboard */ = {
@@ -500,6 +605,64 @@
 			};
 			name = Release;
 		};
+		9F81995A1DA5346E0035E5A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SweetUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.SweetUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F81995B1DA5346E0035E5A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 29X3GG489T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SweetUIKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.SweetUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -529,6 +692,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9F81995C1DA5346E0035E5A8 /* Build configuration list for PBXNativeTarget "SweetUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F81995A1DA5346E0035E5A8 /* Debug */,
+				9F81995B1DA5346E0035E5A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
