@@ -41,9 +41,16 @@ public extension UIAlertController {
      - parameter error: The error.
      - returns: The alert controller.
      */
-    public static func errorAlert(_ error: NSError) -> UIAlertController {
+    public static func errorAlert(_ error: NSError, dismissedBlock: ((Void) -> Void)? = nil) -> UIAlertController {
         let controller = UIAlertController(title: NSLocalizedString("Oops, something went wrong", comment: ""), message: error.localizedDescription, preferredStyle: .alert)
-        controller.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: .cancel, handler: nil))
+
+        if let closeBlock = dismissedBlock {
+            controller.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: .cancel, handler: { _ in
+                closeBlock()
+            }))
+        } else {
+            controller.addAction(UIAlertAction(title: NSLocalizedString("Dismiss", comment: ""), style: .cancel, handler: nil))
+        }
 
         return controller
     }
