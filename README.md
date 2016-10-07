@@ -97,6 +97,19 @@ let frame = image.centeredFrame()
 // Do something with new frame
 ```
 
+#### Image with colour
+
+```swift
+let image = UIImage(color: .red)
+button.setBackgroundImage(image, for: .normal)
+```
+
+or, if you need the image to have specific dimensions
+
+```swift
+let image = UIImage(color: .red, size: someSize)
+```
+
 ## UIViewController
 
 #### Application window
