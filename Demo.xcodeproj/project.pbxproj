@@ -39,6 +39,17 @@
 		9F8199591DA5346E0035E5A8 /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8199511DA5346E0035E5A8 /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FBD1D9C1D75AB1C000039E1 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD1D9B1D75AB1C000039E1 /* TableController.swift */; };
 		9FBD1D9E1D75B17B000039E1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FBD1D9D1D75B17B000039E1 /* TableViewCell.swift */; };
+		9FCC96EC1DAD2CD70098FD78 /* IdentifiableProtocol+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F659FFF1D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift */; };
+		9FCC96ED1DAD2CD70098FD78 /* IndexPath+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142A77241D8993300095A252 /* IndexPath+Sweetness.swift */; };
+		9FCC96EE1DAD2CD70098FD78 /* String+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140800C21D97DB8100F27594 /* String+Sweetness.swift */; };
+		9FCC96EF1DAD2CD70098FD78 /* SweetCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62AF8B1D7461DA00AADDB2 /* SweetCollectionController.swift */; };
+		9FCC96F01DAD2CD70098FD78 /* SweetTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2887491D75A81D00E7E970 /* SweetTableController.swift */; };
+		9FCC96F11DAD2CD70098FD78 /* SweetUIKit.h in Sources */ = {isa = PBXBuildFile; fileRef = 14314F251CDB75B600B3B541 /* SweetUIKit.h */; };
+		9FCC96F21DAD2CD70098FD78 /* UIAlertController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */; };
+		9FCC96F31DAD2CD70098FD78 /* UIImage+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146022DA1CDB7DE800D8F266 /* UIImage+Sweetness.swift */; };
+		9FCC96F41DAD2CD70098FD78 /* UILabel+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */; };
+		9FCC96F51DAD2CD70098FD78 /* UIView+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */; };
+		9FCC96F61DAD2CD70098FD78 /* UIViewController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -434,6 +445,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FCC96EC1DAD2CD70098FD78 /* IdentifiableProtocol+CellRegistration.swift in Sources */,
+				9FCC96ED1DAD2CD70098FD78 /* IndexPath+Sweetness.swift in Sources */,
+				9FCC96EE1DAD2CD70098FD78 /* String+Sweetness.swift in Sources */,
+				9FCC96EF1DAD2CD70098FD78 /* SweetCollectionController.swift in Sources */,
+				9FCC96F01DAD2CD70098FD78 /* SweetTableController.swift in Sources */,
+				9FCC96F11DAD2CD70098FD78 /* SweetUIKit.h in Sources */,
+				9FCC96F21DAD2CD70098FD78 /* UIAlertController+Sweetness.swift in Sources */,
+				9FCC96F31DAD2CD70098FD78 /* UIImage+Sweetness.swift in Sources */,
+				9FCC96F41DAD2CD70098FD78 /* UILabel+Sweetness.swift in Sources */,
+				9FCC96F51DAD2CD70098FD78 /* UIView+Sweetness.swift in Sources */,
+				9FCC96F61DAD2CD70098FD78 /* UIViewController+Sweetness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +601,7 @@
 		9F62AF881D7461C700AADDB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -598,6 +621,7 @@
 		9F62AF891D7461C700AADDB2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -708,6 +732,7 @@
 				9F81995B1DA5346E0035E5A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
