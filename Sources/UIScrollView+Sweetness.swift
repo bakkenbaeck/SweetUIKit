@@ -1,21 +1,23 @@
 import UIKit
 
-extension UIScrollView {
-    var isAtTop: Bool {
+public extension UIScrollView {
+    /// A Boolean value that indicates whether the scrollView's contentOffset is located at the top.
+    public var isAtTheTop: Bool {
         return self.contentOffset.y <= self.topVerticalContentOffset
     }
 
-    var isAtBottom: Bool {
+    /// A Boolean value that indicates whether the scrollView's contentOffset is located at the bottom.
+    public var isAtTheBottom: Bool {
         return self.contentOffset.y >= self.bottomVerticalContentOffset
     }
 
-    var topVerticalContentOffset: CGFloat {
+    private var topVerticalContentOffset: CGFloat {
         let topInset = self.contentInset.top
 
         return -topInset
     }
 
-    var bottomVerticalContentOffset: CGFloat {
+    private var bottomVerticalContentOffset: CGFloat {
         let scrollViewHeight = self.bounds.height
         let scrollContentSizeHeight = self.contentSize.height
         let bottomInset = self.contentInset.bottom

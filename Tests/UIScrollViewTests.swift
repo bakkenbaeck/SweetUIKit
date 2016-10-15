@@ -4,8 +4,8 @@ import XCTest
 class UIScrollViewTests: XCTestCase {
     func testFrameZero() {
         let scrollView = UIScrollView(frame: .zero)
-        XCTAssertTrue(scrollView.isAtTop)
-        XCTAssertTrue(scrollView.isAtBottom)
+        XCTAssertTrue(scrollView.isAtTheTop)
+        XCTAssertTrue(scrollView.isAtTheBottom)
     }
 
     func testIsAtTop() {
@@ -16,8 +16,8 @@ class UIScrollViewTests: XCTestCase {
         let scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: frameWidth, height: frameHeight))
         scrollView.contentSize = CGSize(width: frameWidth, height: contentHeight)
 
-        XCTAssertTrue(scrollView.isAtTop)
-        XCTAssertFalse(scrollView.isAtBottom)
+        XCTAssertTrue(scrollView.isAtTheTop)
+        XCTAssertFalse(scrollView.isAtTheBottom)
     }
 
     func testIsAtBottom() {
@@ -29,7 +29,7 @@ class UIScrollViewTests: XCTestCase {
         scrollView.contentSize = CGSize(width: frameWidth, height: contentHeight)
         scrollView.contentOffset = CGPoint(x: 0, y: contentHeight)
 
-        XCTAssertFalse(scrollView.isAtTop)
-        XCTAssertTrue(scrollView.isAtBottom)
+        XCTAssertFalse(scrollView.isAtTheTop)
+        XCTAssertTrue(scrollView.isAtTheBottom)
     }
 }
