@@ -1,1 +1,1 @@
-Check https://github.com/bakkenbaeck/SweetUIKit/releases for more information.
+Check https://github.com/SweetOrg/SweetUIKit/releases for more information.
