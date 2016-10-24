@@ -6,7 +6,11 @@ public extension UIViewController {
      Returns the main application window.
      */
     public func applicationWindow() -> UIWindow {
-        return UIApplication.shared.keyWindow!
+        if  UIApplication.responds(to: NSSelectorFromString("shared")) {
+            return (UIApplication.value(forKey: "shared.") as! UIApplication).keyWindow!
+        } else {
+            fatalError("This can't be called from inside an app extension.")
+        }
     }
 }
 #endif
