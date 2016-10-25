@@ -13,6 +13,10 @@
 		14314F291CDB75B600B3B541 /* UIAlertController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */; };
 		14314F2A1CDB75B600B3B541 /* UILabel+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */; };
 		14314F2B1CDB75B600B3B541 /* UIView+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */; };
+		14456C131DB19FA5005714B1 /* UIScrollView+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456C121DB19FA5005714B1 /* UIScrollView+Sweetness.swift */; };
+		14456C141DB19FA5005714B1 /* UIScrollView+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456C121DB19FA5005714B1 /* UIScrollView+Sweetness.swift */; };
+		14456C151DB19FA5005714B1 /* UIScrollView+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456C121DB19FA5005714B1 /* UIScrollView+Sweetness.swift */; };
+		14456C171DB1ACE9005714B1 /* UIScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14456C161DB1ACE9005714B1 /* UIScrollViewTests.swift */; };
 		146022DD1CDB7DE800D8F266 /* UIImage+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146022DA1CDB7DE800D8F266 /* UIImage+Sweetness.swift */; };
 		146022DF1CDB7DE800D8F266 /* UIViewController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */; };
 		14A139B41AEFC72B00AD732F /* UILabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A139B31AEFC72B00AD732F /* UILabelTests.swift */; };
@@ -105,6 +109,8 @@
 		14314F261CDB75B600B3B541 /* UIAlertController+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Sweetness.swift"; sourceTree = "<group>"; };
 		14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Sweetness.swift"; sourceTree = "<group>"; };
 		14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Sweetness.swift"; sourceTree = "<group>"; };
+		14456C121DB19FA5005714B1 /* UIScrollView+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Sweetness.swift"; sourceTree = "<group>"; };
+		14456C161DB1ACE9005714B1 /* UIScrollViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewTests.swift; sourceTree = "<group>"; };
 		146022DA1CDB7DE800D8F266 /* UIImage+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Sweetness.swift"; sourceTree = "<group>"; };
 		146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Sweetness.swift"; sourceTree = "<group>"; };
 		146D72AC1AB782920058798C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +209,7 @@
 			children = (
 				14A139B31AEFC72B00AD732F /* UILabelTests.swift */,
 				140800C41D97DB9800F27594 /* StringTests.swift */,
+				14456C161DB1ACE9005714B1 /* UIScrollViewTests.swift */,
 				146D72B01AB782920058798C /* Supporting Files */,
 			);
 			path = Tests;
@@ -245,6 +252,7 @@
 				14314F271CDB75B600B3B541 /* UILabel+Sweetness.swift */,
 				14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */,
 				146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */,
+				14456C121DB19FA5005714B1 /* UIScrollView+Sweetness.swift */,
 				9F6801AE1DBF4234005D9CCB /* OpenInSafariActivity.swift */,
 				9F6801D51DBF4C97005D9CCB /* Resources */,
 			);
@@ -444,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14456C171DB1ACE9005714B1 /* UIScrollViewTests.swift in Sources */,
 				140800C31D97DB8100F27594 /* String+Sweetness.swift in Sources */,
 				14314F2A1CDB75B600B3B541 /* UILabel+Sweetness.swift in Sources */,
 				140800C51D97DB9800F27594 /* StringTests.swift in Sources */,
@@ -456,6 +465,7 @@
 				9F6801AF1DBF4234005D9CCB /* OpenInSafariActivity.swift in Sources */,
 				9F65A0001D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift in Sources */,
 				146022DD1CDB7DE800D8F266 /* UIImage+Sweetness.swift in Sources */,
+				14456C131DB19FA5005714B1 /* UIScrollView+Sweetness.swift in Sources */,
 				9F28874A1D75A81D00E7E970 /* SweetTableController.swift in Sources */,
 				14A139B41AEFC72B00AD732F /* UILabelTests.swift in Sources */,
 			);
@@ -477,6 +487,7 @@
 				9F6801B01DBF4234005D9CCB /* OpenInSafariActivity.swift in Sources */,
 				9F62AF7E1D7461C700AADDB2 /* CollectionController.swift in Sources */,
 				9F62AF8D1D7461DA00AADDB2 /* SweetCollectionController.swift in Sources */,
+				14456C141DB19FA5005714B1 /* UIScrollView+Sweetness.swift in Sources */,
 				9F62AF7C1D7461C700AADDB2 /* AppDelegate.swift in Sources */,
 				9F62E2EE1D7572FE00C45767 /* CollectionViewCell.swift in Sources */,
 			);
@@ -498,6 +509,7 @@
 				9F6801B11DBF4234005D9CCB /* OpenInSafariActivity.swift in Sources */,
 				9FCC96F51DAD2CD70098FD78 /* UIView+Sweetness.swift in Sources */,
 				9FCC96F61DAD2CD70098FD78 /* UIViewController+Sweetness.swift in Sources */,
+				14456C151DB19FA5005714B1 /* UIScrollView+Sweetness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
