@@ -38,8 +38,8 @@ public extension UITableView {
         self.register(viewClass.self, forHeaderFooterViewReuseIdentifier: viewClass.reuseIdentifier)
     }
     
-    public func dequeue<T: UITableViewCell>(_ cellClass: T.Type, for indexPath: IndexPath) -> T {
-        return self.dequeueReusableCell(withIdentifier: String(describing: cellClass), for: indexPath) as! T
+    public func dequeue<T where T: Identifiable, T: UITableViewCell>(_ cellClass: T.Type, for indexPath: IndexPath) -> T {
+        return self.dequeueReusableCell(withIdentifier: cellClass.reuseIdentifier, for: indexPath) as! T
     }    
 }
 
@@ -49,7 +49,11 @@ public extension UICollectionView {
     }
 
     public func registerNib(_ cellClass: UICollectionViewCell.Type) {
-        self.register(UINib.init(nibName: String(describing: cellClass), bundle: nil), forCellWithReuseIdentifier: cellClass.reuseIdentifier)
+        self.register(UINib.init(nibName: cellClass.reuseIdentifier, bundle: nil), forCellWithReuseIdentifier: cellClass.reuseIdentifier)
+    }
+
+    public func dequeue<T where T: Identifiable, T: UICollectionViewCell>(_ cellClass: T.Type, for indexPath: IndexPath) -> T {
+        return self.dequeueReusableCell(withReuseIdentifier: cellClass.reuseIdentifier, for: indexPath) as! T
     }
 }
 #endif
