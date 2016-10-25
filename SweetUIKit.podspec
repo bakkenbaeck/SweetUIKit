@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "SweetUIKit"
   s.summary          = "Helpers and sugar for the UIKit framework."
-  s.version          = "1.1.0"
+  s.version          = "1.2.0"
   s.homepage         = "https://github.com/SweetOrg/SweetUIKit"
   s.license          = 'MIT'
   s.author           = { "Bakken & Bæck" => "post@SweetOrg.no" }
