@@ -1,4 +1,5 @@
 import UIKit
+import SweetUIKit
 
 class CollectionViewCell: UICollectionViewCell {
     lazy var label: UILabel = {

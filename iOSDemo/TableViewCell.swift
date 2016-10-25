@@ -1,4 +1,5 @@
 import UIKit
+import SweetUIKit
 
 class TableViewCell: UITableViewCell {
     lazy var titleLabel: UILabel = {

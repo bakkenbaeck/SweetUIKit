@@ -1,4 +1,5 @@
 import UIKit
+import SweetUIKit
 
 class TableController: SweetTableController {
     let data = ["Some", "Stringing", "Going", "On"]
