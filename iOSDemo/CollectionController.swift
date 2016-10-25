@@ -23,7 +23,7 @@ class CollectionController: SweetCollectionController {
 
 extension CollectionController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseIdentifier, for: indexPath) as! CollectionViewCell
+        let cell = collectionView.dequeue(CollectionViewCell.self, for: indexPath)
         cell.backgroundColor = .white
         cell.label.text = self.data[indexPath.row]
 
