@@ -145,9 +145,9 @@
 		146D72AC1AB782920058798C /* iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		146D72B11AB782920058798C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		149D81391DBD2A5E00A9EB1A /* tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		149D81521DBD2ADD00A9EB1A /* LibraryName.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibraryName.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		149D815F1DBD2AE500A9EB1A /* LibraryName.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibraryName.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		149D816C1DBD2AFB00A9EB1A /* LibraryName.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibraryName.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		149D815F1DBD2AE500A9EB1A /* SweetUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		149D816C1DBD2AFB00A9EB1A /* SweetUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		149D81811DBD2E8000A9EB1A /* SweetUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SweetUIKit.h; sourceTree = "<group>"; };
 		14C0AF801BD6D4230009ECBE /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		14C0AF811BD6D4230009ECBE /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -252,9 +252,9 @@
 			children = (
 				146D72AC1AB782920058798C /* iOSTests.xctest */,
 				149D81391DBD2A5E00A9EB1A /* tvOSTests.xctest */,
-				149D81521DBD2ADD00A9EB1A /* LibraryName.framework */,
-				149D815F1DBD2AE500A9EB1A /* LibraryName.framework */,
-				149D816C1DBD2AFB00A9EB1A /* LibraryName.framework */,
+				149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */,
+				149D815F1DBD2AE500A9EB1A /* SweetUIKit.framework */,
+				149D816C1DBD2AFB00A9EB1A /* SweetUIKit.framework */,
 				140124C11DBF582900EA92FB /* iOSDemo.app */,
 			);
 			name = Products;
@@ -410,8 +410,8 @@
 			dependencies = (
 			);
 			name = "SweetUIKit-iOS";
-			productName = "LibraryName-iOS";
-			productReference = 149D81521DBD2ADD00A9EB1A /* LibraryName.framework */;
+			productName = "SweetUIKit-iOS";
+			productReference = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		149D815E1DBD2AE500A9EB1A /* SweetUIKit-watchOS */ = {
@@ -428,8 +428,8 @@
 			dependencies = (
 			);
 			name = "SweetUIKit-watchOS";
-			productName = "LibraryName-watchOS";
-			productReference = 149D815F1DBD2AE500A9EB1A /* LibraryName.framework */;
+			productName = "SweetUIKit-watchOS";
+			productReference = 149D815F1DBD2AE500A9EB1A /* SweetUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		149D816B1DBD2AFB00A9EB1A /* SweetUIKit-tvOS */ = {
@@ -446,8 +446,8 @@
 			dependencies = (
 			);
 			name = "SweetUIKit-tvOS";
-			productName = "LibraryName-tvOS";
-			productReference = 149D816C1DBD2AFB00A9EB1A /* LibraryName.framework */;
+			productName = "SweetUIKit-tvOS";
+			productReference = 149D816C1DBD2AFB00A9EB1A /* SweetUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -926,8 +926,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LibraryName;
-				PRODUCT_NAME = LibraryName;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.SweetUIKit;
+				PRODUCT_NAME = SweetUIKit;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -956,8 +956,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LibraryName;
-				PRODUCT_NAME = LibraryName;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.SweetUIKit;
+				PRODUCT_NAME = SweetUIKit;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -984,8 +984,8 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LibraryName;
-				PRODUCT_NAME = LibraryName;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.SweetUIKit;
+				PRODUCT_NAME = SweetUIKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1016,8 +1016,8 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LibraryName;
-				PRODUCT_NAME = LibraryName;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.SweetUIKit;
+				PRODUCT_NAME = SweetUIKit;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -1045,8 +1045,8 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LibraryName;
-				PRODUCT_NAME = LibraryName;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.SweetUIKit;
+				PRODUCT_NAME = SweetUIKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1076,8 +1076,8 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.LibraryName;
-				PRODUCT_NAME = LibraryName;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.SweetUIKit;
+				PRODUCT_NAME = SweetUIKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
