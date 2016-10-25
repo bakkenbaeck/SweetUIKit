@@ -11,6 +11,7 @@ extension AppDelegate: UIApplicationDelegate {
         guard let window = self.window else { fatalError("Window not found") }
 
         let navigationController = UINavigationController(rootViewController: CollectionController())
+
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window
