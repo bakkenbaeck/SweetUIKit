@@ -1,4 +1,5 @@
 import UIKit
+import SweetUIKit
 
 class CollectionController: SweetCollectionController {
     let data = ["123", "321", "lol"]

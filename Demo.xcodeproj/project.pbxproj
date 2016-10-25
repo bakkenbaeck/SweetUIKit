@@ -127,20 +127,10 @@
 		14D9866A1DBF58A900D7842C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14D986651DBF58A900D7842C /* Localizable.strings */; };
 		14D9866B1DBF58A900D7842C /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D986661DBF58A900D7842C /* TableController.swift */; };
 		14D9866C1DBF58A900D7842C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D986671DBF58A900D7842C /* TableViewCell.swift */; };
-		14D9866D1DBF58BE00D7842C /* IdentifiableProtocol+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124621DBF57BA00EA92FB /* IdentifiableProtocol+CellRegistration.swift */; };
-		14D9866E1DBF58BE00D7842C /* IndexPath+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124631DBF57BA00EA92FB /* IndexPath+Sweetness.swift */; };
-		14D9866F1DBF58BE00D7842C /* OpenInSafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124641DBF57BA00EA92FB /* OpenInSafariActivity.swift */; };
-		14D986701DBF58BE00D7842C /* String+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124651DBF57BA00EA92FB /* String+Sweetness.swift */; };
-		14D986711DBF58BE00D7842C /* SweetCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124661DBF57BA00EA92FB /* SweetCollectionController.swift */; };
-		14D986721DBF58BE00D7842C /* SweetTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124671DBF57BA00EA92FB /* SweetTableController.swift */; };
-		14D986731DBF58BE00D7842C /* UIAlertController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124681DBF57BA00EA92FB /* UIAlertController+Sweetness.swift */; };
-		14D986741DBF58BE00D7842C /* UIImage+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124691DBF57BA00EA92FB /* UIImage+Sweetness.swift */; };
-		14D986751DBF58BE00D7842C /* UILabel+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401246A1DBF57BA00EA92FB /* UILabel+Sweetness.swift */; };
-		14D986761DBF58BE00D7842C /* UIScrollView+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401246B1DBF57BA00EA92FB /* UIScrollView+Sweetness.swift */; };
-		14D986771DBF58BE00D7842C /* UIView+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401246C1DBF57BA00EA92FB /* UIView+Sweetness.swift */; };
-		14D986781DBF58BE00D7842C /* UIViewController+Sweetness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1401246D1DBF57BA00EA92FB /* UIViewController+Sweetness.swift */; };
 		14D986791DBF58C700D7842C /* OpenInSafariActivity.strings in Resources */ = {isa = PBXBuildFile; fileRef = 140124AB1DBF57E100EA92FB /* OpenInSafariActivity.strings */; };
 		14D9867A1DBF58C900D7842C /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140124AD1DBF57E100EA92FB /* Resources.xcassets */; };
+		9FBA0C7D1DBFBC6D0007D239 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; };
+		9FBA0C801DBFBC880007D239 /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -151,6 +141,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FBA0C7F1DBFBC730007D239 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9FBA0C801DBFBC880007D239 /* SweetUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -204,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FBA0C7D1DBFBC6D0007D239 /* SweetUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +425,7 @@
 				140124BD1DBF582900EA92FB /* Sources */,
 				140124BE1DBF582900EA92FB /* Frameworks */,
 				140124BF1DBF582900EA92FB /* Resources */,
+				9FBA0C7F1DBFBC730007D239 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -650,22 +653,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				14D9866C1DBF58A900D7842C /* TableViewCell.swift in Sources */,
-				14D9866F1DBF58BE00D7842C /* OpenInSafariActivity.swift in Sources */,
-				14D986731DBF58BE00D7842C /* UIAlertController+Sweetness.swift in Sources */,
-				14D9866E1DBF58BE00D7842C /* IndexPath+Sweetness.swift in Sources */,
-				14D986781DBF58BE00D7842C /* UIViewController+Sweetness.swift in Sources */,
-				14D986751DBF58BE00D7842C /* UILabel+Sweetness.swift in Sources */,
 				14D9866B1DBF58A900D7842C /* TableController.swift in Sources */,
-				14D986771DBF58BE00D7842C /* UIView+Sweetness.swift in Sources */,
 				140124C41DBF582900EA92FB /* AppDelegate.swift in Sources */,
 				14D986681DBF58A900D7842C /* CollectionController.swift in Sources */,
-				14D986711DBF58BE00D7842C /* SweetCollectionController.swift in Sources */,
-				14D986701DBF58BE00D7842C /* String+Sweetness.swift in Sources */,
-				14D986721DBF58BE00D7842C /* SweetTableController.swift in Sources */,
-				14D9866D1DBF58BE00D7842C /* IdentifiableProtocol+CellRegistration.swift in Sources */,
 				14D986691DBF58A900D7842C /* CollectionViewCell.swift in Sources */,
-				14D986741DBF58BE00D7842C /* UIImage+Sweetness.swift in Sources */,
-				14D986761DBF58BE00D7842C /* UIScrollView+Sweetness.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
