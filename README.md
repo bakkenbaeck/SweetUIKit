@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/SweetUIKit.svg?style=flat)](https://cocoapods.org/pods/SweetUIKit)
 [![Platform](https://img.shields.io/cocoapods/p/SweetUIKit.svg?style=flat)](https://cocoapods.org/pods/SweetUIKit)
 
-## Dequeing Cells
+## Dequeuing Cells
 
 **Before**: 
 ```swift
