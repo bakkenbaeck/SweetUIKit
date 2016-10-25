@@ -97,6 +97,19 @@ let frame = image.centeredFrame()
 // Do something with new frame
 ```
 
+#### Image with colour
+
+```swift
+let image = UIImage(color: .red)
+button.setBackgroundImage(image, for: .normal)
+```
+
+or, if you need the image to have specific dimensions
+
+```swift
+let image = UIImage(color: .red, size: someSize)
+```
+
 ## UIViewController
 
 #### Application window
@@ -118,7 +131,7 @@ pod 'SweetUIKit'
 it, simply add the following line to your Cartfile:
 
 ```ruby
-github "bakkenbaeck/SweetUIKit"
+github "SweetOrg/SweetUIKit"
 ```
 
 ## License
@@ -127,4 +140,4 @@ github "bakkenbaeck/SweetUIKit"
 
 ## Author
 
-Bakken & Bæck, [@bakkenbaeck](https://twitter.com/bakkenbaeck)
+Bakken & Bæck, [@SweetOrg](https://twitter.com/SweetOrg)
