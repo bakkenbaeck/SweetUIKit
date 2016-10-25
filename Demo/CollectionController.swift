@@ -10,6 +10,14 @@ class CollectionController: SweetCollectionController {
         self.collectionView.backgroundColor = .lightGray
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
+
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share))
+    }
+
+    func share() {
+        let url = URL(string: "https://google.com")!
+        let activityController = UIActivityViewController(activityItems: [url], applicationActivities: [OpenInSafariActivity()])
+        self.present(activityController, animated: true)
     }
 }
 

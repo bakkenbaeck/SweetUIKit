@@ -38,6 +38,18 @@
 		9F62E2ED1D7572FE00C45767 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62E2EC1D7572FE00C45767 /* CollectionViewCell.swift */; };
 		9F62E2EE1D7572FE00C45767 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F62E2EC1D7572FE00C45767 /* CollectionViewCell.swift */; };
 		9F65A0001D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F659FFF1D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift */; };
+		9F6801AF1DBF4234005D9CCB /* OpenInSafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6801AE1DBF4234005D9CCB /* OpenInSafariActivity.swift */; };
+		9F6801B01DBF4234005D9CCB /* OpenInSafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6801AE1DBF4234005D9CCB /* OpenInSafariActivity.swift */; };
+		9F6801B11DBF4234005D9CCB /* OpenInSafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6801AE1DBF4234005D9CCB /* OpenInSafariActivity.swift */; };
+		9F6801DD1DBF4C97005D9CCB /* OpenInSafariActivity.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F6801D61DBF4C97005D9CCB /* OpenInSafariActivity.strings */; };
+		9F6801DE1DBF4C97005D9CCB /* OpenInSafariActivity.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F6801D61DBF4C97005D9CCB /* OpenInSafariActivity.strings */; };
+		9F6801DF1DBF4C97005D9CCB /* OpenInSafariActivity.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F6801D61DBF4C97005D9CCB /* OpenInSafariActivity.strings */; };
+		9F6801F01DBF4CBB005D9CCB /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6801EF1DBF4CBB005D9CCB /* Resources.xcassets */; };
+		9F6801F11DBF4CBB005D9CCB /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6801EF1DBF4CBB005D9CCB /* Resources.xcassets */; };
+		9F6801F21DBF4CBB005D9CCB /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6801EF1DBF4CBB005D9CCB /* Resources.xcassets */; };
+		9F6801F51DBF4E3A005D9CCB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F6801F41DBF4E3A005D9CCB /* Localizable.strings */; };
+		9F6801F61DBF4E3A005D9CCB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F6801F41DBF4E3A005D9CCB /* Localizable.strings */; };
+		9F6801F71DBF4E3A005D9CCB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F6801F41DBF4E3A005D9CCB /* Localizable.strings */; };
 		9F8199551DA5346E0035E5A8 /* SweetUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8199531DA5346E0035E5A8 /* SweetUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F8199581DA5346E0035E5A8 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8199511DA5346E0035E5A8 /* SweetUIKit.framework */; };
 		9F8199591DA5346E0035E5A8 /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F8199511DA5346E0035E5A8 /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -122,6 +134,10 @@
 		9F62AF8B1D7461DA00AADDB2 /* SweetCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetCollectionController.swift; sourceTree = "<group>"; };
 		9F62E2EC1D7572FE00C45767 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		9F659FFF1D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IdentifiableProtocol+CellRegistration.swift"; sourceTree = "<group>"; };
+		9F6801AE1DBF4234005D9CCB /* OpenInSafariActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenInSafariActivity.swift; sourceTree = "<group>"; };
+		9F6801D71DBF4C97005D9CCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OpenInSafariActivity.strings; sourceTree = "<group>"; };
+		9F6801EF1DBF4CBB005D9CCB /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
+		9F6801F41DBF4E3A005D9CCB /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9F8199511DA5346E0035E5A8 /* SweetUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8199531DA5346E0035E5A8 /* SweetUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SweetUIKit.h; sourceTree = "<group>"; };
 		9F8199541DA5346E0035E5A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -237,6 +253,8 @@
 				14314F281CDB75B600B3B541 /* UIView+Sweetness.swift */,
 				146022DC1CDB7DE800D8F266 /* UIViewController+Sweetness.swift */,
 				14456C121DB19FA5005714B1 /* UIScrollView+Sweetness.swift */,
+				9F6801AE1DBF4234005D9CCB /* OpenInSafariActivity.swift */,
+				9F6801D51DBF4C97005D9CCB /* Resources */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -252,8 +270,18 @@
 				9F62AF821D7461C700AADDB2 /* Assets.xcassets */,
 				9F62AF841D7461C700AADDB2 /* LaunchScreen.storyboard */,
 				9F62AF871D7461C700AADDB2 /* Info.plist */,
+				9F6801F41DBF4E3A005D9CCB /* Localizable.strings */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		9F6801D51DBF4C97005D9CCB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F6801D61DBF4C97005D9CCB /* OpenInSafariActivity.strings */,
+				9F6801EF1DBF4CBB005D9CCB /* Resources.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		9F8199521DA5346E0035E5A8 /* SweetUIKit */ = {
@@ -369,6 +397,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 146D728A1AB782920058798C;
 			productRefGroup = 146D72941AB782920058798C /* Products */;
@@ -387,6 +416,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6801F01DBF4CBB005D9CCB /* Resources.xcassets in Resources */,
+				9F6801F51DBF4E3A005D9CCB /* Localizable.strings in Resources */,
+				9F6801DD1DBF4C97005D9CCB /* OpenInSafariActivity.strings in Resources */,
 				14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +427,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6801DE1DBF4C97005D9CCB /* OpenInSafariActivity.strings in Resources */,
+				9F6801F61DBF4E3A005D9CCB /* Localizable.strings in Resources */,
+				9F6801F11DBF4CBB005D9CCB /* Resources.xcassets in Resources */,
 				9F62AF861D7461C700AADDB2 /* LaunchScreen.storyboard in Resources */,
 				9F62AF831D7461C700AADDB2 /* Assets.xcassets in Resources */,
 			);
@@ -404,6 +439,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F6801DF1DBF4C97005D9CCB /* OpenInSafariActivity.strings in Resources */,
+				9F6801F71DBF4E3A005D9CCB /* Localizable.strings in Resources */,
+				9F6801F21DBF4CBB005D9CCB /* Resources.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +462,7 @@
 				14314F291CDB75B600B3B541 /* UIAlertController+Sweetness.swift in Sources */,
 				14314F2B1CDB75B600B3B541 /* UIView+Sweetness.swift in Sources */,
 				146022DF1CDB7DE800D8F266 /* UIViewController+Sweetness.swift in Sources */,
+				9F6801AF1DBF4234005D9CCB /* OpenInSafariActivity.swift in Sources */,
 				9F65A0001D411A4300AAD311 /* IdentifiableProtocol+CellRegistration.swift in Sources */,
 				146022DD1CDB7DE800D8F266 /* UIImage+Sweetness.swift in Sources */,
 				14456C131DB19FA5005714B1 /* UIScrollView+Sweetness.swift in Sources */,
@@ -445,6 +484,7 @@
 				9F62AF921D74663600AADDB2 /* UIViewController+Sweetness.swift in Sources */,
 				9F62AF931D74663600AADDB2 /* IdentifiableProtocol+CellRegistration.swift in Sources */,
 				9FBD1D9C1D75AB1C000039E1 /* TableController.swift in Sources */,
+				9F6801B01DBF4234005D9CCB /* OpenInSafariActivity.swift in Sources */,
 				9F62AF7E1D7461C700AADDB2 /* CollectionController.swift in Sources */,
 				9F62AF8D1D7461DA00AADDB2 /* SweetCollectionController.swift in Sources */,
 				14456C141DB19FA5005714B1 /* UIScrollView+Sweetness.swift in Sources */,
@@ -466,6 +506,7 @@
 				9FCC96F21DAD2CD70098FD78 /* UIAlertController+Sweetness.swift in Sources */,
 				9FCC96F31DAD2CD70098FD78 /* UIImage+Sweetness.swift in Sources */,
 				9FCC96F41DAD2CD70098FD78 /* UILabel+Sweetness.swift in Sources */,
+				9F6801B11DBF4234005D9CCB /* OpenInSafariActivity.swift in Sources */,
 				9FCC96F51DAD2CD70098FD78 /* UIView+Sweetness.swift in Sources */,
 				9FCC96F61DAD2CD70098FD78 /* UIViewController+Sweetness.swift in Sources */,
 				14456C151DB19FA5005714B1 /* UIScrollView+Sweetness.swift in Sources */,
@@ -489,6 +530,14 @@
 				9F62AF851D7461C700AADDB2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9F6801D61DBF4C97005D9CCB /* OpenInSafariActivity.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F6801D71DBF4C97005D9CCB /* en */,
+			);
+			name = OpenInSafariActivity.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -623,7 +672,7 @@
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = no.SweetOrg.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -643,7 +692,7 @@
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.Demo;
+				PRODUCT_BUNDLE_IDENTIFIER = no.SweetOrg.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -653,6 +702,7 @@
 		9F81995A1DA5346E0035E5A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
@@ -666,9 +716,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SweetUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.SweetUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = no.SweetOrg.SweetUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -683,6 +733,7 @@
 		9F81995B1DA5346E0035E5A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
@@ -696,9 +747,9 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SweetUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = no.bakkenbaeck.SweetUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = no.SweetOrg.SweetUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;

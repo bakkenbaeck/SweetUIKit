@@ -131,7 +131,7 @@ pod 'SweetUIKit'
 it, simply add the following line to your Cartfile:
 
 ```ruby
-github "bakkenbaeck/SweetUIKit"
+github "SweetOrg/SweetUIKit"
 ```
 
 ## License
@@ -140,4 +140,4 @@ github "bakkenbaeck/SweetUIKit"
 
 ## Author
 
-Bakken & Bæck, [@bakkenbaeck](https://twitter.com/bakkenbaeck)
+Bakken & Bæck, [@SweetOrg](https://twitter.com/SweetOrg)
