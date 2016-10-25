@@ -39,8 +39,14 @@ class OpenInSafariActivity: UIActivity {
 
     override func perform() {
         if let url = self.url {
-            let completed = UIApplication.shared.openURL(url)
-            self.activityDidFinish(completed)
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:]) { completed in
+                    self.activityDidFinish(completed)
+                }
+            } else {
+                let completed = UIApplication.shared.openURL(url)
+                self.activityDidFinish(completed)
+            }
         } else {
             self.activityDidFinish(false)
         }
