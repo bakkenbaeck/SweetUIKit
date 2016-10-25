@@ -5,7 +5,7 @@ class TableViewCell: UITableViewCell {
         let view = UILabel(withAutoLayout: true)
 
         self.contentView.addSubview(view)
-        let insets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        let insets = UIEdgeInsets(top: 4, left: 20, bottom: 4, right: 20)
         view.fillSuperview(with: insets)
 
         return view
