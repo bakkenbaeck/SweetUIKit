@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/SweetUIKit.svg?style=flat)](https://cocoapods.org/pods/SweetUIKit)
 [![Platform](https://img.shields.io/cocoapods/p/SweetUIKit.svg?style=flat)](https://cocoapods.org/pods/SweetUIKit)
 
-Your project was a toad, now is Cinderella's prince.
+Your project was a toad, now it's Cinderella.
 
 ## Dequeuing Cells
 
