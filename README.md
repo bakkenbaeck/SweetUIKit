@@ -4,6 +4,18 @@
 [![License](https://img.shields.io/cocoapods/l/SweetUIKit.svg?style=flat)](https://cocoapods.org/pods/SweetUIKit)
 [![Platform](https://img.shields.io/cocoapods/p/SweetUIKit.svg?style=flat)](https://cocoapods.org/pods/SweetUIKit)
 
+## Dequeing Cells
+
+**Before**: 
+```swift
+let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCell", for: indexPath) as! TitleCell
+```
+
+**After**: 
+```swift
+let cell = tableView.dequeue(TitleCell.self, for: indexPath)
+```
+
 ## Registering Cells
 
 Simple protocol extensions to simplify registering a cell in UITableViewController and UICollectionViewController.
