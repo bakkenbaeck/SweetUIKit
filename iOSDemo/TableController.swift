@@ -18,8 +18,8 @@ extension TableController: UITableViewDataSource {
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.reuseIdentifier, for: indexPath) as! TableViewCell
-        cell.textLabel?.text = self.data[indexPath.row]
+        let cell = tableView.dequeue(TableViewCell.self, for: indexPath)
+        cell.titleLabel.text = self.data[indexPath.row]
 
         return cell
     }

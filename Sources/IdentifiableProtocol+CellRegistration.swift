@@ -37,6 +37,10 @@ public extension UITableView {
     public func registerHeaderFooter(_ viewClass: UITableViewHeaderFooterView.Type) {
         self.register(viewClass.self, forHeaderFooterViewReuseIdentifier: viewClass.reuseIdentifier)
     }
+    
+    public func dequeue<T: UITableViewCell>(_ cellClass: T.Type, for indexPath: IndexPath) -> T {
+        return self.dequeueReusableCell(withIdentifier: String(describing: cellClass), for: indexPath) as! T
+    }    
 }
 
 public extension UICollectionView {
