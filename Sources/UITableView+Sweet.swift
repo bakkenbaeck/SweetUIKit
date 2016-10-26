@@ -14,7 +14,7 @@
             self.register(viewClass.self, forHeaderFooterViewReuseIdentifier: viewClass.reuseIdentifier)
         }
 
-        public func dequeue<T where T: Identifiable, T: UITableViewCell>(_ cellClass: T.Type, for indexPath: IndexPath) -> T {
+        public func dequeue<T>(_ cellClass: T.Type, for indexPath: IndexPath) -> T where T: Identifiable, T: UITableViewCell {
             return self.dequeueReusableCell(withIdentifier: cellClass.reuseIdentifier, for: indexPath) as! T
         }
     }
