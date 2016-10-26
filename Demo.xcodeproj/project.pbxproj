@@ -141,6 +141,9 @@
 		447976141DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */; };
 		447976151DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */; };
 		447976161DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */; };
+		44CD98C01DC0E38300632C84 /* IndexPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */; };
+		44CD98C11DC0E39400632C84 /* UITableView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */; };
+		44CD98C21DC0E3A100632C84 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124621DBF57BA00EA92FB /* Identifiable.swift */; };
 		9F4C5B6D1DC0DE1A00F2A77B /* IndexPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */; };
 		9FBA0C7D1DBFBC6D0007D239 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; };
 		9FBA0C801DBFBC880007D239 /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -715,6 +718,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140124BC1DBF57FC00EA92FB /* UIScrollViewTests.swift in Sources */,
+				44CD98C01DC0E38300632C84 /* IndexPathTests.swift in Sources */,
 				140124A61DBF57BA00EA92FB /* UIViewController+Sweet.swift in Sources */,
 				140124A11DBF57BA00EA92FB /* UIView+Sweet.swift in Sources */,
 				440998831DC0B1DA00C11852 /* UICollectionView+Sweet.swift in Sources */,
@@ -726,11 +730,13 @@
 				140124791DBF57BA00EA92FB /* OpenInSafariActivity.swift in Sources */,
 				140124BA1DBF57FC00EA92FB /* UILabelTests.swift in Sources */,
 				140124881DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
+				44CD98C21DC0E3A100632C84 /* Identifiable.swift in Sources */,
 				140124741DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
 				440E05881DC0B07D0044F59F /* UITableViewTests.swift in Sources */,
 				140124921DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				440998821DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */,
 				1401249C1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
+				44CD98C11DC0E39400632C84 /* UITableView+Sweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
