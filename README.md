@@ -6,14 +6,24 @@
 
 ## Dequeuing Cells
 
-**Before**: 
+### UITableView
+
 ```swift
+// Before
 let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCell", for: indexPath) as! TitleCell
+
+// After
+let cell = tableView.dequeue(TitleCell.self, for: indexPath)
 ```
 
-**After**: 
+### UICollectionView
+
 ```swift
-let cell = tableView.dequeue(TitleCell.self, for: indexPath)
+// Before
+let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+
+// After
+let cell = collectionView.dequeue(CollectionViewCell.self, for: indexPath)
 ```
 
 ## Registering Cells
@@ -143,7 +153,7 @@ pod 'SweetUIKit'
 it, simply add the following line to your Cartfile:
 
 ```ruby
-github "SweetOrg/SweetUIKit"
+github "UseSweet/SweetUIKit"
 ```
 
 ## License
@@ -152,4 +162,4 @@ github "SweetOrg/SweetUIKit"
 
 ## Author
 
-Bakken & Bæck, [@SweetOrg](https://twitter.com/SweetOrg)
+Bakken & Bæck, [@use_sweet](https://twitter.com/use_sweet)
