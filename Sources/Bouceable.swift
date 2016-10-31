@@ -1,6 +1,6 @@
 import UIKit
 
-protocol Bounceable: class {
+public protocol Bounceable: class {
     func startBouncing()
     func stopBouncing()
 
@@ -8,12 +8,12 @@ protocol Bounceable: class {
     var layer: CALayer { get }
 }
 
-extension Bounceable {
+public extension Bounceable {
     fileprivate func degreesToRadians(_ degrees: Double) -> Double {
         return M_PI * degrees / 180.0
     }
     
-    func startBouncing() {
+    public func startBouncing() {
         let animationRotationDegrees = 1.25
         let random = Double(arc4random_uniform(500))
         let r = (random / 500.0) + 0.5
@@ -30,7 +30,7 @@ extension Bounceable {
         })
     }
 
-    func stopBouncing() {
+    public func stopBouncing() {
         self.layer.removeAllAnimations()
         self.transform = .identity
     }
