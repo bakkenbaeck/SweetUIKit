@@ -1,6 +1,6 @@
 import UIKit
 
-public protocol Bounceable: class {
+public protocol Jiggly: class {
     func startBouncing()
     func stopBouncing()
 
@@ -8,7 +8,7 @@ public protocol Bounceable: class {
     var layer: CALayer { get }
 }
 
-public extension Bounceable {
+public extension Jiggly {
     fileprivate func degreesToRadians(_ degrees: Double) -> Double {
         return M_PI * degrees / 180.0
     }

@@ -1,7 +1,7 @@
 import UIKit
 import SweetUIKit
 
-class CollectionViewCell: UICollectionViewCell, Bounceable {
+class CollectionViewCell: UICollectionViewCell, Jiggly {
     lazy var label: UILabel = {
         let view = UILabel(withAutoLayout: true)
         view.textAlignment = .center

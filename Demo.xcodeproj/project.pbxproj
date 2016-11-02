@@ -147,9 +147,9 @@
 		9F4C5B6D1DC0DE1A00F2A77B /* IndexPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */; };
 		9FBA0C7D1DBFBC6D0007D239 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; };
 		9FBA0C801DBFBC880007D239 /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9FC8B9E91DC74D0500A68185 /* Bouceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Bouceable.swift */; };
-		9FC8B9EA1DC74D0A00A68185 /* Bouceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Bouceable.swift */; };
-		9FC8B9EB1DC74D0D00A68185 /* Bouceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Bouceable.swift */; };
+		9FC8B9E91DC74D0500A68185 /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
+		9FC8B9EA1DC74D0A00A68185 /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
+		9FC8B9EB1DC74D0D00A68185 /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -222,7 +222,7 @@
 		4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Sweet.swift"; sourceTree = "<group>"; };
 		447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Sweet.swift"; sourceTree = "<group>"; };
 		9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPathTests.swift; sourceTree = "<group>"; };
-		9FC8B9E81DC74D0500A68185 /* Bouceable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bouceable.swift; sourceTree = "<group>"; };
+		9FC8B9E81DC74D0500A68185 /* Jiggly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jiggly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,7 +378,7 @@
 				1401246D1DBF57BA00EA92FB /* UIViewController+Sweet.swift */,
 				4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */,
 				447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */,
-				9FC8B9E81DC74D0500A68185 /* Bouceable.swift */,
+				9FC8B9E81DC74D0500A68185 /* Jiggly.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -687,7 +687,7 @@
 				14D9866B1DBF58A900D7842C /* TableController.swift in Sources */,
 				140124C41DBF582900EA92FB /* AppDelegate.swift in Sources */,
 				14D986681DBF58A900D7842C /* CollectionController.swift in Sources */,
-				9FC8B9EB1DC74D0D00A68185 /* Bouceable.swift in Sources */,
+				9FC8B9EB1DC74D0D00A68185 /* Jiggly.swift in Sources */,
 				14D986691DBF58A900D7842C /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -703,7 +703,7 @@
 				140124871DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				440998841DC0B1DB00C11852 /* UICollectionView+Sweet.swift in Sources */,
 				9F4C5B6D1DC0DE1A00F2A77B /* IndexPathTests.swift in Sources */,
-				9FC8B9E91DC74D0500A68185 /* Bouceable.swift in Sources */,
+				9FC8B9E91DC74D0500A68185 /* Jiggly.swift in Sources */,
 				140124961DBF57BA00EA92FB /* UILabel+Sweet.swift in Sources */,
 				140124A51DBF57BA00EA92FB /* UIViewController+Sweet.swift in Sources */,
 				440E05891DC0B0840044F59F /* UITableView+Sweet.swift in Sources */,
@@ -752,7 +752,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140124A71DBF57BA00EA92FB /* UIViewController+Sweet.swift in Sources */,
-				9FC8B9EA1DC74D0A00A68185 /* Bouceable.swift in Sources */,
+				9FC8B9EA1DC74D0A00A68185 /* Jiggly.swift in Sources */,
 				4479760F1DC0A42100A1F577 /* UITableView+Sweet.swift in Sources */,
 				140124A21DBF57BA00EA92FB /* UIView+Sweet.swift in Sources */,
 				140124981DBF57BA00EA92FB /* UILabel+Sweet.swift in Sources */,
