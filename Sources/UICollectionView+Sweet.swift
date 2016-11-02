@@ -2,6 +2,7 @@
     import UIKit
 
     public extension UICollectionView {
+
         public func register(_ cellClass: UICollectionViewCell.Type) {
             self.register(cellClass.self, forCellWithReuseIdentifier: cellClass.reuseIdentifier)
         }

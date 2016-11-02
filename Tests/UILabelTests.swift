@@ -2,6 +2,7 @@ import UIKit
 import XCTest
 
 class UILabelTests: XCTestCase {
+
     func testWidth() {
         let label = UILabel(frame: .zero)
 

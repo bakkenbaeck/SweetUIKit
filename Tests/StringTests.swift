@@ -2,6 +2,7 @@ import UIKit
 import XCTest
 
 class StringTests: XCTestCase {
+
     func testWidth() {
         let smallFont = UIFont.systemFont(ofSize: 15)
         let bigFont = UIFont.boldSystemFont(ofSize: 30)
