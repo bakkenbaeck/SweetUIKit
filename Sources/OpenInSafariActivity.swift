@@ -1,25 +1,26 @@
 import UIKit
 
 #if os(iOS)
+
     public class OpenInSafariActivity: UIActivity {
         fileprivate var url: URL?
 
-        override public var activityType: UIActivityType? {
+        public override var activityType: UIActivityType? {
             return UIActivityType(String(describing: self.classForCoder))
         }
 
-        override public var activityTitle: String? {
+        public override var activityTitle: String? {
             let defaultTitle = Bundle(for: self.classForCoder).localizedString(forKey: "Open in Safari", value: "Open in Safari Default", table: "OpenInSafariActivity")
             let title = Bundle.main.localizedString(forKey: "Open in Safari", value: defaultTitle, table: nil)
 
             return title
         }
 
-        override public var activityImage: UIImage? {
+        public override var activityImage: UIImage? {
             return UIImage(named: "Safari", in: Bundle(for: self.classForCoder), compatibleWith: nil)
         }
 
-        override public func canPerform(withActivityItems activityItems: [Any]) -> Bool {
+        public override func canPerform(withActivityItems activityItems: [Any]) -> Bool {
             for item in activityItems {
                 if let item = item as? URL {
                     return UIApplication.shared.canOpenURL(item)
@@ -29,7 +30,7 @@ import UIKit
             return false
         }
 
-        override public func prepare(withActivityItems activityItems: [Any]) {
+        public override func prepare(withActivityItems activityItems: [Any]) {
             for item in activityItems {
                 if let item = item as? URL {
                     self.url = item
@@ -38,7 +39,7 @@ import UIKit
             }
         }
 
-        override public func perform() {
+        public override func perform() {
             if let url = self.url {
                 if #available(iOS 10.0, *) {
                     UIApplication.shared.open(url, options: [:]) { completed in

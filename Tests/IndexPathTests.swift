@@ -2,6 +2,7 @@ import UIKit
 import XCTest
 
 class IndexPathTests: XCTestCase {
+
     func testPositionComparison() {
         let firstPath = IndexPath(row: 0, section: 0)
         let secondPath = IndexPath(row: 1, section: 0)

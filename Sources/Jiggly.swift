@@ -9,10 +9,11 @@ public protocol Jiggly: class {
 }
 
 public extension Jiggly {
+
     fileprivate func degreesToRadians(_ degrees: Double) -> Double {
         return M_PI * degrees / 180.0
     }
-    
+
     public func startBouncing() {
         let animationRotationDegrees = 1.25
         let random = Double(arc4random_uniform(500))

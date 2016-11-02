@@ -2,6 +2,7 @@ import UIKit
 import XCTest
 
 class UIScrollViewTests: XCTestCase {
+
     func testFrameZero() {
         let scrollView = UIScrollView(frame: .zero)
         XCTAssertTrue(scrollView.isAtTheTop)
