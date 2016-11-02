@@ -7,7 +7,6 @@
         public init(style: UITableViewStyle = .plain) {
             let view = UITableView(frame: .zero, style: style)
             view.translatesAutoresizingMaskIntoConstraints = false
-            view.separatorStyle = .none
             self.tableView = view
 
             super.init(nibName: nil, bundle: nil)
