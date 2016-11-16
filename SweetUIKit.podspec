@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.requires_arc = true
   s.source_files = 'Sources/**/*.swift'
-  s.exclude_files = 'Sources/Resources/**/*'
   s.frameworks = 'UIKit'
-  s.resource_bundles = { 'SweetUIKitResources' => ['Sources/Resources/**/*'] }
+  s.resource_bundles = { 'SweetUIKitResources' => ['Resources/**/*'] }
 end
