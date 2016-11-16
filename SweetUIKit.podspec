@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'Sources/**/*.swift'
   s.frameworks = 'UIKit'
-  s.resources =  'Resources/**/*'
+  s.resource_bundles = { 'SweetUIKitResources' => ['Resources/**/*'] }
 end
