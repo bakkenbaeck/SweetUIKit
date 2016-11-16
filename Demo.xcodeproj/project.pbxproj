@@ -80,6 +80,8 @@
 		140124C41DBF582900EA92FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124C31DBF582900EA92FB /* AppDelegate.swift */; };
 		140124CB1DBF582900EA92FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140124CA1DBF582900EA92FB /* Assets.xcassets */; };
 		140124CE1DBF582900EA92FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140124CC1DBF582900EA92FB /* LaunchScreen.storyboard */; };
+		1460417E1DDC6203005BEF7C /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
+		1460417F1DDC6204005BEF7C /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
 		1480D4BC1DBF600900507EE0 /* Identifiable.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124621DBF57BA00EA92FB /* Identifiable.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4BD1DBF600900507EE0 /* IndexPath+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124631DBF57BA00EA92FB /* IndexPath+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4BE1DBF600900507EE0 /* OpenInSafariActivity.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124641DBF57BA00EA92FB /* OpenInSafariActivity.swift */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -776,6 +778,7 @@
 				140124A81DBF57BA00EA92FB /* UIViewController+Sweet.swift in Sources */,
 				447976101DC0A42100A1F577 /* UITableView+Sweet.swift in Sources */,
 				140124A31DBF57BA00EA92FB /* UIView+Sweet.swift in Sources */,
+				1460417E1DDC6203005BEF7C /* Jiggly.swift in Sources */,
 				140124991DBF57BA00EA92FB /* UILabel+Sweet.swift in Sources */,
 				140124801DBF57BA00EA92FB /* String+Sweet.swift in Sources */,
 				447976151DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */,
@@ -797,6 +800,7 @@
 				140124A91DBF57BA00EA92FB /* UIViewController+Sweet.swift in Sources */,
 				447976111DC0A42100A1F577 /* UITableView+Sweet.swift in Sources */,
 				140124A41DBF57BA00EA92FB /* UIView+Sweet.swift in Sources */,
+				1460417F1DDC6204005BEF7C /* Jiggly.swift in Sources */,
 				1401249A1DBF57BA00EA92FB /* UILabel+Sweet.swift in Sources */,
 				140124811DBF57BA00EA92FB /* String+Sweet.swift in Sources */,
 				447976161DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */,

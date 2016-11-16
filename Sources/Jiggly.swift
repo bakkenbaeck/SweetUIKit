@@ -1,5 +1,7 @@
 import UIKit
 
+#if os(iOS) || os(tvOS)
+
 public protocol Jiggly: class {
     func startBouncing()
     func stopBouncing()
@@ -36,3 +38,5 @@ public extension Jiggly {
         self.transform = .identity
     }
 }
+
+#endif
