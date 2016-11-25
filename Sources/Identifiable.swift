@@ -16,9 +16,10 @@
     extension UITableViewCell: Identifiable {
     }
 
-    extension UICollectionViewCell: Identifiable {
+    extension UITableViewHeaderFooterView: Identifiable {
     }
 
-    extension UITableViewHeaderFooterView: Identifiable {
+    extension UICollectionReusableView: Identifiable {
+
     }
 #endif
