@@ -153,7 +153,7 @@ pod 'SweetUIKit'
 it, simply add the following line to your Cartfile:
 
 ```ruby
-github "UseSweet/SweetUIKit"
+github "UseSweet/SweetUIKit" ~> 1.0
 ```
 
 ## License
