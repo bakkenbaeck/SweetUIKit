@@ -23,4 +23,22 @@ class StringTests: XCTestCase {
             XCTAssertEqual(floor(string.width(for: bigFont)), 32)
         #endif
     }
+
+    func testHeight() {
+        let smallFont = UIFont.systemFont(ofSize: 15)
+        let bigFont = UIFont.boldSystemFont(ofSize: 30)
+        let width = CGFloat(320)
+
+        var string = ""
+        XCTAssertEqual(floor(string.height(for: smallFont, constrainedToWidth: width)), 17)
+        XCTAssertEqual(floor(string.height(for: bigFont, constrainedToWidth: width)), 35)
+
+        string = "aa"
+        XCTAssertEqual(floor(string.height(for: smallFont, constrainedToWidth: width)), 17)
+        XCTAssertEqual(floor(string.height(for: bigFont, constrainedToWidth: width)), 35)
+
+        string = "aa\naa"
+        XCTAssertEqual(floor(string.height(for: smallFont, constrainedToWidth: width)), 35)
+        XCTAssertEqual(floor(string.height(for: bigFont, constrainedToWidth: width)), 71)
+    }
 }
