@@ -17,10 +17,7 @@ class StringTests: XCTestCase {
 
         string = "aa"
         XCTAssertEqual(floor(string.width(for: smallFont)), 16)
-        #if os(iOS)
-            XCTAssertEqual(floor(string.width(for: bigFont)), 33)
-        #else
-            XCTAssertEqual(floor(string.width(for: bigFont)), 32)
-        #endif
+        XCTAssertEqual(floor(string.width(for: bigFont)), 33)
+
     }
 }
