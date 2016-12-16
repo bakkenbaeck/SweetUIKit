@@ -10,7 +10,12 @@ class UILabelTests: XCTestCase {
         XCTAssertEqual(label.width(), 0)
 
         label.text = "a"
-        XCTAssertEqual(floor(label.width()), 8)
+
+        #if os(iOS)
+            XCTAssertEqual(floor(label.width()), 8)
+        #else
+            XCTAssertEqual(floor(label.width()), 20)
+        #endif
 
         label.font = UIFont.boldSystemFont(ofSize: 30)
         XCTAssertEqual(floor(label.width()), 16)
