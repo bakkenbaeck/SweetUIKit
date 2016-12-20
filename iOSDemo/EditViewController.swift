@@ -57,8 +57,8 @@ class EditViewController: UIViewController, KeyboardAwareAccessoryViewDelegate {
         self.textInputBottomConstraint.isActive = true
     }
 
-    func inputView(_ inputView: KeyboardAwareInputAccessoryView, shouldUpdatePosition keyboardOriginY: CGFloat) {
-        self.textInputBottomConstraint.constant = keyboardOriginY
+    func inputView(_ inputView: KeyboardAwareInputAccessoryView, shouldUpdatePosition keyboardOriginYDistance: CGFloat) {
+        self.textInputBottomConstraint.constant = keyboardOriginYDistance
         self.view.layoutIfNeeded()
     }
 }
