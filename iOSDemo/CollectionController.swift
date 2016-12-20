@@ -40,7 +40,7 @@ extension CollectionController: UICollectionViewDataSource {
 extension CollectionController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let viewController = TableController()
+        let viewController = indexPath.row % 2 == 0 ? TableController() : EditViewController()
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

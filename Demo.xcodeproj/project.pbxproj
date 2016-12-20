@@ -158,6 +158,9 @@
 		44CD98C01DC0E38300632C84 /* IndexPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */; };
 		44CD98C11DC0E39400632C84 /* UITableView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */; };
 		44CD98C21DC0E3A100632C84 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124621DBF57BA00EA92FB /* Identifiable.swift */; };
+		9F2BDE1A1E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; };
+		9F2BDE1B1E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; };
+		9F2BDE1D1E092B0C00E32CAD /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BDE1C1E092B0C00E32CAD /* EditViewController.swift */; };
 		9F4C5B6D1DC0DE1A00F2A77B /* IndexPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */; };
 		9FBA0C7D1DBFBC6D0007D239 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; };
 		9FBA0C801DBFBC880007D239 /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -238,6 +241,8 @@
 		4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Sweet.swift"; sourceTree = "<group>"; };
 		447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Sweet.swift"; sourceTree = "<group>"; };
 		449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILocalNotification+Sweet.swift"; sourceTree = "<group>"; };
+		9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAwareInputViewProtocol.swift; sourceTree = "<group>"; };
+		9F2BDE1C1E092B0C00E32CAD /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPathTests.swift; sourceTree = "<group>"; };
 		9FC8B9E81DC74D0500A68185 /* Jiggly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jiggly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -292,6 +297,7 @@
 		140124C21DBF582900EA92FB /* iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9F2BDE1C1E092B0C00E32CAD /* EditViewController.swift */,
 				14D986631DBF58A900D7842C /* CollectionController.swift */,
 				14D986641DBF58A900D7842C /* CollectionViewCell.swift */,
 				14D986651DBF58A900D7842C /* Localizable.strings */,
@@ -399,6 +405,7 @@
 				9FC8B9E81DC74D0500A68185 /* Jiggly.swift */,
 				449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */,
 				142565771E09641400184D47 /* UIColor+Sweet.swift */,
+				9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -709,6 +716,7 @@
 				9FC8B9EB1DC74D0D00A68185 /* Jiggly.swift in Sources */,
 				1425657D1E09641400184D47 /* UIColor+Sweet.swift in Sources */,
 				14D986691DBF58A900D7842C /* CollectionViewCell.swift in Sources */,
+				9F2BDE1D1E092B0C00E32CAD /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -717,6 +725,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				440E058A1DC0B0870044F59F /* Identifiable.swift in Sources */,
+				9F2BDE1A1E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift in Sources */,
 				140124B91DBF57FC00EA92FB /* UILabelTests.swift in Sources */,
 				140124781DBF57BA00EA92FB /* OpenInSafariActivity.swift in Sources */,
 				140124821DBF57BA00EA92FB /* SweetCollectionController.swift in Sources */,
@@ -792,6 +801,7 @@
 				140124701DBF57BA00EA92FB /* Identifiable.swift in Sources */,
 				140124751DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
 				449822361E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
+				9F2BDE1B1E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift in Sources */,
 				140124931DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				1401249D1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
 			);
