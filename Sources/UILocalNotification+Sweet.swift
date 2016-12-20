@@ -12,9 +12,7 @@ public extension UILocalNotification {
         notification.timeZone = TimeZone.current
         notification.alertBody = message
         notification.alertAction = actionTitle
-        if actionTitle == nil {
-            notification.hasAction = false
-        }
+        notification.hasAction = actionTitle != nil
 
         var userInfo = [AnyHashable: Any]()
         userInfo[UILocalNotification.idKey] = id
