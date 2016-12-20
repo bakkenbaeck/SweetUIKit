@@ -23,13 +23,7 @@ class EditViewController: UIViewController, KeyboardAwareAccessoryViewDelegate {
         return view
     }()
 
-    lazy var keyboardAwareInputView: KeyboardAwareInputAccessoryView = {
-        let view = KeyboardAwareInputAccessoryView(withAutoLayout: true)
-        view.delegate = self
-
-        return view
-    }()
-
+    // TODO: Find a way to make this work implicitly.
     override var inputAccessoryView: UIView? {
         return self.keyboardAwareInputView
     }
@@ -63,8 +57,8 @@ class EditViewController: UIViewController, KeyboardAwareAccessoryViewDelegate {
         self.textInputBottomConstraint.isActive = true
     }
 
-    func inputView(_ inputView: KeyboardAwareInputAccessoryView, shouldUpdatePosition keyboardMaxY: CGFloat) {
-        self.textInputBottomConstraint.constant = keyboardMaxY
+    func inputView(_ inputView: KeyboardAwareInputAccessoryView, shouldUpdatePosition keyboardOriginY: CGFloat) {
+        self.textInputBottomConstraint.constant = keyboardOriginY
         self.view.layoutIfNeeded()
     }
 }

@@ -11,11 +11,42 @@ import UIKit
  to the main window, no the keyboard window) position. Thus, we're able to keep the input accessory always above the keyboard, but also always visible.
  */
 public protocol KeyboardAwareAccessoryViewDelegate: class {
-    func inputView(_ inputView: KeyboardAwareInputAccessoryView, shouldUpdatePosition keyboardMaxY: CGFloat)
+    func inputView(_ inputView: KeyboardAwareInputAccessoryView, shouldUpdatePosition keyboardOriginY: CGFloat)
 
-    var keyboardAwareInputView: KeyboardAwareInputAccessoryView { get set }
+    var keyboardAwareInputView: KeyboardAwareInputAccessoryView { get }
 
     var inputAccessoryView: UIView? { get }
+}
+
+private var valueKey: UInt8 = 0 // We still need this boilerplate
+
+public extension KeyboardAwareAccessoryViewDelegate where Self: UIResponder  {
+    var keyboardAwareInputView: KeyboardAwareInputAccessoryView {
+        get {
+            return self.associatedObject(base: self, key: &valueKey) { () -> KeyboardAwareInputAccessoryView in
+
+                let view = KeyboardAwareInputAccessoryView(withAutoLayout: true)
+                view.delegate = self
+
+                return view
+            }
+        }
+    }
+
+    func associatedObject<ValueType: AnyObject>(base: AnyObject, key: UnsafePointer<UInt8>, initialiser: () -> ValueType) -> ValueType {
+        if let associated = objc_getAssociatedObject(base, key) as? ValueType {
+            return associated
+        }
+
+        let associated = initialiser()
+        objc_setAssociatedObject(base, key, associated, .OBJC_ASSOCIATION_RETAIN)
+
+        return associated
+    }
+
+    func associateObject<ValueType: AnyObject>(base: AnyObject, key: UnsafePointer<UInt8>, value: ValueType?) {
+        objc_setAssociatedObject(base, key, value, .OBJC_ASSOCIATION_RETAIN)
+    }
 }
 
 public class KeyboardAwareInputAccessoryView: UIView {
