@@ -29,7 +29,7 @@ public class KeyboardAwareInputAccessoryView: UIView {
         "self.center"
     }()
 
-    override public func didMoveToSuperview() {
+    public override func didMoveToSuperview() {
         if let superview = self.delegate?.inputAccessoryView?.superview {
             self.storedSuperview = superview
             self.storedSuperview.addObserver(self, forKeyPath: self.observableKeyPath, options: .new, context: &self.inputAccessoryContext)
@@ -38,7 +38,7 @@ public class KeyboardAwareInputAccessoryView: UIView {
         }
     }
 
-    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == self.observableKeyPath {
             let superview = self.storedSuperview
 
