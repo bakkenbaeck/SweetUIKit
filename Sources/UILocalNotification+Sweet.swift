@@ -24,17 +24,9 @@ public extension UILocalNotification {
 
     public static func find(_ id: String) -> UILocalNotification? {
         let notifications = UIApplication.shared.scheduledLocalNotifications ?? [UILocalNotification]()
-        for notification in notifications {
-            if let userInfo = notification.userInfo {
-                if let key = userInfo[UILocalNotification.idKey] as? String {
-                    if key == id {
-                        return notification
-                    }
-                }
-            }
-        }
+        let notification = notifications.filter { $0.userInfo?[UILocalNotification.idKey] as? String == id }
 
-        return nil
+        return notification.first
     }
 
     public static func delete(_ id: String) {
