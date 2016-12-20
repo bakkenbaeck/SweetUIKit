@@ -15,8 +15,8 @@ public extension UILocalNotification {
         notification.hasAction = actionTitle != nil
 
         var userInfo = [AnyHashable: Any]()
-        userInfo[UILocalNotification.idKey] = id
-        userInfo[UILocalNotification.fireDateKey] = Date()
+        userInfo[idKey] = id
+        userInfo[fireDateKey] = Date()
         notification.userInfo = userInfo
 
         UIApplication.shared.scheduleLocalNotification(notification)
@@ -24,7 +24,10 @@ public extension UILocalNotification {
 
     public static func find(_ id: String) -> UILocalNotification? {
         let notifications = UIApplication.shared.scheduledLocalNotifications ?? [UILocalNotification]()
-        let filteredNotifications = notifications.filter { $0.userInfo?[UILocalNotification.idKey] as? String == id }
+        let filteredNotifications = notifications.filter { notification in
+            let filteredNotificationID = notification.userInfo?[idKey] as? String
+            return filteredNotificationID == id
+        }
 
         return filteredNotifications.first
     }
