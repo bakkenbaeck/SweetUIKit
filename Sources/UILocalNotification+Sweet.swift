@@ -8,12 +8,12 @@
         /// Schedules a local notification.
         ///
         /// - Parameters:
-        ///   - id: The id used to represent a local notification in your app.
+        ///   - notificationID: The id used to represent a local notification in your app.
         ///   - date: The date when the notification will trigger
         ///   - soundName: The name of the sound to be used when the notification is received.
         ///   - message: The message that the app will use for your local notification.
         ///   - actionTitle: The title of the action to be displayed by your notification, it's optional, though, since Apple provides a good default for this.
-        public static func schedule(_ id: String, at date: Date, soundName: String? = nil, message: String, actionTitle: String? = nil) {
+        public static func schedule(notificationID: String, at date: Date, soundName: String? = nil, message: String, actionTitle: String? = nil) {
             let notification = UILocalNotification()
             notification.soundName = soundName
 
@@ -33,9 +33,9 @@
 
         /// Finds a local notification for certain id.
         ///
-        /// - Parameter id: The id used to store the notification.
+        /// - Parameter notificationID: The id used to store the notification.
         /// - Returns: A local notification that matches the provided id.
-        public static func find(_ id: String) -> UILocalNotification? {
+        public static func find(notificationID: String) -> UILocalNotification? {
             let notifications = UIApplication.shared.scheduledLocalNotifications ?? [UILocalNotification]()
             let filteredNotifications = notifications.filter { notification in
                 let filteredNotificationID = notification.userInfo?[idKey] as? String
@@ -47,8 +47,8 @@
 
         /// Cancels a local notification.
         ///
-        /// - Parameter id: The id used to store the notification.
-        public static func cancel(_ id: String) {
+        /// - Parameter notificationID: The id used to store the notification.
+        public static func cancel(notificationID: String) {
             if let notification = self.find(id) {
                 UIApplication.shared.cancelLocalNotification(notification)
             }
