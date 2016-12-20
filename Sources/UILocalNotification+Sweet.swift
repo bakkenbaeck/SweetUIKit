@@ -9,15 +9,15 @@
         ///
         /// - Parameters:
         ///   - notificationName: The name used to represent a local notification in your app.
-        ///   - fireDate: The date when the notification will trigger
+        ///   - date: The date when the notification will trigger
         ///   - soundName: The name of the sound to be used when the notification is received.
         ///   - message: The message that the app will use for your local notification.
         ///   - actionTitle: The title of the action to be displayed by your notification, it's optional, though, since Apple provides a good default for this.
-        public static func schedule(named notificationName: String, fireDate: Date, soundName: String? = nil, message: String, actionTitle: String? = nil) {
+        public static func schedule(named notificationName: String, at date: Date, soundName: String? = nil, message: String, actionTitle: String? = nil) {
             let notification = UILocalNotification()
             notification.soundName = soundName
 
-            notification.fireDate = fireDate
+            notification.fireDate = date
             notification.timeZone = TimeZone.current
             notification.alertBody = message
             notification.alertAction = actionTitle
@@ -25,7 +25,7 @@
 
             var userInfo = [AnyHashable: Any]()
             userInfo[idKey] = notificationName
-            userInfo[fireDateKey] = fireDate
+            userInfo[fireDateKey] = date
             notification.userInfo = userInfo
 
             UIApplication.shared.scheduleLocalNotification(notification)
