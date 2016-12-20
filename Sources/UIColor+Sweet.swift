@@ -26,15 +26,13 @@ public extension UIColor {
     /// - Parameter color: A UIColor to compare.
     /// - Returns: A boolean, true if same (or very similar) and false otherwise.
     public func isEqual(to color: UIColor) -> Bool {
-        let RGBA = self.RGBA
-        let other = color.RGBA
-        let margin = CGFloat(0.01)
+        let currentRGBA = self.RGBA
+        let comparedRGBA = color.RGBA
 
-        func comp(a: CGFloat, b: CGFloat) -> Bool {
-            return abs(b-a) <= (a*margin)
-        }
-
-        return comp(a: RGBA[0], b: other[0]) && comp(a: RGBA[1], b: other[1]) && comp(a: RGBA[2], b: other[2]) && comp(a: RGBA[3], b: other[3])
+        return self.compareColorComponents(a: currentRGBA[0], b: comparedRGBA[0]) &&
+            self.compareColorComponents(a: currentRGBA[1], b: comparedRGBA[1]) &&
+            self.compareColorComponents(a: currentRGBA[2], b: comparedRGBA[2]) &&
+            self.compareColorComponents(a: currentRGBA[3], b: comparedRGBA[3])
     }
 
 
@@ -44,5 +42,9 @@ public extension UIColor {
         self.getRed(&RGBA[0], green: &RGBA[1], blue: &RGBA[2], alpha: &RGBA[3])
 
         return RGBA
+    }
+
+    private func compareColorComponents(a: CGFloat, b: CGFloat) -> Bool {
+        return abs(b - a) <= 0
     }
 }

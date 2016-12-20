@@ -16,6 +16,13 @@ class Tests: XCTestCase {
         XCTAssertTrue(redHex.isEqual(to: red))
     }
 
+    func testHexYellowAndiOSYellow() {
+        let yellowHex = UIColor(hex: "#ffff00")
+        let yellowiOS = UIColor.yellow
+
+        XCTAssertTrue(yellowHex.isEqual(to: yellowiOS))
+    }
+
     func testBlackAndWhiteColor() {
         let whiteHex = UIColor(hex: "FFFFFF")
         let black = UIColor.black
