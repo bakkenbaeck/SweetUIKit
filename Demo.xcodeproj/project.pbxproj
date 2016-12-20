@@ -141,6 +141,12 @@
 		447976141DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */; };
 		447976151DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */; };
 		447976161DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */; };
+		449822341E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; };
+		449822351E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; };
+		449822361E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; };
+		449822371E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; };
+		449822381E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; };
+		449822391E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; };
 		44CD98C01DC0E38300632C84 /* IndexPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */; };
 		44CD98C11DC0E39400632C84 /* UITableView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */; };
 		44CD98C21DC0E3A100632C84 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124621DBF57BA00EA92FB /* Identifiable.swift */; };
@@ -221,6 +227,7 @@
 		440E05861DC0B07D0044F59F /* UITableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
 		4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Sweet.swift"; sourceTree = "<group>"; };
 		447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Sweet.swift"; sourceTree = "<group>"; };
+		449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILocalNotification+Sweet.swift"; sourceTree = "<group>"; };
 		9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPathTests.swift; sourceTree = "<group>"; };
 		9FC8B9E81DC74D0500A68185 /* Jiggly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jiggly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -379,6 +386,7 @@
 				4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */,
 				447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */,
 				9FC8B9E81DC74D0500A68185 /* Jiggly.swift */,
+				449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -683,6 +691,7 @@
 			files = (
 				14D9866C1DBF58A900D7842C /* TableViewCell.swift in Sources */,
 				14D9866B1DBF58A900D7842C /* TableController.swift in Sources */,
+				449822391E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
 				140124C41DBF582900EA92FB /* AppDelegate.swift in Sources */,
 				14D986681DBF58A900D7842C /* CollectionController.swift in Sources */,
 				9FC8B9EB1DC74D0D00A68185 /* Jiggly.swift in Sources */,
@@ -707,6 +716,7 @@
 				440E05891DC0B0840044F59F /* UITableView+Sweet.swift in Sources */,
 				1401249B1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
 				140124731DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
+				449822341E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
 				140124911DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				140124B71DBF57FC00EA92FB /* StringTests.swift in Sources */,
 				1401248C1DBF57BA00EA92FB /* UIAlertController+Sweet.swift in Sources */,
@@ -738,6 +748,7 @@
 				44CD98C21DC0E3A100632C84 /* Identifiable.swift in Sources */,
 				140124741DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
 				440E05881DC0B07D0044F59F /* UITableViewTests.swift in Sources */,
+				449822351E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
 				140124921DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				440998821DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */,
 				1401249C1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
@@ -762,6 +773,7 @@
 				140124891DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				140124701DBF57BA00EA92FB /* Identifiable.swift in Sources */,
 				140124751DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
+				449822361E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
 				140124931DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				1401249D1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
 			);
@@ -784,6 +796,7 @@
 				1401248A1DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				140124711DBF57BA00EA92FB /* Identifiable.swift in Sources */,
 				140124761DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
+				449822371E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
 				140124941DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				1401249E1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
 			);
@@ -806,6 +819,7 @@
 				1401248B1DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				140124721DBF57BA00EA92FB /* Identifiable.swift in Sources */,
 				140124771DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
+				449822381E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
 				140124951DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				1401249F1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
 			);
