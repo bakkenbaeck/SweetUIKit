@@ -33,7 +33,7 @@
             ]
 
             constants.forEach { constant in
-                constant.priority = UILayoutPriorityDefaultLow
+                constant.priority = 999
                 constant.isActive = true
             }
         }
