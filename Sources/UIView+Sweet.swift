@@ -32,7 +32,7 @@
                 self.bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -insets.bottom)
             ]
 
-            constants.map { constant in
+            constants.forEach { constant in
                 constant.priority = UILayoutPriorityDefaultLow
                 constant.isActive = true
             }
