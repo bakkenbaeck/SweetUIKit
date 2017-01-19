@@ -28,8 +28,8 @@ public extension UIColor {
     ///   - green: The green part.
     ///   - blue: The blue part.
     ///   - alpha: The alpha part.
-    public convenience init(r red: Double, g green: Double, b blue: Double, a alpha: Double = 1) {
-        self.init(red: CGFloat(red)/CGFloat(255.0), green: CGFloat(green)/CGFloat(255.0), blue: CGFloat(blue)/CGFloat(255.0), alpha: CGFloat(alpha))
+    public convenience init(r red: Double, g green: Double, b blue: Double, a alpha: Double = 100) {
+        self.init(red: CGFloat(red)/CGFloat(255.0), green: CGFloat(green)/CGFloat(255.0), blue: CGFloat(blue)/CGFloat(255.0), alpha: CGFloat(alpha)/CGFloat(100.0))
     }
 
     /// Compares if two colors are equal.
