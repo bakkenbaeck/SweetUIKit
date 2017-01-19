@@ -36,4 +36,9 @@ class Tests: XCTestCase {
 
         XCTAssertFalse(clearColorHex.isEqual(to: clear))
     }
+
+    func testRGBConvenience() {
+        XCTAssertTrue(UIColor(r: 0, g: 0, b: 0).isEqual(to: UIColor.black))
+        XCTAssertTrue(UIColor(r: 255, g: 255, b: 255).isEqual(to: UIColor.white))
+    }
 }
