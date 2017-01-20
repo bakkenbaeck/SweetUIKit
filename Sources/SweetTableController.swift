@@ -26,8 +26,8 @@
             self.addConstraints()
         }
 
-        open override func viewDidAppear(_ animated: Bool) {
-            super.viewDidAppear(animated)
+        open override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
 
             if self.clearsSelectionOnViewWillAppear {
                 if let indexPath = tableView.indexPathForSelectedRow {
