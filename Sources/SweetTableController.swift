@@ -4,7 +4,7 @@
     open class SweetTableController: UIViewController {
         open var tableView: UITableView
 
-        public var clearsSelectionOnViewWillAppear = false
+        public var clearsSelectionOnViewWillAppear = true
 
         public init(style: UITableViewStyle = .plain) {
             let view = UITableView(frame: .zero, style: style)
