@@ -4,10 +4,12 @@
     public extension UIImage {
 
         /// Creates a QR code from a string.
+        /// Resizing rate defaults to 15.0 here because the CIFilter result is 31x31 pixels in size.
         ///
         /// - Parameter string: Text to be the QR Code content
+        /// - Parameter resizeRate: The resizing rate. Positive for enlarging and negative for shrinking. Defaults to 15.0.
         /// - Returns: image QR Code image
-        public static func imageQRCode(for string: String) -> UIImage {
+        public static func imageQRCode(for string: String, resizeRate: CGFloat = 15.0) -> UIImage {
             let data = string.data(using: .isoLatin1, allowLossyConversion: false)
 
             let filter = CIFilter(name: "CIQRCodeGenerator")!
@@ -18,7 +20,7 @@
             let cImage = filter.outputImage!
 
             let qrCode = UIImage(ciImage: cImage)
-            let qrCodeResized = qrCode.resize(by: 15.0, quality: .none)
+            let qrCodeResized = qrCode.resize(by: resizeRate, quality: .none)
 
             return qrCodeResized
         }
