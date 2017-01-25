@@ -335,14 +335,14 @@
 		146D72AF1AB782920058798C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */,
 				140124B41DBF57FC00EA92FB /* StringTests.swift */,
+				440998801DC0B1C600C11852 /* UICollectionViewTests.swift */,
+				1425657E1E09643100184D47 /* UIColorTests.swift */,
 				140124B51DBF57FC00EA92FB /* UILabelTests.swift */,
 				140124B61DBF57FC00EA92FB /* UIScrollViewTests.swift */,
 				440E05861DC0B07D0044F59F /* UITableViewTests.swift */,
-				440998801DC0B1C600C11852 /* UICollectionViewTests.swift */,
-				9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */,
 				146D72B01AB782920058798C /* Supporting Files */,
-				1425657E1E09643100184D47 /* UIColorTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
