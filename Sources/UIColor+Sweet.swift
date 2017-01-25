@@ -24,10 +24,10 @@ public extension UIColor {
     /// Convenience initializers for RGB colors.
     ///
     /// - Parameters:
-    ///   - red: The red part.
-    ///   - green: The green part.
-    ///   - blue: The blue part.
-    ///   - alpha: The alpha part.
+    ///   - red: The red part, ranging from 0 to 255.
+    ///   - green: The green part, ranging from 0 to 255.
+    ///   - blue: The blue part, ranging from 0 to 255.
+    ///   - alpha: The alpha part, ranging from 0 to 100.
     public convenience init(r red: Double, g green: Double, b blue: Double, a alpha: Double = 100) {
         self.init(red: CGFloat(red)/CGFloat(255.0), green: CGFloat(green)/CGFloat(255.0), blue: CGFloat(blue)/CGFloat(255.0), alpha: CGFloat(alpha)/CGFloat(100.0))
     }
