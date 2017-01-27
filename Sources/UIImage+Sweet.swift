@@ -78,5 +78,22 @@
 
             return resized
         }
+
+        /// Normalizes image orientation by rotating an image so that it's orientation is UIImageOrientation.up
+        ///
+        /// - Returns: The normalized image.
+        public func imageByNormalizingOrientation() -> UIImage? {
+            if self.imageOrientation == .up {
+                return self
+            }
+
+            let size = self.size
+            UIGraphicsBeginImageContextWithOptions(size, false, self.scale)
+            self.draw(in: CGRect(origin: CGPoint.zero, size: size))
+            let normalizedImage = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            return normalizedImage
+        }
     }
 #endif
