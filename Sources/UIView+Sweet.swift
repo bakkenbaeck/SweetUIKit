@@ -4,17 +4,25 @@
     public extension UIView {
 
         /**
+         Disturbs the view. Useful for getting the user's attention when something changed.
+         */
+        public func disturb() {
+            self.transform = CGAffineTransform(scaleX: 0.98, y: 0.98)
+            
+            UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 150, options: [.curveEaseOut, .beginFromCurrentState, .allowUserInteraction], animations: {
+                self.transform = .identity
+            }, completion: nil)
+        }
+        
+        /**
          Shakes the view. Useful for displaying failures to users.
          */
         public func shake() {
-            let animation = CABasicAnimation(keyPath: "position")
-            animation.duration = 0.1
-            animation.repeatCount = 2
-            animation.autoreverses = true
-            animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x - 10.0, y: self.center.y))
-            animation.toValue = NSValue(cgPoint: CGPoint(x: self.center.x + 10.0, y: self.center.y))
-            animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-            self.layer.add(animation, forKey: "position")
+            self.transform = CGAffineTransform(translationX: 10, y: 0)
+            
+            UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 50, options: [.curveEaseOut, .beginFromCurrentState, .allowUserInteraction], animations: {
+                self.transform = .identity
+            }, completion: nil)
         }
 
         public convenience init(withAutoLayout autoLayout: Bool) {
