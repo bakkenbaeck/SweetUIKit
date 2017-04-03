@@ -83,11 +83,13 @@
         ///
         /// - Parameter width: The new scaled width
         /// - Returns: A scaled image
-        public func resized(toWidth width: CGFloat) -> UIImage {
+        public func resized(toWidth width: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
             let scale = width / self.size.width
             let height = self.size.height * scale
 
             UIGraphicsBeginImageContext(CGSize(width: width, height: height))
+            let context = UIGraphicsGetCurrentContext()
+            context?.interpolationQuality = quality
 
             self.draw(in: CGRect(x: 0, y: 0, width: width, height: height))
             let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
@@ -101,11 +103,13 @@
         ///
         /// - Parameter height: The new scaled height
         /// - Returns: A scaled image
-        public func resized(toHeight height: CGFloat) -> UIImage {
+        public func resized(toHeight height: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
             let scale = height / self.size.height
             let width = self.size.width * scale
 
             UIGraphicsBeginImageContext(CGSize(width: width, height: height))
+            let context = UIGraphicsGetCurrentContext()
+            context?.interpolationQuality = quality
 
             self.draw(in: CGRect(x: 0, y: 0, width: width, height: height))
             let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
