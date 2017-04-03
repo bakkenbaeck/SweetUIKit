@@ -29,23 +29,9 @@
             }
         }
 
-        public func indexPaths(collectionView: UICollectionView) -> [IndexPath] {
-            var indexPaths = [IndexPath]()
-
-            let sections = collectionView.numberOfSections
-            for section in 0 ..< sections {
-                let rows = collectionView.numberOfItems(inSection: section)
-                for row in 0 ..< rows {
-                    indexPaths.append(IndexPath(row: row, section: section))
-                }
-            }
-
-            return indexPaths
-        }
-
         public func next(collectionView: UICollectionView) -> IndexPath? {
             var found = false
-            let indexPaths = self.indexPaths(collectionView: collectionView)
+            let indexPaths = collectionView.indexPaths
             for indexPath in indexPaths {
                 if found == true {
                     return indexPath
@@ -61,7 +47,7 @@
 
         public func previous(collectionView: UICollectionView) -> IndexPath? {
             var previousIndexPath: IndexPath?
-            let indexPaths = self.indexPaths(collectionView: collectionView)
+            let indexPaths = collectionView.indexPaths
             for indexPath in indexPaths {
                 if indexPath == self {
                     return previousIndexPath
