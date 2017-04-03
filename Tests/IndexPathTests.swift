@@ -42,8 +42,8 @@ class IndexPathTests: XCTestCase {
         }
 
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-        let source = DataSource()
-        collectionView.dataSource = source
+        let dataSource = DataSource()
+        collectionView.dataSource = dataSource
         XCTAssertEqual(collectionView.indexPaths, [IndexPath(item: 0, section: 0)])
     }
 }
