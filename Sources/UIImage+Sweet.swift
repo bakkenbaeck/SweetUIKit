@@ -79,6 +79,42 @@
             return resized
         }
 
+        /// Returns a new version of the image to a given max width preserving aspect ratio
+        ///
+        /// - Parameter width: The new scaled width
+        /// - Returns: A scaled image
+        public func resize(toWidth width: CGFloat) -> UIImage {
+            let scale = width / self.size.width
+            let height = self.size.height * scale
+
+            UIGraphicsBeginImageContext(CGSize(width: width, height: height))
+
+            self.draw(in: CGRect(x: 0, y: 0, width: width, height: height))
+            let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+
+            UIGraphicsEndImageContext()
+
+            return scaledImage!
+        }
+
+        /// Returns a new version of the image to a given max height preserving aspect ratio
+        ///
+        /// - Parameter height: The new scaled height
+        /// - Returns: A scaled image
+        public func resize(toHeight height: CGFloat) -> UIImage {
+            let scale = height / self.size.height
+            let width = self.size.width * scale
+
+            UIGraphicsBeginImageContext(CGSize(width: width, height: height))
+
+            self.draw(in: CGRect(x: 0, y: 0, width: width, height: height))
+            let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+
+            UIGraphicsEndImageContext()
+
+            return scaledImage!
+        }
+
         /// Normalizes image orientation by rotating an image so that it's orientation is UIImageOrientation.up
         ///
         /// - Returns: The normalized image.
