@@ -20,7 +20,7 @@
             let cImage = filter.outputImage!
 
             let qrCode = UIImage(ciImage: cImage)
-            let qrCodeResized = qrCode.resize(by: resizeRate, quality: .none)
+            let qrCodeResized = qrCode.resized(by: resizeRate, quality: .none)
 
             return qrCodeResized
         }
@@ -64,7 +64,7 @@
         ///   - rate: The resize rate. Positive to enlarge, negative to shrink. Defaults to medium.
         ///   - quality: The interpolation quality.
         /// - Returns: The resized image.
-        public func resize(by rate: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
+        public func resized(by rate: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
             let width = self.size.width * rate
             let height = self.size.height * rate
             let size = CGSize(width: width, height: height)
@@ -83,7 +83,7 @@
         ///
         /// - Parameter width: The new scaled width
         /// - Returns: A scaled image
-        public func resize(toWidth width: CGFloat) -> UIImage {
+        public func resized(toWidth width: CGFloat) -> UIImage {
             let scale = width / self.size.width
             let height = self.size.height * scale
 
@@ -101,7 +101,7 @@
         ///
         /// - Parameter height: The new scaled height
         /// - Returns: A scaled image
-        public func resize(toHeight height: CGFloat) -> UIImage {
+        public func resized(toHeight height: CGFloat) -> UIImage {
             let scale = height / self.size.height
             let width = self.size.width * scale
 
