@@ -20,7 +20,7 @@
             let cImage = filter.outputImage!
 
             let qrCode = UIImage(ciImage: cImage)
-            let qrCodeResized = qrCode.resize(by: resizeRate, quality: .none)
+            let qrCodeResized = qrCode.resized(by: resizeRate, quality: .none)
 
             return qrCodeResized
         }
@@ -64,7 +64,7 @@
         ///   - rate: The resize rate. Positive to enlarge, negative to shrink. Defaults to medium.
         ///   - quality: The interpolation quality.
         /// - Returns: The resized image.
-        public func resize(by rate: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
+        public func resized(by rate: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
             let width = self.size.width * rate
             let height = self.size.height * rate
             let size = CGSize(width: width, height: height)
@@ -77,6 +77,46 @@
             UIGraphicsEndImageContext()
 
             return resized
+        }
+
+        /// Returns a new version of the image to a given max width preserving aspect ratio
+        ///
+        /// - Parameter width: The new scaled width
+        /// - Returns: A scaled image
+        public func resized(toWidth width: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
+            let scale = width / self.size.width
+            let height = self.size.height * scale
+
+            UIGraphicsBeginImageContext(CGSize(width: width, height: height))
+            let context = UIGraphicsGetCurrentContext()
+            context?.interpolationQuality = quality
+
+            self.draw(in: CGRect(x: 0, y: 0, width: width, height: height))
+            let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+
+            UIGraphicsEndImageContext()
+
+            return scaledImage!
+        }
+
+        /// Returns a new version of the image to a given max height preserving aspect ratio
+        ///
+        /// - Parameter height: The new scaled height
+        /// - Returns: A scaled image
+        public func resized(toHeight height: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
+            let scale = height / self.size.height
+            let width = self.size.width * scale
+
+            UIGraphicsBeginImageContext(CGSize(width: width, height: height))
+            let context = UIGraphicsGetCurrentContext()
+            context?.interpolationQuality = quality
+
+            self.draw(in: CGRect(x: 0, y: 0, width: width, height: height))
+            let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+
+            UIGraphicsEndImageContext()
+
+            return scaledImage!
         }
 
         /// Normalizes image orientation by rotating an image so that it's orientation is UIImageOrientation.up
