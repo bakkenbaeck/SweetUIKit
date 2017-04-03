@@ -13,7 +13,7 @@ public protocol Jiggly: class {
 public extension Jiggly {
 
     fileprivate func degreesToRadians(_ degrees: Double) -> Double {
-        return M_PI * degrees / 180.0
+        return Double.pi * degrees / 180.0
     }
 
     public func startBouncing() {

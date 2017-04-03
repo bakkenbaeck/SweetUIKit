@@ -96,7 +96,32 @@ let width = self.usernameLabel.width()
 
 ## UIView
 
-### Shake
+### Autolayout
+#### Fill superview
+
+Set a view’s top, left, right and bottom anchors to be the same as the superviews. Accepts an optional `UIEdgeInsets` argument. Values can be all positive for margins, as it handles the negative values for bottom and right constants already.
+
+```swift
+    view.fillSuperview()
+    
+    anotherView.fillSuperview(UIEdgeInsets(top: 10, left: 10, bottom: 80, right: 10))
+```
+
+#### Set hight and width anchors directly
+
+```swift
+    view.set(height: 30.0)
+    view.set(width: 50.0)
+```
+
+#### Attach to top
+Great for toolbars, attaches to view to the top of the superview. Doesn’t set a height. If you pass a view controller, it will attach to `viewController.topLayoutGuide.bottomAnchor` instead of `superview.topAnchor`. 
+
+```swift
+    toolbar.attachToTop(viewController: self)
+```
+
+#### Shake
 
 ```swift
 self.fetcher.authenticate(username, password: password) { clientID, clientSecret, accessToken, refreshToken, expiresIn, error in
@@ -110,6 +135,17 @@ self.fetcher.authenticate(username, password: password) { clientID, clientSecret
 ```
 
 ## UIImage
+
+#### Resizing
+
+You can resize an image by providing a new height, width or scale rate.
+
+```swift
+let image = UIImage()
+let scaledImage = image.resized(by: 0.5) // CGInterpolationQuality defaults to .medium
+let widthImage = image.resized(toWidth: 300) // scales up or down as needed
+let heightImage = image.resized(toHeight: 300)
+```
 
 #### Centered frame
 
@@ -131,6 +167,16 @@ or, if you need the image to have specific dimensions
 ```swift
 let image = UIImage(color: .red, size: someSize)
 ```
+
+#### Colours from RGBA values
+
+Create images using `rgba(255,255,255,1.0)` values.
+
+```swift
+    UIColor(r: 200, b: 120, c: 255)
+    UIColor(r: 200, b: 120, c: 25, 0.5)
+```
+
 
 ## UIViewController
 
