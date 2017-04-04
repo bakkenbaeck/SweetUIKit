@@ -36,5 +36,35 @@
 
             return indexPaths
         }
+
+        public func nextIndexPath(to indexPath: IndexPath, offset: Int = 0) -> IndexPath? {
+            return UICollectionView.nextIndexPath(to: indexPath, offset: offset, source: self.indexPaths)
+        }
+
+        public func previousIndexPath(to indexPath: IndexPath, offset: Int = 0) -> IndexPath? {
+            return UICollectionView.nextIndexPath(to: indexPath, offset: offset, source: self.indexPaths.reversed())
+        }
+
+        private class func nextIndexPath(to indexPath: IndexPath, offset: Int = 0, source: [IndexPath]) -> IndexPath? {
+            var found = false
+            let indexPaths = source
+            var skippedResults = offset
+
+            for currentIndexPath in indexPaths {
+                if found == true {
+                    if skippedResults <= 0 {
+                        return currentIndexPath
+                    }
+
+                    skippedResults -= 1
+                }
+
+                if currentIndexPath == indexPath {
+                    found = true
+                }
+            }
+            
+            return nil
+        }
     }
 #endif
