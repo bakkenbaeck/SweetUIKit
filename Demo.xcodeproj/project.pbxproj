@@ -169,6 +169,8 @@
 		9FC8B9E91DC74D0500A68185 /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
 		9FC8B9EA1DC74D0A00A68185 /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
 		9FC8B9EB1DC74D0D00A68185 /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
+		D197B7EB3117725B44A2079A /* SweetCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B5FBC7A79F8E4F51AA89 /* SweetCollectionViewFlowLayout.swift */; };
+		D197B93FD074908656DBB287 /* SweetCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197B5FBC7A79F8E4F51AA89 /* SweetCollectionViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -264,6 +266,7 @@
 		449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILocalNotification+Sweet.swift"; sourceTree = "<group>"; };
 		9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPathTests.swift; sourceTree = "<group>"; };
 		9FC8B9E81DC74D0500A68185 /* Jiggly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jiggly.swift; sourceTree = "<group>"; };
+		D197B5FBC7A79F8E4F51AA89 /* SweetCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,6 +465,7 @@
 				4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */,
 				1401246C1DBF57BA00EA92FB /* UIView+Sweet.swift */,
 				1401246D1DBF57BA00EA92FB /* UIViewController+Sweet.swift */,
+				D197B5FBC7A79F8E4F51AA89 /* SweetCollectionViewFlowLayout.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -835,6 +839,7 @@
 				9FC8B9EB1DC74D0D00A68185 /* Jiggly.swift in Sources */,
 				1425657D1E09641400184D47 /* UIColor+Sweet.swift in Sources */,
 				14D986691DBF58A900D7842C /* CollectionViewCell.swift in Sources */,
+				D197B7EB3117725B44A2079A /* SweetCollectionViewFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -883,6 +888,7 @@
 				440E05871DC0B07D0044F59F /* UITableViewTests.swift in Sources */,
 				140124A01DBF57BA00EA92FB /* UIView+Sweet.swift in Sources */,
 				1401247D1DBF57BA00EA92FB /* String+Sweet.swift in Sources */,
+				D197B93FD074908656DBB287 /* SweetCollectionViewFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
