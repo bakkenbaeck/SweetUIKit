@@ -22,5 +22,19 @@
         public func dequeue<T>(_ supplementaryViewClass: T.Type, ofKind kind: String, for indexPath: IndexPath) -> T? where T: Identifiable, T: UICollectionReusableView {
             return self.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: supplementaryViewClass.reuseIdentifier, for: indexPath) as? T
         }
+
+        public var indexPaths: [IndexPath] {
+            var indexPaths = [IndexPath]()
+
+            let sections = self.numberOfSections
+            for section in 0 ..< sections {
+                let rows = self.numberOfItems(inSection: section)
+                for row in 0 ..< rows {
+                    indexPaths.append(IndexPath(row: row, section: section))
+                }
+            }
+
+            return indexPaths
+        }
     }
 #endif
