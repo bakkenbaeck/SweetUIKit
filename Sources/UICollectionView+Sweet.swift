@@ -47,10 +47,9 @@
 
         private class func nextIndexPath(to indexPath: IndexPath, offset: Int = 0, source: [IndexPath]) -> IndexPath? {
             var found = false
-            let indexPaths = source
             var skippedResults = offset
 
-            for currentIndexPath in indexPaths {
+            for currentIndexPath in source {
                 if found == true {
                     if skippedResults <= 0 {
                         return currentIndexPath
