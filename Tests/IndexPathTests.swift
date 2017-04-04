@@ -29,21 +29,4 @@ class IndexPathTests: XCTestCase {
         XCTAssert(fourthPath.comparePosition(to: thirdPath) == .ahead)
         XCTAssert(fourthPath.comparePosition(to: fourthPath) == .same)
     }
-
-    func testIndexPaths() {
-        class DataSource: NSObject, UICollectionViewDataSource {
-            func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-                return 1
-            }
-
-            func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-                return UICollectionViewCell()
-            }
-        }
-
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-        let dataSource = DataSource()
-        collectionView.dataSource = dataSource
-        XCTAssertEqual(collectionView.indexPaths, [IndexPath(item: 0, section: 0)])
-    }
 }

@@ -36,5 +36,35 @@
 
             return indexPaths
         }
+
+        public func nextIndexPath(to indexPath: IndexPath) -> IndexPath? {
+            var found = false
+            let indexPaths = self.indexPaths
+            for currentIndexPath in indexPaths {
+                if found == true {
+                    return currentIndexPath
+                }
+
+                if currentIndexPath == indexPath {
+                    found = true
+                }
+            }
+
+            return nil
+        }
+
+        public func previousIndexPath(to indexPath: IndexPath) -> IndexPath? {
+            var previousIndexPath: IndexPath?
+            let indexPaths = self.indexPaths
+            for currentIndexPath in indexPaths {
+                if currentIndexPath == indexPath {
+                    return previousIndexPath
+                }
+
+                previousIndexPath = currentIndexPath
+            }
+            
+            return nil
+        }
     }
 #endif
