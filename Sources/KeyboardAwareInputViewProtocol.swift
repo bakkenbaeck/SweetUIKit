@@ -86,7 +86,7 @@ public class KeyboardAwareInputAccessoryView: UIView {
         }
     }
     
-    override var intrinsicContentSize: CGSize {
+    override public var intrinsicContentSize: CGSize {
         return CGSize(width: bounds.width, height: self.height)
     }
 
