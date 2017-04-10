@@ -168,6 +168,12 @@
 		A92B12931E9BCA7300478C1F /* KeyboardAwareInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; };
 		A92B12941E9BCA7400478C1F /* KeyboardAwareInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; };
 		A92B12951E9BCA7400478C1F /* KeyboardAwareInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; };
+		A92B12961E9BCCE300478C1F /* UITableView+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		A92B12971E9BCCE300478C1F /* UICollectionView+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		A92B12981E9BCCE300478C1F /* Jiggly.swift in Headers */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		A92B12991E9BCCE300478C1F /* UILocalNotification+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		A92B129A1E9BCCE300478C1F /* UIColor+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 142565771E09641400184D47 /* UIColor+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		A92B129B1E9BCCE300478C1F /* KeyboardAwareInputViewProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -431,6 +437,12 @@
 				1480D4C51DBF600900507EE0 /* UIScrollView+Sweet.swift in Headers */,
 				1480D4C61DBF600900507EE0 /* UIView+Sweet.swift in Headers */,
 				1480D4C71DBF600900507EE0 /* UIViewController+Sweet.swift in Headers */,
+				A92B12961E9BCCE300478C1F /* UITableView+Sweet.swift in Headers */,
+				A92B12971E9BCCE300478C1F /* UICollectionView+Sweet.swift in Headers */,
+				A92B12981E9BCCE300478C1F /* Jiggly.swift in Headers */,
+				A92B12991E9BCCE300478C1F /* UILocalNotification+Sweet.swift in Headers */,
+				A92B129A1E9BCCE300478C1F /* UIColor+Sweet.swift in Headers */,
+				A92B129B1E9BCCE300478C1F /* KeyboardAwareInputViewProtocol.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
