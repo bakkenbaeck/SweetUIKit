@@ -79,7 +79,6 @@
 		1425657A1E09641400184D47 /* UIColor+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142565771E09641400184D47 /* UIColor+Sweet.swift */; };
 		1425657B1E09641400184D47 /* UIColor+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142565771E09641400184D47 /* UIColor+Sweet.swift */; };
 		1425657C1E09641400184D47 /* UIColor+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142565771E09641400184D47 /* UIColor+Sweet.swift */; };
-		1425657D1E09641400184D47 /* UIColor+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142565771E09641400184D47 /* UIColor+Sweet.swift */; };
 		1425657F1E09643100184D47 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425657E1E09643100184D47 /* UIColorTests.swift */; };
 		142565801E09643100184D47 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425657E1E09643100184D47 /* UIColorTests.swift */; };
 		1460417E1DDC6203005BEF7C /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
@@ -154,7 +153,6 @@
 		449822361E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; };
 		449822371E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; };
 		449822381E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; };
-		449822391E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; };
 		44CD98C01DC0E38300632C84 /* IndexPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */; };
 		44CD98C11DC0E39400632C84 /* UITableView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */; };
 		44CD98C21DC0E3A100632C84 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124621DBF57BA00EA92FB /* Identifiable.swift */; };
@@ -166,7 +164,10 @@
 		9FBA0C801DBFBC880007D239 /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FC8B9E91DC74D0500A68185 /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
 		9FC8B9EA1DC74D0A00A68185 /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
-		9FC8B9EB1DC74D0D00A68185 /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
+		A92B12921E9BCA6900478C1F /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
+		A92B12931E9BCA7300478C1F /* KeyboardAwareInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; };
+		A92B12941E9BCA7400478C1F /* KeyboardAwareInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; };
+		A92B12951E9BCA7400478C1F /* KeyboardAwareInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -710,11 +711,8 @@
 			files = (
 				14D9866C1DBF58A900D7842C /* TableViewCell.swift in Sources */,
 				14D9866B1DBF58A900D7842C /* TableController.swift in Sources */,
-				449822391E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
 				140124C41DBF582900EA92FB /* AppDelegate.swift in Sources */,
 				14D986681DBF58A900D7842C /* CollectionController.swift in Sources */,
-				9FC8B9EB1DC74D0D00A68185 /* Jiggly.swift in Sources */,
-				1425657D1E09641400184D47 /* UIColor+Sweet.swift in Sources */,
 				14D986691DBF58A900D7842C /* CollectionViewCell.swift in Sources */,
 				9F2BDE1D1E092B0C00E32CAD /* EditViewController.swift in Sources */,
 			);
@@ -768,6 +766,7 @@
 				1401248D1DBF57BA00EA92FB /* UIAlertController+Sweet.swift in Sources */,
 				140124791DBF57BA00EA92FB /* OpenInSafariActivity.swift in Sources */,
 				140124BA1DBF57FC00EA92FB /* UILabelTests.swift in Sources */,
+				A92B12931E9BCA7300478C1F /* KeyboardAwareInputViewProtocol.swift in Sources */,
 				140124881DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				44CD98C21DC0E3A100632C84 /* Identifiable.swift in Sources */,
 				140124741DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
@@ -777,6 +776,7 @@
 				140124921DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				440998821DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */,
 				142565801E09643100184D47 /* UIColorTests.swift in Sources */,
+				A92B12921E9BCA6900478C1F /* Jiggly.swift in Sources */,
 				1401249C1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
 				44CD98C11DC0E39400632C84 /* UITableView+Sweet.swift in Sources */,
 			);
@@ -826,6 +826,7 @@
 				140124711DBF57BA00EA92FB /* Identifiable.swift in Sources */,
 				140124761DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
 				449822371E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
+				A92B12941E9BCA7400478C1F /* KeyboardAwareInputViewProtocol.swift in Sources */,
 				140124941DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				1401249E1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
 			);
@@ -850,6 +851,7 @@
 				140124721DBF57BA00EA92FB /* Identifiable.swift in Sources */,
 				140124771DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
 				449822381E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
+				A92B12951E9BCA7400478C1F /* KeyboardAwareInputViewProtocol.swift in Sources */,
 				140124951DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				1401249F1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
 			);
