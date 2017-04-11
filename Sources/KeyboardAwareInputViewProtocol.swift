@@ -79,6 +79,16 @@ public class KeyboardAwareInputAccessoryView: UIView {
     fileprivate lazy var observableKeyPath: String = {
         "self.center"
     }()
+    
+    public var height: CGFloat = 0 {
+        didSet {
+            self.invalidateLayout()
+        }
+    }
+    
+    override public var intrinsicContentSize: CGSize {
+        return CGSize(width: bounds.width, height: self.height)
+    }
 
     public override func didMoveToSuperview() {
         if let superview = self.delegate?.inputAccessoryView?.superview {
@@ -107,5 +117,11 @@ public class KeyboardAwareInputAccessoryView: UIView {
         } else {
             super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
         }
+    }
+    
+    func invalidateLayout() {
+        if self.frame.isEmpty { return }
+        self.invalidateIntrinsicContentSize()
+        self.layoutIfNeeded()
     }
 }
