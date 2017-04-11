@@ -136,6 +136,17 @@ self.fetcher.authenticate(username, password: password) { clientID, clientSecret
 
 ## UIImage
 
+#### Resizing
+
+You can resize an image by providing a new height, width or scale rate.
+
+```swift
+let image = UIImage()
+let scaledImage = image.resized(by: 0.5) // CGInterpolationQuality defaults to .medium
+let widthImage = image.resized(toWidth: 300) // scales up or down as needed
+let heightImage = image.resized(toHeight: 300)
+```
+
 #### Centered frame
 
 ```swift
