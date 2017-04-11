@@ -186,6 +186,21 @@ Create images using `rgba(255,255,255,1.0)` values.
 let window = self.applicationWindow()
 ```
 
+## Keyboard Aware Accessory View
+
+This keyboard aware accessory view is part of your view(controller) and moves with the keyboard.
+
+#### KeyboardAwareAccessoryViewDelegate
+
+```swift
+var keyboardAwareInputView: KeyboardAwareInputAccessoryView { get }
+```
+
+```swift
+inputView(_:shouldUpdatePosition:)
+```
+
+
 ## Installation
 
 **SweetUIKit** is available through [CocoaPods](http://cocoapods.org). To install

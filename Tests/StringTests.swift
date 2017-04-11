@@ -1,5 +1,6 @@
 import UIKit
 import XCTest
+import SweetUIKit
 
 class StringTests: XCTestCase {
 
@@ -18,6 +19,5 @@ class StringTests: XCTestCase {
         string = "aa"
         XCTAssertEqual(floor(string.width(for: smallFont)), 16)
         XCTAssertEqual(floor(string.width(for: bigFont)), 33)
-
     }
 }
