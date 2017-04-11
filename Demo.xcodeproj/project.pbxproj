@@ -326,14 +326,14 @@
 		146D72AF1AB782920058798C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */,
 				140124B41DBF57FC00EA92FB /* StringTests.swift */,
+				440998801DC0B1C600C11852 /* UICollectionViewTests.swift */,
+				1425657E1E09643100184D47 /* UIColorTests.swift */,
 				140124B51DBF57FC00EA92FB /* UILabelTests.swift */,
 				140124B61DBF57FC00EA92FB /* UIScrollViewTests.swift */,
 				440E05861DC0B07D0044F59F /* UITableViewTests.swift */,
-				440998801DC0B1C600C11852 /* UICollectionViewTests.swift */,
-				9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */,
 				146D72B01AB782920058798C /* Supporting Files */,
-				1425657E1E09643100184D47 /* UIColorTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -375,14 +375,19 @@
 				149D81811DBD2E8000A9EB1A /* SweetUIKit.h */,
 				140124621DBF57BA00EA92FB /* Identifiable.swift */,
 				140124631DBF57BA00EA92FB /* IndexPath+Sweet.swift */,
+				9FC8B9E81DC74D0500A68185 /* Jiggly.swift */,
 				140124641DBF57BA00EA92FB /* OpenInSafariActivity.swift */,
 				140124651DBF57BA00EA92FB /* String+Sweet.swift */,
 				140124661DBF57BA00EA92FB /* SweetCollectionController.swift */,
 				140124671DBF57BA00EA92FB /* SweetTableController.swift */,
 				140124681DBF57BA00EA92FB /* UIAlertController+Sweet.swift */,
+				447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */,
+				142565771E09641400184D47 /* UIColor+Sweet.swift */,
 				140124691DBF57BA00EA92FB /* UIImage+Sweet.swift */,
 				1401246A1DBF57BA00EA92FB /* UILabel+Sweet.swift */,
+				449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */,
 				1401246B1DBF57BA00EA92FB /* UIScrollView+Sweet.swift */,
+				4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */,
 				1401246C1DBF57BA00EA92FB /* UIView+Sweet.swift */,
 				1401246D1DBF57BA00EA92FB /* UIViewController+Sweet.swift */,
 				4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */,
@@ -613,7 +618,7 @@
 					};
 					149D81511DBD2ADD00A9EB1A = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					149D815E1DBD2AE500A9EB1A = {
