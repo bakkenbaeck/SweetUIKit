@@ -150,6 +150,7 @@
 		A92B12A51E9CD00200478C1F /* UILocalNotification+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		A92B12A61E9CD00200478C1F /* UIColor+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 142565771E09641400184D47 /* UIColor+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		A92B12A71E9CD00200478C1F /* KeyboardAwareInputViewProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		A92B12AC1E9CD5CB00478C1F /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -243,6 +244,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92B12AC1E9CD5CB00478C1F /* SweetUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
