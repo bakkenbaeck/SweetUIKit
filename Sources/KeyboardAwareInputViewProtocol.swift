@@ -69,8 +69,8 @@ public extension KeyboardAwareAccessoryViewDelegate where Self: UIResponder  {
     }
 }
 
-public class KeyboardAwareInputAccessoryView: UIView {
-    public weak var delegate: KeyboardAwareAccessoryViewDelegate?
+open class KeyboardAwareInputAccessoryView: UIView {
+    open weak var delegate: KeyboardAwareAccessoryViewDelegate?
 
     fileprivate var storedSuperview = UIView()
 
@@ -80,17 +80,17 @@ public class KeyboardAwareInputAccessoryView: UIView {
         "self.center"
     }()
     
-    public var height: CGFloat = 0 {
+    open var height: CGFloat = 0 {
         didSet {
             self.invalidateLayout()
         }
     }
     
-    override public var intrinsicContentSize: CGSize {
+    override open var intrinsicContentSize: CGSize {
         return CGSize(width: bounds.width, height: self.height)
     }
 
-    public override func didMoveToSuperview() {
+    open override func didMoveToSuperview() {
         if let superview = self.delegate?.inputAccessoryView?.superview {
             self.storedSuperview = superview
             self.storedSuperview.addObserver(self, forKeyPath: self.observableKeyPath, options: .new, context: &self.inputAccessoryContext)
@@ -99,7 +99,7 @@ public class KeyboardAwareInputAccessoryView: UIView {
         }
     }
 
-    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+    open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == self.observableKeyPath {
             let superview = self.storedSuperview
 
