@@ -1,11 +1,3 @@
-//
-//  SearchableCollectionViewLayout.swift
-//  Demo
-//
-//  Created by Yuliia Veresklia on 20/04/2017.
-//
-//
-
 import Foundation
 import UIKit
 

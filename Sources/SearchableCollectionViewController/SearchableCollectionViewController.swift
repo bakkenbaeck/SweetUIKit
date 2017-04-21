@@ -1,11 +1,3 @@
-//
-//  SearchableCollectionViewController.swift
-//  Demo
-//
-//  Created by Yuliia Veresklia on 20/04/2017.
-//
-//
-
 import Foundation
 import UIKit
 
@@ -21,7 +13,6 @@ class SearchableCollectionController: UIViewController {
         view.contentInset = UIEdgeInsetsMake(0.0, 0.0, SearchBarView.height, 0.0)
         view.showsHorizontalScrollIndicator = false
         view.showsVerticalScrollIndicator = false
-        view.register(UICollectionViewCell.self, forCellWithReuseIdentifier: NSStringFromClass(UICollectionViewCell.self))
         
         return view
     }()
