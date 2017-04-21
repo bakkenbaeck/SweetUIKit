@@ -19,6 +19,7 @@ class SearchableCollectionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
@@ -28,6 +29,7 @@ class SearchableCollectionController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         navigationController?.navigationBar.barTintColor = SearchBarView.defaultSearchBackgroundColor
     }
 }

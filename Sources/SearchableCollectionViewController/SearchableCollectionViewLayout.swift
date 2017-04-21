@@ -7,6 +7,7 @@ class SearchableCollectionViewLayout: UICollectionViewFlowLayout {
     
     override init() {
         super.init()
+        
         register(SearchBarView.self, forDecorationViewOfKind: SearchBarView.kind)
     }
     
@@ -24,7 +25,7 @@ class SearchableCollectionViewLayout: UICollectionViewFlowLayout {
             }
         }
         
-        let decorationViewAttributes = self.layoutAttributesForDecorationView(ofKind: SearchBarView.kind, at: IndexPath.init(item: 0, section: 0))!
+        let decorationViewAttributes = self.layoutAttributesForDecorationView(ofKind: SearchBarView.kind, at: IndexPath(item: 0, section: 0))!
         attributes?.append(decorationViewAttributes)
         return attributes
     }
@@ -34,13 +35,15 @@ class SearchableCollectionViewLayout: UICollectionViewFlowLayout {
         if let center = attributes?.center as CGPoint? {
             attributes?.center = CGPoint(x: center.x, y: center.y + SearchBarView.height)
         }
+        
         return attributes
     }
     
     override func layoutAttributesForDecorationView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let attributes = UICollectionViewLayoutAttributes.init(forDecorationViewOfKind: String(describing: SearchBarView.self),
-                                                               with: indexPath)
+        let attributes = UICollectionViewLayoutAttributes(forDecorationViewOfKind: String(describing: SearchBarView.self),
+                                                          with: indexPath)
         attributes.frame = CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: SearchBarView.height)
+        
         return attributes
     }
 }
