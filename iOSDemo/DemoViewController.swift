@@ -3,10 +3,10 @@ import UIKit
 import SweetUIKit
 
 enum DemoItem: Int {
-    case edit, collection
+    case edit, collection, searchableCollection
     
     static var titles: [String] {
-        let allItems: [DemoItem] = [.edit, .collection]
+        let allItems: [DemoItem] = [.edit, .collection, .searchableCollection]
         return allItems.map{ $0.title }
     }
     
@@ -14,6 +14,7 @@ enum DemoItem: Int {
         switch self {
         case .edit: return "Edit Controller"
         case .collection: return "Collection Controller"
+        case .searchableCollection: return "Searchable Collection Controller"
         }
     }
     
@@ -21,6 +22,7 @@ enum DemoItem: Int {
         switch self {
         case .edit: return EditViewController()
         case .collection: return CollectionController()
+        case .searchableCollection: return SearchableCollectionViewController()
         }
     }
 }
