@@ -19,8 +19,6 @@ class SearchableCollectionViewController: SearchableCollectionController {
         
         navigationController?.navigationBar.barTintColor = nil
         navigationController?.navigationBar.isTranslucent = true
-        navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
-        navigationController?.navigationBar.shadowImage = nil
     }
 }
 

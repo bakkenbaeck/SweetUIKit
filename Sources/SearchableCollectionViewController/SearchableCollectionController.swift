@@ -25,8 +25,6 @@ public class SearchableCollectionController: UIViewController {
         super.viewDidLoad()
         
         navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
-        navigationController?.navigationBar.shadowImage = UIImage()
         view.addSubview(collectionView)
         collectionView.fillSuperview()
     }
