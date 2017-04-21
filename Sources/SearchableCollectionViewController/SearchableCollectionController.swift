@@ -42,9 +42,9 @@ public class SearchableCollectionController: UIViewController {
 
 extension SearchableCollectionController: UIScrollViewDelegate {
     public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if scrollView.contentOffset.y >= 22 && scrollView.contentOffset.y < SearchBarView.height {
+        if scrollView.contentOffset.y >= SearchBarView.height / 2 && scrollView.contentOffset.y < SearchBarView.height {
             scrollView.setContentOffset(CGPoint(x: 0.0, y: SearchBarView.height), animated: true)
-        } else if scrollView.contentOffset.y > 0 && scrollView.contentOffset.y < 22.0 {
+        } else if scrollView.contentOffset.y > 0 && scrollView.contentOffset.y < SearchBarView.height / 2 {
             scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
         }
     }
