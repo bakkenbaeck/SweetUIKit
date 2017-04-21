@@ -28,9 +28,9 @@ public extension Jiggly {
         self.layer.anchorPoint = CGPoint(x: 0.5, y: 0.5)
 
         let options = UIViewAnimationOptions(arrayLiteral: .allowUserInteraction, .repeat, .autoreverse)
-        UIView.animate(withDuration: 0.15, delay: 0.0, options: options, animations: {
+        UIView.animate(withDuration: 0.15, delay: 0.0, options: options) {
             self.transform = rightWobble
-        })
+        }
     }
 
     public func stopBouncing() {
