@@ -57,8 +57,6 @@
 		14028E501E92881D00EEE567 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14028E4A1E92881D00EEE567 /* LaunchScreen.storyboard */; };
 		14028E521E92881D00EEE567 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14028E4D1E92881D00EEE567 /* ViewController.swift */; };
 		14028E5A1E92888600EEE567 /* UITests_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14028E591E92888600EEE567 /* UITests_Tests.swift */; };
-		142565781E09641400184D47 /* UIColor+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142565771E09641400184D47 /* UIColor+Sweet.swift */; };
-		142565791E09641400184D47 /* UIColor+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142565771E09641400184D47 /* UIColor+Sweet.swift */; };
 		1425657A1E09641400184D47 /* UIColor+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142565771E09641400184D47 /* UIColor+Sweet.swift */; };
 		1425657B1E09641400184D47 /* UIColor+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142565771E09641400184D47 /* UIColor+Sweet.swift */; };
 		1425657C1E09641400184D47 /* UIColor+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142565771E09641400184D47 /* UIColor+Sweet.swift */; };
@@ -117,6 +115,7 @@
 		14D9866A1DBF58A900D7842C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14D986651DBF58A900D7842C /* Localizable.strings */; };
 		14D9866B1DBF58A900D7842C /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D986661DBF58A900D7842C /* TableController.swift */; };
 		14D9866C1DBF58A900D7842C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D986671DBF58A900D7842C /* TableViewCell.swift */; };
+		2B3FEEE91EAA04BB00EF8D20 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */; };
 		440998811DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		440998821DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		440E05871DC0B07D0044F59F /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E05861DC0B07D0044F59F /* UITableViewTests.swift */; };
@@ -246,6 +245,7 @@
 		14D986671DBF58A900D7842C /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		14F393951CC6512400616696 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		14F393961CC6517E00616696 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		440998801DC0B1C600C11852 /* UICollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
 		440E05861DC0B07D0044F59F /* UITableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
 		4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Sweet.swift"; sourceTree = "<group>"; };
@@ -328,6 +328,7 @@
 				14D986651DBF58A900D7842C /* Localizable.strings */,
 				14D986661DBF58A900D7842C /* TableController.swift */,
 				14D986671DBF58A900D7842C /* TableViewCell.swift */,
+				2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */,
 				140124C31DBF582900EA92FB /* AppDelegate.swift */,
 				140124CA1DBF582900EA92FB /* Assets.xcassets */,
 				140124CC1DBF582900EA92FB /* LaunchScreen.storyboard */,
@@ -440,19 +441,14 @@
 				149D81811DBD2E8000A9EB1A /* SweetUIKit.h */,
 				140124621DBF57BA00EA92FB /* Identifiable.swift */,
 				140124631DBF57BA00EA92FB /* IndexPath+Sweet.swift */,
-				9FC8B9E81DC74D0500A68185 /* Jiggly.swift */,
 				140124641DBF57BA00EA92FB /* OpenInSafariActivity.swift */,
 				140124651DBF57BA00EA92FB /* String+Sweet.swift */,
 				140124661DBF57BA00EA92FB /* SweetCollectionController.swift */,
 				140124671DBF57BA00EA92FB /* SweetTableController.swift */,
 				140124681DBF57BA00EA92FB /* UIAlertController+Sweet.swift */,
-				447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */,
-				142565771E09641400184D47 /* UIColor+Sweet.swift */,
 				140124691DBF57BA00EA92FB /* UIImage+Sweet.swift */,
 				1401246A1DBF57BA00EA92FB /* UILabel+Sweet.swift */,
-				449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */,
 				1401246B1DBF57BA00EA92FB /* UIScrollView+Sweet.swift */,
-				4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */,
 				1401246C1DBF57BA00EA92FB /* UIView+Sweet.swift */,
 				1401246D1DBF57BA00EA92FB /* UIViewController+Sweet.swift */,
 				4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */,
@@ -848,6 +844,7 @@
 				14D9866B1DBF58A900D7842C /* TableController.swift in Sources */,
 				140124C41DBF582900EA92FB /* AppDelegate.swift in Sources */,
 				14D986681DBF58A900D7842C /* CollectionController.swift in Sources */,
+				2B3FEEE91EAA04BB00EF8D20 /* DemoViewController.swift in Sources */,
 				14D986691DBF58A900D7842C /* CollectionViewCell.swift in Sources */,
 				9F2BDE1D1E092B0C00E32CAD /* EditViewController.swift in Sources */,
 			);
@@ -1479,6 +1476,7 @@
 				14028E421E9285BE00EEE567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14028E5E1E92888600EEE567 /* Build configuration list for PBXNativeTarget "UITests-Tests" */ = {
 			isa = XCConfigurationList;
@@ -1487,6 +1485,7 @@
 				14028E601E92888600EEE567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		146D728E1AB782920058798C /* Build configuration list for PBXProject "Demo" */ = {
 			isa = XCConfigurationList;
