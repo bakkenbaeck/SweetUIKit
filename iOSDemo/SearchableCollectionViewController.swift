@@ -11,7 +11,7 @@ class SearchableCollectionViewController: SearchableCollectionController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: SearchableCollectionViewController.cellIdentifier)
-        searchBackgroundColor = nil
+        searchBackgroundColor = .lightGray
     }
     
     override func viewWillDisappear(_ animated: Bool) {

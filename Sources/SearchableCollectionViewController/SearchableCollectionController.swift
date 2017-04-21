@@ -36,7 +36,6 @@ public class SearchableCollectionController: UIViewController {
     }
     
     private func updateSearchColor() {
-        navigationController?.navigationBar.barTintColor = searchBackgroundColor
         SearchBarView.appearance().searchBackgroundColor = searchBackgroundColor
     }
 }
