@@ -40,8 +40,7 @@ extension SearchableCollectionViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchableCollectionViewController.cellIdentifier,
-                                                      for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchableCollectionViewController.cellIdentifier, for: indexPath)
         switch indexPath.section {
         case 0: cell.backgroundColor = .yellow
         case 1: cell.backgroundColor = .purple

@@ -40,8 +40,7 @@ class SearchableCollectionViewLayout: UICollectionViewFlowLayout {
     }
     
     override func layoutAttributesForDecorationView(ofKind elementKind: String, at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let attributes = UICollectionViewLayoutAttributes(forDecorationViewOfKind: String(describing: SearchBarView.self),
-                                                          with: indexPath)
+        let attributes = UICollectionViewLayoutAttributes(forDecorationViewOfKind: String(describing: SearchBarView.self), with: indexPath)
         attributes.frame = CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: SearchBarView.height)
         
         return attributes

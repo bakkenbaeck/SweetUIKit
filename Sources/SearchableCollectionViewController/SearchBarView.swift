@@ -23,8 +23,7 @@ class SearchBarView: UICollectionReusableView {
     }
     
     private(set) lazy var searchBar: UISearchBar = {
-        let bar = UISearchBar(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width,
-                                            height: SearchBarView.height))
+        let bar = UISearchBar(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: SearchBarView.height))
         bar.translatesAutoresizingMaskIntoConstraints = false
         bar.barStyle = .default
         bar.backgroundColor = SearchBarView.defaultSearchBackgroundColor
