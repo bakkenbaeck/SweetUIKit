@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class SearchableCollectionController: UIViewController {
+public class SearchableCollectionController: UIViewController {
     
     lazy var collectionView: UICollectionView = {
         let layout = SearchableCollectionViewLayout()
@@ -17,7 +17,11 @@ class SearchableCollectionController: UIViewController {
         return view
     }()
     
-    override func viewDidLoad() {
+    var searchBackgroundColor: UIColor? = SearchBarView.defaultSearchBackgroundColor {
+        didSet { updateSearchColor() }
+    }
+    
+    override public func viewDidLoad() {
         super.viewDidLoad()
         
         navigationController?.navigationBar.isTranslucent = false
@@ -27,15 +31,20 @@ class SearchableCollectionController: UIViewController {
         collectionView.fillSuperview()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        navigationController?.navigationBar.barTintColor = SearchBarView.defaultSearchBackgroundColor
+        updateSearchColor()
+    }
+    
+    private func updateSearchColor() {
+        navigationController?.navigationBar.barTintColor = searchBackgroundColor
+        SearchBarView.appearance().searchBackgroundColor = searchBackgroundColor
     }
 }
 
 extension SearchableCollectionController: UIScrollViewDelegate {
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if scrollView.contentOffset.y >= 22 && scrollView.contentOffset.y < SearchBarView.height {
             scrollView.setContentOffset(CGPoint(x: 0.0, y: SearchBarView.height), animated: true)
         } else if scrollView.contentOffset.y > 0 && scrollView.contentOffset.y < 22.0 {

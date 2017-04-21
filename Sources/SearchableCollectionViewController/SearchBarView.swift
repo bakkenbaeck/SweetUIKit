@@ -7,6 +7,10 @@ class SearchBarView: UICollectionReusableView {
     static let kind = String(describing:SearchBarView.self)
     static let defaultSearchBackgroundColor = UIColor(hex: "00C365")
     
+    dynamic open var searchBackgroundColor: UIColor? = SearchBarView.defaultSearchBackgroundColor {
+        didSet { searchBar.backgroundColor = searchBackgroundColor }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         

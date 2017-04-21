@@ -7,13 +7,16 @@ class SearchableCollectionViewController: SearchableCollectionController {
     
     override func viewDidLoad() {
       super.viewDidLoad()
+        
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: SearchableCollectionViewController.cellIdentifier)
+        searchBackgroundColor = nil
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
         navigationController?.navigationBar.barTintColor = nil
         navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
