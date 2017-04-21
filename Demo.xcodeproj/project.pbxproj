@@ -128,6 +128,7 @@
 		2B440A751EA9EB7B00AC33F8 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A661EA9EA0700AC33F8 /* SearchBarView.swift */; };
 		2B440A761EA9EB7C00AC33F8 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A661EA9EA0700AC33F8 /* SearchBarView.swift */; };
 		2B440A771EA9EB7D00AC33F8 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A661EA9EA0700AC33F8 /* SearchBarView.swift */; };
+		2B3FEEE91EAA04BB00EF8D20 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */; };
 		440998811DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		440998821DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		440E05871DC0B07D0044F59F /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E05861DC0B07D0044F59F /* UITableViewTests.swift */; };
@@ -261,6 +262,7 @@
 		2B440A651EA9EA0700AC33F8 /* SearchableCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchableCollectionViewLayout.swift; path = SearchableCollectionViewController/SearchableCollectionViewLayout.swift; sourceTree = "<group>"; };
 		2B440A661EA9EA0700AC33F8 /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBarView.swift; path = SearchableCollectionViewController/SearchBarView.swift; sourceTree = "<group>"; };
 		2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableCollectionViewController.swift; sourceTree = "<group>"; };
+		2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		440998801DC0B1C600C11852 /* UICollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
 		440E05861DC0B07D0044F59F /* UITableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
 		4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Sweet.swift"; sourceTree = "<group>"; };
@@ -344,6 +346,7 @@
 				14D986661DBF58A900D7842C /* TableController.swift */,
 				14D986671DBF58A900D7842C /* TableViewCell.swift */,
 				2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */,
+				2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */,
 				140124C31DBF582900EA92FB /* AppDelegate.swift */,
 				140124CA1DBF582900EA92FB /* Assets.xcassets */,
 				140124CC1DBF582900EA92FB /* LaunchScreen.storyboard */,
@@ -873,6 +876,7 @@
 				14D9866B1DBF58A900D7842C /* TableController.swift in Sources */,
 				140124C41DBF582900EA92FB /* AppDelegate.swift in Sources */,
 				14D986681DBF58A900D7842C /* CollectionController.swift in Sources */,
+				2B3FEEE91EAA04BB00EF8D20 /* DemoViewController.swift in Sources */,
 				14D986691DBF58A900D7842C /* CollectionViewCell.swift in Sources */,
 				2B440A6B1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift in Sources */,
 				9F2BDE1D1E092B0C00E32CAD /* EditViewController.swift in Sources */,

@@ -12,8 +12,6 @@ import UIKit
  to the main window, no the keyboard window) position. Thus, we're able to keep the input accessory always above the keyboard, but also always visible.
  */
 
-
-
 /// A UIViewController that conforms to this protocol can use the inputView(:shouldUpdatePosition:) callback
 /// to keep a view always in sync with the keyboard.
 public protocol KeyboardAwareAccessoryViewDelegate: class {
@@ -29,10 +27,8 @@ public protocol KeyboardAwareAccessoryViewDelegate: class {
     ///   - keyboardOriginYDistance: The distance from the top of the keyboard to the bottom of the screen.
     func inputView(_ inputView: KeyboardAwareInputAccessoryView, shouldUpdatePosition keyboardOriginYDistance: CGFloat)
 
-    
     /// This is not the actual input view. This is a view we use as proxy to get the exact position of the keyboard.
     var keyboardAwareInputView: KeyboardAwareInputAccessoryView { get }
-
 
     /// You need to implement this property to return the keyboardAwareInputView for everything to work.
     var inputAccessoryView: UIView? { get }
@@ -40,16 +36,14 @@ public protocol KeyboardAwareAccessoryViewDelegate: class {
 
 private var valueKey: UInt8 = 0 // We still need this boilerplate
 
-public extension KeyboardAwareAccessoryViewDelegate where Self: UIResponder  {
+public extension KeyboardAwareAccessoryViewDelegate where Self: UIResponder {
     var keyboardAwareInputView: KeyboardAwareInputAccessoryView {
-        get {
-            return self.associatedObject(base: self, key: &valueKey) { () -> KeyboardAwareInputAccessoryView in
+        return self.associatedObject(base: self, key: &valueKey) { () -> KeyboardAwareInputAccessoryView in
 
-                let view = KeyboardAwareInputAccessoryView(withAutoLayout: true)
-                view.delegate = self
+            let view = KeyboardAwareInputAccessoryView(withAutoLayout: true)
+            view.delegate = self
 
-                return view
-            }
+            return view
         }
     }
 
@@ -79,14 +73,14 @@ open class KeyboardAwareInputAccessoryView: UIView {
     fileprivate lazy var observableKeyPath: String = {
         "self.center"
     }()
-    
+
     open var height: CGFloat = 0 {
         didSet {
             self.invalidateLayout()
         }
     }
-    
-    override open var intrinsicContentSize: CGSize {
+
+    open override var intrinsicContentSize: CGSize {
         return CGSize(width: bounds.width, height: self.height)
     }
 
@@ -118,7 +112,7 @@ open class KeyboardAwareInputAccessoryView: UIView {
             super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
         }
     }
-    
+
     func invalidateLayout() {
         if self.frame.isEmpty { return }
         self.invalidateIntrinsicContentSize()
