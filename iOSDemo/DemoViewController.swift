@@ -3,16 +3,15 @@ import UIKit
 import SweetUIKit
 
 enum DemoItem: Int {
-    case table, edit, collection
+    case edit, collection
     
     static var titles: [String] {
-        let allItems: [DemoItem] = [.table, .edit, .collection]
+        let allItems: [DemoItem] = [.edit, .collection]
         return allItems.map{ $0.title }
     }
     
     var title: String {
         switch self {
-        case .table: return "Table Controller"
         case .edit: return "Edit Controller"
         case .collection: return "Collection Controller"
         }
@@ -20,24 +19,25 @@ enum DemoItem: Int {
     
     var viewController: UIViewController {
         switch self {
-        case .table: return TableController()
         case .edit: return EditViewController()
         case .collection: return CollectionController()
         }
     }
 }
 
-class DemoViewController: SweetTableController, UITableViewDataSource {
+class DemoViewController: SweetTableController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.register(TableViewCell.self)
         tableView.dataSource = self
         tableView.delegate = self
     }
-    
-    //MARK: - UITableViewDataSource
-    
+}
+
+extension DemoViewController: UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DemoItem.titles.count
     }
