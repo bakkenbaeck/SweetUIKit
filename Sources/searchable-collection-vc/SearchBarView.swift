@@ -18,7 +18,7 @@ class SearchBarView: UICollectionReusableView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(searchBar)
-        searchBar.pinToSuperview()
+        searchBar.fillSuperview()
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -70,15 +70,6 @@
         class func instanceFromNib<T: UIView>(bundle: Bundle = .main) -> T {
             return UINib(nibName: String(describing: T.self), bundle: bundle).instantiate(withOwner: nil, options: nil)[0] as! T
         }
-        
-        func pinToSuperview(top: CGFloat = 0.0, left: CGFloat = 0.0, bottom: CGFloat = 0.0, right: CGFloat = 0.0) {
-            if let superview = self.superview  {
-                self.topAnchor.constraint(equalTo: superview.topAnchor, constant: top).isActive = true
-                self.leftAnchor.constraint(equalTo: superview.leftAnchor, constant: left).isActive = true
-                self.rightAnchor.constraint(equalTo: superview.rightAnchor, constant: right).isActive = true
-                self.bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: bottom).isActive = true
-            }
-        }
     }
 
 #endif

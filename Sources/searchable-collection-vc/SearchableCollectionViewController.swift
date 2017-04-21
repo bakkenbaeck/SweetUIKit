@@ -32,7 +32,7 @@ class SearchableCollectionController: UIViewController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         view.addSubview(collectionView)
-        collectionView.pinToSuperview()
+        collectionView.fillSuperview()
     }
     
     override func viewWillAppear(_ animated: Bool) {
