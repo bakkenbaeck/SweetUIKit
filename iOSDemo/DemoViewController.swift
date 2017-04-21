@@ -57,7 +57,7 @@ extension DemoViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        if let item = DemoItem.init(rawValue: indexPath.row) as DemoItem? {
+        if let item = DemoItem(rawValue: indexPath.row) as DemoItem? {
             navigationController?.pushViewController(item.viewController, animated: true)
         }
     }
