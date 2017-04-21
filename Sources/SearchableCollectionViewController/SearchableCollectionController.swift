@@ -8,9 +8,9 @@ public class SearchableCollectionController: UIViewController {
         
         let view = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         view.translatesAutoresizingMaskIntoConstraints = false
-        (view as UIScrollView).delegate = self
+        view.delegate = self
         view.backgroundColor = UIColor.white
-        view.contentInset = UIEdgeInsetsMake(0.0, 0.0, SearchBarView.height, 0.0)
+        view.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: SearchBarView.height, right: 0.0)
         view.showsHorizontalScrollIndicator = false
         view.showsVerticalScrollIndicator = false
         
@@ -40,7 +40,7 @@ public class SearchableCollectionController: UIViewController {
     }
 }
 
-extension SearchableCollectionController: UIScrollViewDelegate {
+extension SearchableCollectionController: UICollectionViewDelegate {
     public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if scrollView.contentOffset.y >= SearchBarView.height / 2 && scrollView.contentOffset.y < SearchBarView.height {
             scrollView.setContentOffset(CGPoint(x: 0.0, y: SearchBarView.height), animated: true)
