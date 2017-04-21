@@ -16,7 +16,7 @@ class SearchableCollectionViewLayout: UICollectionViewFlowLayout {
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        var attributes = super.layoutAttributesForElements(in: rect)
+        var attributes = super.layoutAttributesForElements(in: rect)?.flatMap({ $0.copy() as? UICollectionViewLayoutAttributes })
         
         attributes?.forEach{ attribute in
             if attribute.representedElementCategory != .decorationView {
@@ -31,7 +31,7 @@ class SearchableCollectionViewLayout: UICollectionViewFlowLayout {
     }
     
     override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let attributes = super.layoutAttributesForItem(at: indexPath)
+        let attributes = super.layoutAttributesForItem(at: indexPath).flatMap({ $0.copy() as? UICollectionViewLayoutAttributes })
         if let center = attributes?.center as CGPoint? {
             attributes?.center = CGPoint(x: center.x, y: center.y + SearchBarView.height)
         }
