@@ -11,6 +11,11 @@ class SearchableCollectionViewController: SearchableCollectionController {
         collectionView.delegate = self
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: SearchableCollectionViewController.cellIdentifier)
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.barTintColor = .white
+    }
 }
 
 extension SearchableCollectionViewController: UICollectionViewDataSource {
@@ -34,8 +39,8 @@ extension SearchableCollectionViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchableCollectionViewController.cellIdentifier,
                                                       for: indexPath)
         switch indexPath.section {
-        case 0: cell.backgroundColor = UIColor.yellow
-        case 1: cell.backgroundColor = UIColor.purple
+        case 0: cell.backgroundColor = .yellow
+        case 1: cell.backgroundColor = .purple
         default: break
         }
         
