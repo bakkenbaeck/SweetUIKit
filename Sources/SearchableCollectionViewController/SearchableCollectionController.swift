@@ -9,6 +9,7 @@ open class SearchableCollectionController: UIViewController {
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.delegate = self
+        view.dataSource = self
         view.backgroundColor = UIColor.white
         view.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: SearchBarView.height, right: 0.0)
         view.showsHorizontalScrollIndicator = false
@@ -50,5 +51,15 @@ extension SearchableCollectionController: UICollectionViewDelegate {
         } else if scrollView.contentOffset.y > 0 && scrollView.contentOffset.y < SearchBarView.height / 2 {
             scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
         }
+    }
+}
+
+extension SearchableCollectionController: UICollectionViewDataSource {
+    open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+
+    open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 0
     }
 }
