@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 public class SearchableCollectionController: UIViewController {
-    
+
     lazy var collectionView: UICollectionView = {
         let layout = SearchableCollectionViewLayout()
         
@@ -16,8 +16,8 @@ public class SearchableCollectionController: UIViewController {
         
         return view
     }()
-    
-    var searchBackgroundColor: UIColor? = SearchBarView.defaultSearchBackgroundColor {
+
+    dynamic public var searchBackgroundColor: UIColor? = SearchBarView.defaultSearchBackgroundColor {
         didSet { updateSearchColor() }
     }
     
