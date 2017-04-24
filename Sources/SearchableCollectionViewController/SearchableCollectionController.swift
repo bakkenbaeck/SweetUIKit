@@ -1,47 +1,50 @@
 import Foundation
 import UIKit
 
-public class SearchableCollectionController: UIViewController {
-    
-    lazy var collectionView: UICollectionView = {
+open class SearchableCollectionController: UIViewController {
+
+    open lazy var collectionView: UICollectionView = {
         let layout = SearchableCollectionViewLayout()
-        
-        let view = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+
+        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.delegate = self
         view.backgroundColor = UIColor.white
         view.contentInset = UIEdgeInsets(top: 0.0, left: 0.0, bottom: SearchBarView.height, right: 0.0)
         view.showsHorizontalScrollIndicator = false
         view.showsVerticalScrollIndicator = false
-        
+
         return view
     }()
-    
-    var searchBackgroundColor: UIColor? = SearchBarView.defaultSearchBackgroundColor {
-        didSet { updateSearchColor() }
+
+    open var searchBackgroundColor: UIColor? = SearchBarView.defaultSearchBackgroundColor {
+        didSet {
+            self.updateSearchColor()
+        }
     }
-    
-    override public func viewDidLoad() {
+
+    open override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController?.navigationBar.isTranslucent = false
-        view.addSubview(collectionView)
-        collectionView.fillSuperview()
+
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.view.addSubview(self.collectionView)
+        self.collectionView.fillSuperview()
     }
-    
-    override public func viewWillAppear(_ animated: Bool) {
+
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        updateSearchColor()
+
+        self.updateSearchColor()
     }
-    
+
     private func updateSearchColor() {
-        SearchBarView.appearance().searchBackgroundColor = searchBackgroundColor
+        SearchBarView.appearance().searchBackgroundColor = self.searchBackgroundColor
     }
 }
 
 extension SearchableCollectionController: UICollectionViewDelegate {
-    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate _: Bool) {
+        // TODO: extract this conditions into named constants.
         if scrollView.contentOffset.y >= SearchBarView.height / 2 && scrollView.contentOffset.y < SearchBarView.height {
             scrollView.setContentOffset(CGPoint(x: 0.0, y: SearchBarView.height), animated: true)
         } else if scrollView.contentOffset.y > 0 && scrollView.contentOffset.y < SearchBarView.height / 2 {

@@ -1,34 +1,36 @@
 import Foundation
 import UIKit
 
-class SearchBarView: UICollectionReusableView {
-    
-    static let height: CGFloat = 44.0
-    static let kind = String(describing:SearchBarView.self)
-    static let defaultSearchBackgroundColor = UIColor(hex: "00C365")
-    
-    dynamic open var searchBackgroundColor: UIColor? = SearchBarView.defaultSearchBackgroundColor {
-        didSet { searchBar.backgroundColor = searchBackgroundColor }
+open class SearchBarView: UICollectionReusableView {
+
+    open static let height: CGFloat = 44.0
+    open static let kind = String(describing: SearchBarView.self)
+    open static let defaultSearchBackgroundColor = UIColor(hex: "00C365")
+
+    open dynamic var searchBackgroundColor: UIColor? = SearchBarView.defaultSearchBackgroundColor {
+        didSet {
+            self.searchBar.backgroundColor = self.searchBackgroundColor
+        }
     }
-    
-    override init(frame: CGRect) {
+
+    public override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        addSubview(searchBar)
-        searchBar.fillSuperview()
+
+        self.addSubview(self.searchBar)
+        self.searchBar.fillSuperview()
     }
-    
-    required init?(coder aDecoder: NSCoder) {
+
+    public required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    private(set) lazy var searchBar: UISearchBar = {
-        let bar = UISearchBar(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: SearchBarView.height))
-        bar.translatesAutoresizingMaskIntoConstraints = false
-        bar.barStyle = .default
-        bar.backgroundColor = SearchBarView.defaultSearchBackgroundColor
-        bar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
-        
-        return bar
+
+    private(set) open lazy var searchBar: UISearchBar = {
+        let searchBar = UISearchBar(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: SearchBarView.height))
+        searchBar.translatesAutoresizingMaskIntoConstraints = false
+        searchBar.barStyle = .default
+        searchBar.backgroundColor = SearchBarView.defaultSearchBackgroundColor
+        searchBar.setBackgroundImage(UIImage(), for: .any, barMetrics: .default)
+
+        return searchBar
     }()
 }
