@@ -1,7 +1,13 @@
 import Foundation
 import UIKit
 
+let SearchBarTag = 123
+
 open class SearchableCollectionController: UIViewController {
+
+    open var searchBar: UISearchBar {
+        return self.collectionView.viewWithTag(SearchBarTag) as! UISearchBar
+    }
 
     open lazy var collectionView: UICollectionView = {
         let layout = SearchableCollectionViewLayout()
