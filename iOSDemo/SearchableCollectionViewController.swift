@@ -62,6 +62,6 @@ extension SearchableCollectionViewController: UICollectionViewDelegateFlowLayout
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(0.0, 10.0, 10.0, 10.0)
+        return UIEdgeInsets(top: 0, left: 10, bottom: 10, right: 10)
     }
 }
