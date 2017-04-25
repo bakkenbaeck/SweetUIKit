@@ -50,9 +50,6 @@ open class SearchableCollectionController: SweetCollectionController {
         self.searchBar.sizeToFit()
 
         self.definesPresentationContext = true
-
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
     }
 
     open override func viewWillAppear(_ animated: Bool) {
@@ -62,17 +59,7 @@ open class SearchableCollectionController: SweetCollectionController {
     }
 }
 
-extension SearchableCollectionController: UICollectionViewDataSource {
-    open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
-    }
-
-    open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
-    }
-}
-
-extension SearchableCollectionController: UICollectionViewDelegate {
+extension SearchableCollectionController: UIScrollViewDelegate {
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard self.isAnimatingSearchBar == false else { return }
 
@@ -99,10 +86,6 @@ extension SearchableCollectionController: UICollectionViewDelegate {
             scrollView.setContentOffset(CGPoint(x: 0.0, y: self.searchBar.frame.height - scrollView.contentInset.top), animated: true)
         }
     }
-}
-
-extension SearchableCollectionController: UICollectionViewDelegateFlowLayout {
-
 }
 
 extension SearchableCollectionController: UISearchControllerDelegate {
