@@ -9,22 +9,22 @@ class SearchBarView: UICollectionReusableView {
 
     dynamic var searchBackgroundColor: UIColor? = SearchBarView.defaultSearchBackgroundColor {
         didSet {
-            self.searchBar.backgroundColor = self.searchBackgroundColor
+            SearchBarView.searchBar.backgroundColor = self.searchBackgroundColor
         }
     }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        self.addSubview(self.searchBar)
-        self.searchBar.fillSuperview()
+        self.addSubview(SearchBarView.searchBar)
+        SearchBarView.searchBar.fillSuperview()
     }
 
     required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private(set) lazy var searchBar: UISearchBar = {
+    static var searchBar: UISearchBar = {
         let searchBar = UISearchBar(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: SearchBarView.height))
         searchBar.tag = SearchBarTag
         searchBar.translatesAutoresizingMaskIntoConstraints = false

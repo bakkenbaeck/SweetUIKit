@@ -6,7 +6,7 @@ let SearchBarTag = 123
 open class SearchableCollectionController: UIViewController {
 
     open var searchBar: UISearchBar {
-        return self.collectionView.viewWithTag(SearchBarTag) as! UISearchBar
+        return SearchBarView.searchBar
     }
 
     open lazy var collectionView: UICollectionView = {

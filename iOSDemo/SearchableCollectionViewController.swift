@@ -12,6 +12,8 @@ class SearchableCollectionViewController: SearchableCollectionController {
         self.collectionView.delegate = self
         self.collectionView.register(UICollectionViewCell.self)
         self.searchBackgroundColor = .lightGray
+
+        self.searchBar.delegate = self
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -74,4 +76,8 @@ extension SearchableCollectionViewController: UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
+}
+
+extension SearchableCollectionViewController: UISearchBarDelegate {
+    
 }
