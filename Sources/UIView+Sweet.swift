@@ -54,6 +54,9 @@ public extension UIView {
         self.widthAnchor.constraint(equalToConstant: width).isActive = true
     }
 
+    /// Attach a view to the top of its superview or view controller's top layout guide, if one is supplied
+    ///
+    /// - Parameter viewController: If not nil, attach the view to the bottom of its top layout guide.
     public func attachToTop(viewController: UIViewController? = nil) {
         guard let superview = self.superview else { return }
 

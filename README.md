@@ -4,6 +4,33 @@
 [![License](https://img.shields.io/cocoapods/l/SweetUIKit.svg?style=flat)](https://cocoapods.org/pods/SweetUIKit)
 [![Platform](https://img.shields.io/cocoapods/p/SweetUIKit.svg?style=flat)](https://cocoapods.org/pods/SweetUIKit)
 
+## SearchableCollectionView
+
+We provide a `SearchableCollectionController`, a subclass of `SweetCollectionController` that provides the same search functionality that a `UITableView` combined with a `UISearchController` can provide. That includes attaching the search bar to the bottom of the navigation bar, handling scrolling animations and automatically handling its positioning so that it’s never half-shown. Exactly the same as the native table view behaviour.
+
+### Implementing
+
+Just subclass it, override the following methods and it should be good to go.
+
+```swift
+func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+
+func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+```
+
+Of course it won’t do much until you also implement the `UISearchBar` delegate method. 
+
+Here’s a very naive implementation:
+
+```swift
+extension SearchableCollectionViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        self.searchTerm = searchText
+        self.collectionView.reloadData()
+    }
+}
+```
+
 ## Dequeuing Cells
 
 ### UITableView
