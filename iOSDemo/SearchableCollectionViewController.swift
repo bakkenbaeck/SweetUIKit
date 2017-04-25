@@ -72,6 +72,10 @@ class SearchableCollectionViewController: SearchableCollectionController {
         self.navigationController?.navigationBar.barTintColor = nil
         self.navigationController?.navigationBar.isTranslucent = true
     }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath)
+    }
 }
 
 extension SearchableCollectionViewController: UICollectionViewDataSource {

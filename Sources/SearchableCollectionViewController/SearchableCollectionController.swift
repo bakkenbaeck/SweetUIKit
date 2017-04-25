@@ -50,6 +50,8 @@ open class SearchableCollectionController: SweetCollectionController {
         self.searchBar.sizeToFit()
 
         self.definesPresentationContext = true
+
+        self.collectionView.delegate = self
     }
 
     open override func viewWillAppear(_ animated: Bool) {
@@ -59,7 +61,7 @@ open class SearchableCollectionController: SweetCollectionController {
     }
 }
 
-extension SearchableCollectionController: UIScrollViewDelegate {
+extension SearchableCollectionController: UICollectionViewDelegate {
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard self.isAnimatingSearchBar == false else { return }
 
