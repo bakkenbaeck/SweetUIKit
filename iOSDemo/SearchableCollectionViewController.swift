@@ -84,7 +84,7 @@ class SearchableCollectionViewController: SearchableCollectionController {
                 }).count
             }
 
-            return self.secondSection.count
+            return self.firstSection.count
         case 1:
             if self.isSearching {
                 return self.secondSection.filter({ item -> Bool in
