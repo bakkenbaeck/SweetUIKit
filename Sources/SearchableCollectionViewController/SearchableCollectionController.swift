@@ -52,23 +52,12 @@ open class SearchableCollectionController: SweetCollectionController {
         self.definesPresentationContext = true
 
         self.collectionView.delegate = self
-        self.collectionView.dataSource = self
     }
 
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         self.collectionView.contentInset.top += self.searchBar.frame.height
-    }
-}
-
-extension SearchableCollectionController: UICollectionViewDataSource {
-    open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
-    }
-
-    open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
     }
 }
 
@@ -99,10 +88,6 @@ extension SearchableCollectionController: UICollectionViewDelegate {
             scrollView.setContentOffset(CGPoint(x: 0.0, y: self.searchBar.frame.height - scrollView.contentInset.top), animated: true)
         }
     }
-}
-
-extension SearchableCollectionController: UICollectionViewDelegateFlowLayout {
-
 }
 
 extension SearchableCollectionController: UISearchControllerDelegate {

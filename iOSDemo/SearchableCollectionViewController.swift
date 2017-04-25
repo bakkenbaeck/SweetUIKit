@@ -62,6 +62,8 @@ class SearchableCollectionViewController: SearchableCollectionController {
 
         self.collectionView.register(SearchCell.self)
         self.searchController.searchBar.delegate = self
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -71,25 +73,31 @@ class SearchableCollectionViewController: SearchableCollectionController {
         self.navigationController?.navigationBar.isTranslucent = true
     }
 
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath)
+    }
+}
+
+extension SearchableCollectionViewController: UICollectionViewDataSource {
+    public func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
 
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0:
             if self.isSearching {
-                return self.firstSection.filter({ item -> Bool in
+                return self.firstSection.filter { item -> Bool in
                     item.contains(self.searchTerm)
-                }).count
+                }.count
             }
 
             return self.firstSection.count
         case 1:
             if self.isSearching {
-                return self.secondSection.filter({ item -> Bool in
+                return self.secondSection.filter { item -> Bool in
                     item.contains(self.searchTerm)
-                }).count
+                }.count
             }
 
             return self.secondSection.count
@@ -98,7 +106,7 @@ class SearchableCollectionViewController: SearchableCollectionController {
         }
     }
 
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeue(SearchCell.self, for: indexPath)
 
         switch indexPath.section {
@@ -106,9 +114,9 @@ class SearchableCollectionViewController: SearchableCollectionController {
             cell.backgroundColor = .yellow
 
             if self.isSearching {
-                cell.titleLabel.text = self.firstSection.filter({ item -> Bool in
+                cell.titleLabel.text = self.firstSection.filter { item -> Bool in
                     item.contains(self.searchTerm)
-                })[indexPath.row]
+                }[indexPath.row]
             } else {
                 cell.titleLabel.text = self.firstSection[indexPath.row]
             }
@@ -116,9 +124,9 @@ class SearchableCollectionViewController: SearchableCollectionController {
             cell.backgroundColor = .purple
 
             if self.isSearching {
-                cell.titleLabel.text = self.secondSection.filter({ item -> Bool in
+                cell.titleLabel.text = self.secondSection.filter { item -> Bool in
                     item.contains(self.searchTerm)
-                })[indexPath.row]
+                }[indexPath.row]
             } else {
                 cell.titleLabel.text = self.secondSection[indexPath.row]
             }
@@ -128,7 +136,9 @@ class SearchableCollectionViewController: SearchableCollectionController {
 
         return cell
     }
+}
 
+extension SearchableCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let size = collectionView.frame.width / 2 - 25
 
