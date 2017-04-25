@@ -106,6 +106,9 @@
 		1480D4DD1DBF600E00507EE0 /* UIScrollView+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1401246B1DBF57BA00EA92FB /* UIScrollView+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4DE1DBF600E00507EE0 /* UIView+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1401246C1DBF57BA00EA92FB /* UIView+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4DF1DBF600E00507EE0 /* UIViewController+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1401246D1DBF57BA00EA92FB /* UIViewController+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14951C681EAF92A3008FB871 /* SearchableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14951C671EAF92A3008FB871 /* SearchableCollectionController.swift */; };
+		14951C691EAF92A3008FB871 /* SearchableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14951C671EAF92A3008FB871 /* SearchableCollectionController.swift */; };
+		14951C6A1EAF92A3008FB871 /* SearchableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14951C671EAF92A3008FB871 /* SearchableCollectionController.swift */; };
 		149D81821DBD2E8000A9EB1A /* SweetUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 149D81811DBD2E8000A9EB1A /* SweetUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		149D81831DBD2E8000A9EB1A /* SweetUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 149D81811DBD2E8000A9EB1A /* SweetUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		149D81841DBD2E8000A9EB1A /* SweetUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 149D81811DBD2E8000A9EB1A /* SweetUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -117,9 +120,6 @@
 		14D9866C1DBF58A900D7842C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D986671DBF58A900D7842C /* TableViewCell.swift */; };
 		2B3FEEE91EAA04BB00EF8D20 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */; };
 		2B440A6B1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */; };
-		2B440A6C1EA9EB6700AC33F8 /* SearchableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A641EA9EA0700AC33F8 /* SearchableCollectionController.swift */; };
-		2B440A6D1EA9EB6800AC33F8 /* SearchableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A641EA9EA0700AC33F8 /* SearchableCollectionController.swift */; };
-		2B440A6E1EA9EB6800AC33F8 /* SearchableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A641EA9EA0700AC33F8 /* SearchableCollectionController.swift */; };
 		440998811DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		440998821DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		440E05871DC0B07D0044F59F /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E05861DC0B07D0044F59F /* UITableViewTests.swift */; };
@@ -235,6 +235,7 @@
 		146D72B11AB782920058798C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		146F4AD41DDC6A2B007C9534 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OpenInSafariActivity.strings; sourceTree = "<group>"; };
 		146F4AD51DDC6A2B007C9534 /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
+		14951C671EAF92A3008FB871 /* SearchableCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableCollectionController.swift; sourceTree = "<group>"; };
 		149D81391DBD2A5E00A9EB1A /* tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		149D815F1DBD2AE500A9EB1A /* SweetUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,7 +254,6 @@
 		14F393951CC6512400616696 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		14F393961CC6517E00616696 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
-		2B440A641EA9EA0700AC33F8 /* SearchableCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchableCollectionController.swift; path = SearchableCollectionViewController/SearchableCollectionController.swift; sourceTree = "<group>"; };
 		2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableCollectionViewController.swift; sourceTree = "<group>"; };
 		440998801DC0B1C600C11852 /* UICollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
 		440E05861DC0B07D0044F59F /* UITableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
@@ -451,7 +451,6 @@
 		14C31A8C1CD294C70056A33F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				2B440A541EA90A9F00AC33F8 /* SearchableCollectionViewController */,
 				149D81811DBD2E8000A9EB1A /* SweetUIKit.h */,
 				140124621DBF57BA00EA92FB /* Identifiable.swift */,
 				140124631DBF57BA00EA92FB /* IndexPath+Sweet.swift */,
@@ -462,6 +461,7 @@
 				140124681DBF57BA00EA92FB /* UIAlertController+Sweet.swift */,
 				140124691DBF57BA00EA92FB /* UIImage+Sweet.swift */,
 				1401246A1DBF57BA00EA92FB /* UILabel+Sweet.swift */,
+				14951C671EAF92A3008FB871 /* SearchableCollectionController.swift */,
 				1401246B1DBF57BA00EA92FB /* UIScrollView+Sweet.swift */,
 				1401246C1DBF57BA00EA92FB /* UIView+Sweet.swift */,
 				1401246D1DBF57BA00EA92FB /* UIViewController+Sweet.swift */,
@@ -473,14 +473,6 @@
 				9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		2B440A541EA90A9F00AC33F8 /* SearchableCollectionViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2B440A641EA9EA0700AC33F8 /* SearchableCollectionController.swift */,
-			);
-			name = SearchableCollectionViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -935,12 +927,12 @@
 				1401247A1DBF57BA00EA92FB /* OpenInSafariActivity.swift in Sources */,
 				140124891DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				140124701DBF57BA00EA92FB /* Identifiable.swift in Sources */,
-				2B440A6C1EA9EB6700AC33F8 /* SearchableCollectionController.swift in Sources */,
 				140124751DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
 				449822361E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
 				9F2BDE1B1E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift in Sources */,
 				140124931DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				1401249D1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
+				14951C681EAF92A3008FB871 /* SearchableCollectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -961,12 +953,12 @@
 				1401247B1DBF57BA00EA92FB /* OpenInSafariActivity.swift in Sources */,
 				1401248A1DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				140124711DBF57BA00EA92FB /* Identifiable.swift in Sources */,
-				2B440A6D1EA9EB6800AC33F8 /* SearchableCollectionController.swift in Sources */,
 				140124761DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
 				449822371E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
 				A92B12941E9BCA7400478C1F /* KeyboardAwareInputViewProtocol.swift in Sources */,
 				140124941DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				1401249E1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
+				14951C691EAF92A3008FB871 /* SearchableCollectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,12 +979,12 @@
 				1401247C1DBF57BA00EA92FB /* OpenInSafariActivity.swift in Sources */,
 				1401248B1DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				140124721DBF57BA00EA92FB /* Identifiable.swift in Sources */,
-				2B440A6E1EA9EB6800AC33F8 /* SearchableCollectionController.swift in Sources */,
 				140124771DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
 				449822381E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
 				A92B12951E9BCA7400478C1F /* KeyboardAwareInputViewProtocol.swift in Sources */,
 				140124951DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				1401249F1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
+				14951C6A1EAF92A3008FB871 /* SearchableCollectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

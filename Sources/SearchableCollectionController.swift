@@ -1,3 +1,4 @@
+#if os(iOS) || os(tvOS)
 import Foundation
 import UIKit
 
@@ -122,3 +123,4 @@ extension SearchableCollectionController: UISearchControllerDelegate {
         self.isAnimatingSearchBar = false
     }
 }
+#endif
