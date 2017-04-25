@@ -1,13 +1,13 @@
 import Foundation
 import UIKit
 
-let SearchBarTag = 123
-
 open class SearchableCollectionController: SweetCollectionController {
 
     open var searchBar: UISearchBar {
         return self.searchController.searchBar
     }
+
+    fileprivate var isAnimatingSearchBar: Bool = false
 
     open lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
@@ -15,11 +15,12 @@ open class SearchableCollectionController: SweetCollectionController {
         controller.dimsBackgroundDuringPresentation = false
 
         controller.searchBar.autoresizingMask = [.flexibleWidth]
+        controller.delegate = self
 
         return controller
     }()
 
-    lazy var searchBarContainerView: UIView = {
+    private lazy var searchBarContainerView: UIView = {
         let view = UIView(withAutoLayout: true)
         view.backgroundColor = .clear
 
@@ -50,10 +51,6 @@ open class SearchableCollectionController: SweetCollectionController {
 
         self.collectionView.contentInset.top += self.searchBar.frame.height
     }
-
-    open override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
 }
 
 extension SearchableCollectionController: UICollectionViewDataSource {
@@ -68,7 +65,7 @@ extension SearchableCollectionController: UICollectionViewDataSource {
 
 extension SearchableCollectionController: UICollectionViewDelegate, UIScrollViewDelegate {
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        guard self.searchController.isActive == false else { return }
+        guard self.isAnimatingSearchBar == false else { return }
 
         let verticalOffset = scrollView.contentOffset.y + scrollView.contentInset.top
 
@@ -97,4 +94,22 @@ extension SearchableCollectionController: UICollectionViewDelegate, UIScrollView
 
 extension SearchableCollectionController: UICollectionViewDelegateFlowLayout {
 
+}
+
+extension SearchableCollectionController: UISearchControllerDelegate {
+    public func willPresentSearchController(_ searchController: UISearchController) {
+        self.isAnimatingSearchBar = true
+    }
+
+    public func didPresentSearchController(_ searchController: UISearchController) {
+        self.isAnimatingSearchBar = false
+    }
+
+    public func willDismissSearchController(_ searchController: UISearchController) {
+        self.isAnimatingSearchBar = true
+    }
+
+    public func didDismissSearchController(_ searchController: UISearchController) {
+        self.isAnimatingSearchBar = false
+    }
 }
