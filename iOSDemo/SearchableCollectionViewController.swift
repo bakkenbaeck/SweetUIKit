@@ -1,24 +1,20 @@
 import Foundation
 import UIKit
+import SweetUIKit
 
 class SearchableCollectionViewController: SearchableCollectionController {
 
     static let cellIdentifier = String(describing: UICollectionViewCell.self)
-    
-    override func viewDidLoad() {
-      super.viewDidLoad()
-        
-        self.collectionView.dataSource = self
-        self.collectionView.delegate = self
-        self.collectionView.register(UICollectionViewCell.self)
-        self.searchBackgroundColor = .lightGray
 
-        self.searchBar.delegate = self
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.collectionView.register(UICollectionViewCell.self)
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
+
         self.navigationController?.navigationBar.barTintColor = nil
         self.navigationController?.navigationBar.isTranslucent = true
     }
@@ -29,7 +25,7 @@ extension SearchableCollectionViewController {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
-    
+
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         var itemsNumber = 0
 
@@ -41,10 +37,10 @@ extension SearchableCollectionViewController {
         default:
             break
         }
-        
+
         return itemsNumber
     }
-    
+
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchableCollectionViewController.cellIdentifier, for: indexPath)
 
@@ -56,28 +52,22 @@ extension SearchableCollectionViewController {
         default:
             break
         }
-        
+
         return cell
     }
-}
 
-extension SearchableCollectionViewController: UICollectionViewDelegateFlowLayout {
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let size = collectionView.frame.width / 2 - 25
 
         return CGSize(width: size, height: size)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
 }
 
-extension SearchableCollectionViewController: UISearchBarDelegate {
-    
-}

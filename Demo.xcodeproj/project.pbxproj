@@ -115,20 +115,11 @@
 		14D9866A1DBF58A900D7842C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14D986651DBF58A900D7842C /* Localizable.strings */; };
 		14D9866B1DBF58A900D7842C /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D986661DBF58A900D7842C /* TableController.swift */; };
 		14D9866C1DBF58A900D7842C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D986671DBF58A900D7842C /* TableViewCell.swift */; };
+		2B3FEEE91EAA04BB00EF8D20 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */; };
 		2B440A6B1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */; };
 		2B440A6C1EA9EB6700AC33F8 /* SearchableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A641EA9EA0700AC33F8 /* SearchableCollectionController.swift */; };
 		2B440A6D1EA9EB6800AC33F8 /* SearchableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A641EA9EA0700AC33F8 /* SearchableCollectionController.swift */; };
 		2B440A6E1EA9EB6800AC33F8 /* SearchableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A641EA9EA0700AC33F8 /* SearchableCollectionController.swift */; };
-		2B440A6F1EA9EB6900AC33F8 /* SearchableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A641EA9EA0700AC33F8 /* SearchableCollectionController.swift */; };
-		2B440A701EA9EB6E00AC33F8 /* SearchableCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A651EA9EA0700AC33F8 /* SearchableCollectionViewLayout.swift */; };
-		2B440A711EA9EB6E00AC33F8 /* SearchableCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A651EA9EA0700AC33F8 /* SearchableCollectionViewLayout.swift */; };
-		2B440A721EA9EB6F00AC33F8 /* SearchableCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A651EA9EA0700AC33F8 /* SearchableCollectionViewLayout.swift */; };
-		2B440A731EA9EB7000AC33F8 /* SearchableCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A651EA9EA0700AC33F8 /* SearchableCollectionViewLayout.swift */; };
-		2B440A741EA9EB7B00AC33F8 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A661EA9EA0700AC33F8 /* SearchBarView.swift */; };
-		2B440A751EA9EB7B00AC33F8 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A661EA9EA0700AC33F8 /* SearchBarView.swift */; };
-		2B440A761EA9EB7C00AC33F8 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A661EA9EA0700AC33F8 /* SearchBarView.swift */; };
-		2B440A771EA9EB7D00AC33F8 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A661EA9EA0700AC33F8 /* SearchBarView.swift */; };
-		2B3FEEE91EAA04BB00EF8D20 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */; };
 		440998811DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		440998821DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		440E05871DC0B07D0044F59F /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E05861DC0B07D0044F59F /* UITableViewTests.swift */; };
@@ -146,6 +137,8 @@
 		9F2BDE1B1E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; };
 		9F2BDE1D1E092B0C00E32CAD /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BDE1C1E092B0C00E32CAD /* EditViewController.swift */; };
 		9F4C5B6D1DC0DE1A00F2A77B /* IndexPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */; };
+		9F589E771EAF42D200C1B294 /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F589E761EAF42D200C1B294 /* RevealServer.framework */; };
+		9F589E781EAF42DF00C1B294 /* RevealServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F589E761EAF42D200C1B294 /* RevealServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FBA0C7D1DBFBC6D0007D239 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; };
 		9FBA0C801DBFBC880007D239 /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FC8B9EA1DC74D0A00A68185 /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
@@ -199,6 +192,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				9FBA0C801DBFBC880007D239 /* SweetUIKit.framework in Embed Frameworks */,
+				9F589E781EAF42DF00C1B294 /* RevealServer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,11 +252,9 @@
 		14D986671DBF58A900D7842C /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		14F393951CC6512400616696 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		14F393961CC6517E00616696 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		2B440A641EA9EA0700AC33F8 /* SearchableCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchableCollectionController.swift; path = SearchableCollectionViewController/SearchableCollectionController.swift; sourceTree = "<group>"; };
-		2B440A651EA9EA0700AC33F8 /* SearchableCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchableCollectionViewLayout.swift; path = SearchableCollectionViewController/SearchableCollectionViewLayout.swift; sourceTree = "<group>"; };
-		2B440A661EA9EA0700AC33F8 /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBarView.swift; path = SearchableCollectionViewController/SearchBarView.swift; sourceTree = "<group>"; };
-		2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableCollectionViewController.swift; sourceTree = "<group>"; };
 		2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		2B440A641EA9EA0700AC33F8 /* SearchableCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchableCollectionController.swift; path = SearchableCollectionViewController/SearchableCollectionController.swift; sourceTree = "<group>"; };
+		2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableCollectionViewController.swift; sourceTree = "<group>"; };
 		440998801DC0B1C600C11852 /* UICollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
 		440E05861DC0B07D0044F59F /* UITableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
 		4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Sweet.swift"; sourceTree = "<group>"; };
@@ -271,6 +263,7 @@
 		9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAwareInputViewProtocol.swift; sourceTree = "<group>"; };
 		9F2BDE1C1E092B0C00E32CAD /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPathTests.swift; sourceTree = "<group>"; };
+		9F589E761EAF42D200C1B294 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevealServer.framework; sourceTree = "<group>"; };
 		9FC8B9E81DC74D0500A68185 /* Jiggly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jiggly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -279,6 +272,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F589E771EAF42D200C1B294 /* RevealServer.framework in Frameworks */,
 				9FBA0C7D1DBFBC6D0007D239 /* SweetUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +345,7 @@
 				140124CA1DBF582900EA92FB /* Assets.xcassets */,
 				140124CC1DBF582900EA92FB /* LaunchScreen.storyboard */,
 				140124CF1DBF582900EA92FB /* Info.plist */,
+				9F589E761EAF42D200C1B294 /* RevealServer.framework */,
 			);
 			path = iOSDemo;
 			sourceTree = "<group>";
@@ -484,8 +479,6 @@
 			isa = PBXGroup;
 			children = (
 				2B440A641EA9EA0700AC33F8 /* SearchableCollectionController.swift */,
-				2B440A651EA9EA0700AC33F8 /* SearchableCollectionViewLayout.swift */,
-				2B440A661EA9EA0700AC33F8 /* SearchBarView.swift */,
 			);
 			name = SearchableCollectionViewController;
 			sourceTree = "<group>";
@@ -869,9 +862,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B440A771EA9EB7D00AC33F8 /* SearchBarView.swift in Sources */,
-				2B440A731EA9EB7000AC33F8 /* SearchableCollectionViewLayout.swift in Sources */,
-				2B440A6F1EA9EB6900AC33F8 /* SearchableCollectionController.swift in Sources */,
 				14D9866C1DBF58A900D7842C /* TableViewCell.swift in Sources */,
 				14D9866B1DBF58A900D7842C /* TableController.swift in Sources */,
 				140124C41DBF582900EA92FB /* AppDelegate.swift in Sources */,
@@ -942,8 +932,6 @@
 				140124841DBF57BA00EA92FB /* SweetCollectionController.swift in Sources */,
 				1425657A1E09641400184D47 /* UIColor+Sweet.swift in Sources */,
 				1401248E1DBF57BA00EA92FB /* UIAlertController+Sweet.swift in Sources */,
-				2B440A741EA9EB7B00AC33F8 /* SearchBarView.swift in Sources */,
-				2B440A701EA9EB6E00AC33F8 /* SearchableCollectionViewLayout.swift in Sources */,
 				1401247A1DBF57BA00EA92FB /* OpenInSafariActivity.swift in Sources */,
 				140124891DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				140124701DBF57BA00EA92FB /* Identifiable.swift in Sources */,
@@ -970,8 +958,6 @@
 				140124851DBF57BA00EA92FB /* SweetCollectionController.swift in Sources */,
 				1425657B1E09641400184D47 /* UIColor+Sweet.swift in Sources */,
 				1401248F1DBF57BA00EA92FB /* UIAlertController+Sweet.swift in Sources */,
-				2B440A761EA9EB7C00AC33F8 /* SearchBarView.swift in Sources */,
-				2B440A711EA9EB6E00AC33F8 /* SearchableCollectionViewLayout.swift in Sources */,
 				1401247B1DBF57BA00EA92FB /* OpenInSafariActivity.swift in Sources */,
 				1401248A1DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				140124711DBF57BA00EA92FB /* Identifiable.swift in Sources */,
@@ -998,8 +984,6 @@
 				140124861DBF57BA00EA92FB /* SweetCollectionController.swift in Sources */,
 				1425657C1E09641400184D47 /* UIColor+Sweet.swift in Sources */,
 				140124901DBF57BA00EA92FB /* UIAlertController+Sweet.swift in Sources */,
-				2B440A751EA9EB7B00AC33F8 /* SearchBarView.swift in Sources */,
-				2B440A721EA9EB6F00AC33F8 /* SearchableCollectionViewLayout.swift in Sources */,
 				1401247C1DBF57BA00EA92FB /* OpenInSafariActivity.swift in Sources */,
 				1401248B1DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				140124721DBF57BA00EA92FB /* Identifiable.swift in Sources */,
@@ -1059,6 +1043,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 29X3GG489T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOSDemo",
+				);
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1079,6 +1067,10 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 29X3GG489T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOSDemo",
+				);
 				INFOPLIST_FILE = iOSDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

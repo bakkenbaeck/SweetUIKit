@@ -3,61 +3,56 @@ import UIKit
 
 let SearchBarTag = 123
 
-open class SearchableCollectionController: UIViewController {
+open class SearchableCollectionController: SweetCollectionController {
 
     open var searchBar: UISearchBar {
-        return SearchBarView.searchBar
+        return self.searchController.searchBar
     }
 
-    open lazy var collectionView: UICollectionView = {
-        let layout = SearchableCollectionViewLayout()
+    open lazy var searchController: UISearchController = {
+        let controller = UISearchController(searchResultsController: nil)
+        controller.hidesNavigationBarDuringPresentation = true
+        controller.dimsBackgroundDuringPresentation = false
 
-        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.delegate = self
-        view.dataSource = self
-        view.backgroundColor = UIColor.white
-        view.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: SearchBarView.height, right: 0)
-        view.showsHorizontalScrollIndicator = false
-        view.showsVerticalScrollIndicator = false
+        controller.searchBar.autoresizingMask = [.flexibleWidth]
+
+        return controller
+    }()
+
+    lazy var searchBarContainerView: UIView = {
+        let view = UIView(withAutoLayout: true)
+        view.backgroundColor = .clear
 
         return view
     }()
 
-    open var searchBackgroundColor: UIColor? = SearchBarView.defaultSearchBackgroundColor {
-        didSet {
-            self.updateSearchColor()
-        }
-    }
-
     open override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController?.navigationBar.isTranslucent = false
-        self.view.addSubview(self.collectionView)
-        self.collectionView.fillSuperview()
+        self.automaticallyAdjustsScrollViewInsets = true
+
+        self.view.addSubview(self.searchBarContainerView)
+        self.searchBarContainerView.addSubview(self.searchBar)
+
+        self.searchBarContainerView.attachToTop(viewController: self)
+        self.searchBarContainerView.set(height: self.searchBar.frame.height)
+
+        self.searchBar.sizeToFit()
+
+        self.definesPresentationContext = true
+
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
     }
 
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        self.updateSearchColor()
+        self.collectionView.contentInset.top += self.searchBar.frame.height
     }
 
-    private func updateSearchColor() {
-        SearchBarView.appearance().searchBackgroundColor = self.searchBackgroundColor
-    }
-}
-
-extension SearchableCollectionController: UICollectionViewDelegate {
-    open func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate _: Bool) {
-        let adjustedContentOffset = scrollView.contentOffset.y + scrollView.contentInset.top
-
-        if adjustedContentOffset <= SearchBarView.height / 2 {
-            scrollView.setContentOffset(CGPoint(x: 0.0, y: -scrollView.contentInset.top), animated: true)
-        } else if adjustedContentOffset > SearchBarView.height / 2 && adjustedContentOffset < SearchBarView.height {
-            scrollView.setContentOffset(CGPoint(x: 0.0, y: SearchBarView.height - scrollView.contentInset.top), animated: true)
-        }
+    open override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
 }
 
@@ -69,4 +64,37 @@ extension SearchableCollectionController: UICollectionViewDataSource {
     open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 0
     }
+}
+
+extension SearchableCollectionController: UICollectionViewDelegate, UIScrollViewDelegate {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard self.searchController.isActive == false else { return }
+
+        let verticalOffset = scrollView.contentOffset.y + scrollView.contentInset.top
+
+        self.searchBar.frame.origin.y = max(-self.searchBar.frame.height, -verticalOffset)
+    }
+
+    open func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        let adjustedContentOffset = scrollView.contentOffset.y + scrollView.contentInset.top
+        let searchBarHeight = self.searchBar.frame.height
+        let halfHeight = searchBarHeight / 2.0
+
+        let isOffsetInsideTopHalf = adjustedContentOffset <= halfHeight
+
+        let isOffsetOutsideTopHalf = adjustedContentOffset > halfHeight
+        let isOffsetInsideBar = adjustedContentOffset < searchBarHeight
+
+        let isOffsetInsideBottomHalf = isOffsetInsideBar && isOffsetOutsideTopHalf
+
+        if isOffsetInsideTopHalf {
+            scrollView.setContentOffset(CGPoint(x: 0.0, y: -scrollView.contentInset.top), animated: true)
+        } else if isOffsetInsideBottomHalf {
+            scrollView.setContentOffset(CGPoint(x: 0.0, y: self.searchBar.frame.height - scrollView.contentInset.top), animated: true)
+        }
+    }
+}
+
+extension SearchableCollectionController: UICollectionViewDelegateFlowLayout {
+
 }
