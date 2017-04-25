@@ -1,14 +1,23 @@
 import Foundation
 import UIKit
 
+/// SearchableCollectionController is a subclass of SweetCollectionController
+///
+/// SearchableCollectionController replicates the behaviour and features of a UITableViewController with a UISearchController 
+/// combined, with a UISearchBar as the headerView.
+///
+/// The UISearchBar can be customised directly, as it's accessible through the `searchBar` property.
+/// The same applies to the UISearchController.
 open class SearchableCollectionController: SweetCollectionController {
 
+    /// The search bar from the backing UISearchController
     open var searchBar: UISearchBar {
         return self.searchController.searchBar
     }
 
     fileprivate var isAnimatingSearchBar: Bool = false
 
+    /// The installed UISearchController. Override the delegate methods (call super) if necessary.
     open lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
         controller.hidesNavigationBarDuringPresentation = true
