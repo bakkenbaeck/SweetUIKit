@@ -72,7 +72,7 @@ extension SearchableCollectionController: UICollectionViewDataSource {
     }
 }
 
-extension SearchableCollectionController: UICollectionViewDelegate, UIScrollViewDelegate {
+extension SearchableCollectionController: UICollectionViewDelegate {
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard self.isAnimatingSearchBar == false else { return }
 
