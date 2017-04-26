@@ -1,4 +1,3 @@
-#if os(iOS) || os(tvOS)
 import UIKit
 
 public extension UIViewController {
@@ -35,4 +34,3 @@ public extension UIViewController {
         controller.removeFromParentViewController()
     }
 }
-#endif

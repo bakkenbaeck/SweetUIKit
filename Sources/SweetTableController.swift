@@ -1,4 +1,3 @@
-#if os(iOS) || os(tvOS)
 import UIKit
 
 open class SweetTableController: UIViewController {
@@ -44,4 +43,3 @@ open class SweetTableController: UIViewController {
         }
     }
 }
-#endif

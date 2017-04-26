@@ -1,7 +1,5 @@
 import UIKit
 
-#if os(iOS) || os(tvOS)
-
 public extension UIScrollView {
     /// A Boolean value that indicates whether the scrollView's contentOffset is located at the top.
     public var isAtTheTop: Bool {
@@ -28,4 +26,3 @@ public extension UIScrollView {
         return scrollViewBottomOffset
     }
 }
-#endif

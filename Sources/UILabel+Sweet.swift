@@ -1,4 +1,3 @@
-#if os(iOS) || os(tvOS)
 import UIKit
 
 public extension UILabel {
@@ -37,4 +36,3 @@ public extension UILabel {
         self.attributedText = attributedString
     }
 }
-#endif

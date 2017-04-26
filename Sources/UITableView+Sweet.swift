@@ -1,4 +1,3 @@
-#if os(iOS) || os(tvOS)
 import UIKit
 
 public extension UITableView {
@@ -19,4 +18,3 @@ public extension UITableView {
         return self.dequeueReusableCell(withIdentifier: cellClass.reuseIdentifier, for: indexPath) as! T
     }
 }
-#endif

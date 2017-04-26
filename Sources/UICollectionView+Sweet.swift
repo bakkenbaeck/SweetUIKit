@@ -1,4 +1,3 @@
-#if os(iOS) || os(tvOS)
 import UIKit
 
 public extension UICollectionView {
@@ -66,4 +65,3 @@ public extension UICollectionView {
         return nil
     }
 }
-#endif

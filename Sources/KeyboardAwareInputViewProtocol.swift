@@ -1,4 +1,3 @@
-#if os(iOS) || os(tvOS)
 import UIKit
 
 /*
@@ -120,4 +119,3 @@ open class KeyboardAwareInputAccessoryView: UIView {
         self.layoutIfNeeded()
     }
 }
-#endif

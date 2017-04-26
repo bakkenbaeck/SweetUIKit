@@ -1,4 +1,3 @@
-#if os(iOS) || os(tvOS)
 import UIKit
 
 open class SweetCollectionController: UIViewController {
@@ -32,4 +31,3 @@ open class SweetCollectionController: UIViewController {
         }
     }
 }
-#endif
