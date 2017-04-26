@@ -55,11 +55,6 @@ open class SearchableCollectionController: SweetCollectionController {
 
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-    }
-
-    open override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
         self.collectionView.contentInset.top += self.searchBar.frame.height
     }
 }
