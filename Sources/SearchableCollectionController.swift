@@ -1,10 +1,9 @@
-#if os(iOS) || os(tvOS)
 import Foundation
 import UIKit
 
 /// SearchableCollectionController is a subclass of SweetCollectionController
 ///
-/// SearchableCollectionController replicates the behaviour and features of a UITableViewController with a UISearchController 
+/// SearchableCollectionController replicates the behaviour and features of a UITableViewController with a UISearchController
 /// combined, with a UISearchBar as the headerView.
 ///
 /// The UISearchBar can be customised directly, as it's accessible through the `searchBar` property.
@@ -66,11 +65,11 @@ open class SearchableCollectionController: SweetCollectionController {
 }
 
 extension SearchableCollectionController: UICollectionViewDataSource {
-    open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    open func collectionView(_: UICollectionView, cellForItemAt _: IndexPath) -> UICollectionViewCell {
         return UICollectionViewCell()
     }
 
-    open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    open func collectionView(_: UICollectionView, numberOfItemsInSection _: Int) -> Int {
         return 0
     }
 }
@@ -84,7 +83,7 @@ extension SearchableCollectionController: UICollectionViewDelegate {
         self.searchBar.frame.origin.y = max(-self.searchBar.frame.height, -verticalOffset)
     }
 
-    open func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    open func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate _: Bool) {
         let adjustedContentOffset = scrollView.contentOffset.y + scrollView.contentInset.top
         let searchBarHeight = self.searchBar.frame.height
         let halfHeight = searchBarHeight / 2.0
@@ -105,24 +104,22 @@ extension SearchableCollectionController: UICollectionViewDelegate {
 }
 
 extension SearchableCollectionController: UICollectionViewDelegateFlowLayout {
-
 }
 
 extension SearchableCollectionController: UISearchControllerDelegate {
-    public func willPresentSearchController(_ searchController: UISearchController) {
+    public func willPresentSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = true
     }
 
-    public func didPresentSearchController(_ searchController: UISearchController) {
+    public func didPresentSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = false
     }
 
-    public func willDismissSearchController(_ searchController: UISearchController) {
+    public func willDismissSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = true
     }
 
-    public func didDismissSearchController(_ searchController: UISearchController) {
+    public func didDismissSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = false
     }
 }
-#endif

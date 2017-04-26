@@ -1,4 +1,3 @@
-#if os(iOS) || os(tvOS)
 import UIKit
 
 public extension UIView {
@@ -73,5 +72,3 @@ public extension UIView {
         return UINib(nibName: String(describing: T.self), bundle: bundle).instantiate(withOwner: nil, options: nil)[0] as! T
     }
 }
-
-#endif

@@ -1,4 +1,3 @@
-#if os(iOS) || os(tvOS)
 import UIKit
 
 open class SweetTableController: UIViewController {
@@ -31,7 +30,7 @@ open class SweetTableController: UIViewController {
 
         if self.clearsSelectionOnViewWillAppear {
             if let indexPath = tableView.indexPathForSelectedRow {
-                tableView.deselectRow(at: indexPath, animated: true)
+                self.tableView.deselectRow(at: indexPath, animated: true)
             }
         }
     }
@@ -44,4 +43,3 @@ open class SweetTableController: UIViewController {
         }
     }
 }
-#endif

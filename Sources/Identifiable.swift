@@ -1,4 +1,3 @@
-#if os(iOS) || os(tvOS)
 import UIKit
 
 public protocol Identifiable {
@@ -19,4 +18,3 @@ extension UITableViewHeaderFooterView: Identifiable {
 
 extension UICollectionReusableView: Identifiable {
 }
-#endif

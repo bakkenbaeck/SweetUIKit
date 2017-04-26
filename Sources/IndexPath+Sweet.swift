@@ -1,4 +1,3 @@
-#if os(iOS) || os(tvOS)
 import UIKit
 
 public extension IndexPath {
@@ -57,4 +56,3 @@ public extension IndexPath {
         return count + self.row
     }
 }
-#endif

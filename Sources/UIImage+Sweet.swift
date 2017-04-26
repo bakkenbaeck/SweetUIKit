@@ -1,4 +1,3 @@
-#if os(iOS) || os(tvOS)
 import UIKit
 
 public extension UIImage {
@@ -136,4 +135,3 @@ public extension UIImage {
         return normalizedImage
     }
 }
-#endif

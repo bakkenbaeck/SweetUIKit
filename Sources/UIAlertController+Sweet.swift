@@ -1,4 +1,3 @@
-#if os(iOS) || os(tvOS)
 import UIKit
 
 public extension UIAlertController {
@@ -65,4 +64,3 @@ public extension UIAlertController {
         return controller
     }
 }
-#endif
