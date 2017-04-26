@@ -22,7 +22,9 @@ open class SearchableCollectionController: SweetCollectionController {
     open lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
         controller.hidesNavigationBarDuringPresentation = true
-        controller.dimsBackgroundDuringPresentation = false
+        #if os(iOS)
+            controller.dimsBackgroundDuringPresentation = false
+        #endif
 
         controller.searchBar.autoresizingMask = [.flexibleWidth]
         controller.delegate = self
