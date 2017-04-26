@@ -11,15 +11,15 @@ class DataSource: NSObject, UICollectionViewDataSource {
         self.numberOfRowsInEachSection = numberOfRowsInEachSection
     }
 
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func numberOfSections(in _: UICollectionView) -> Int {
         return self.numberOfSections
     }
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_: UICollectionView, numberOfItemsInSection _: Int) -> Int {
         return self.numberOfRowsInEachSection
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_: UICollectionView, cellForItemAt _: IndexPath) -> UICollectionViewCell {
         return UICollectionViewCell()
     }
 }
