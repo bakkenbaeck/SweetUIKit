@@ -15,9 +15,9 @@ open class SearchableCollectionController: SweetCollectionController {
         return self.searchController.searchBar
     }
 
-    fileprivate var isAnimatingSearchBar: Bool = false
+    fileprivate var isAnimatingSearchBar = false
 
-    fileprivate var isActive: Bool = false
+    fileprivate var isActive = false
 
     /// The installed UISearchController. Override the delegate methods (call super) if necessary.
     open lazy var searchController: UISearchController = {
