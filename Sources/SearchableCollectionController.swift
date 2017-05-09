@@ -73,7 +73,7 @@ extension SearchableCollectionController: UICollectionViewDataSource {
 
 extension SearchableCollectionController: UICollectionViewDelegate {
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        guard self.isAnimatingSearchBar == false && !self.isActive else { return }
+        guard !self.isAnimatingSearchBar && !self.isActive else { return }
 
         let verticalOffset = scrollView.contentOffset.y + scrollView.contentInset.top
 
