@@ -15,7 +15,9 @@ open class SearchableCollectionController: SweetCollectionController {
         return self.searchController.searchBar
     }
 
-    fileprivate var isAnimatingSearchBar: Bool = false
+    fileprivate var isAnimatingSearchBar = false
+
+    fileprivate var isActive = false
 
     /// The installed UISearchController. Override the delegate methods (call super) if necessary.
     open lazy var searchController: UISearchController = {
@@ -71,7 +73,7 @@ extension SearchableCollectionController: UICollectionViewDataSource {
 
 extension SearchableCollectionController: UICollectionViewDelegate {
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        guard self.isAnimatingSearchBar == false else { return }
+        guard !self.isAnimatingSearchBar && !self.isActive else { return }
 
         let verticalOffset = scrollView.contentOffset.y + scrollView.contentInset.top
 
@@ -108,6 +110,7 @@ extension SearchableCollectionController: UISearchControllerDelegate {
 
     public func didPresentSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = false
+        self.isActive = true
     }
 
     public func willDismissSearchController(_: UISearchController) {
@@ -116,5 +119,6 @@ extension SearchableCollectionController: UISearchControllerDelegate {
 
     public func didDismissSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = false
+        self.isActive = false
     }
 }
