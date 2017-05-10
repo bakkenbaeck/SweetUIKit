@@ -55,7 +55,7 @@ open class SearchableCollectionController: SweetCollectionController {
     }
 }
 
-open extension SearchableCollectionController: UICollectionViewDataSource {
+extension SearchableCollectionController: UICollectionViewDataSource {
     open func collectionView(_: UICollectionView, cellForItemAt _: IndexPath) -> UICollectionViewCell {
         return UICollectionViewCell()
     }
@@ -65,7 +65,7 @@ open extension SearchableCollectionController: UICollectionViewDataSource {
     }
 }
 
-open extension SearchableCollectionController: UICollectionViewDelegate {
+extension SearchableCollectionController: UICollectionViewDelegate {
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard !self.isAnimatingSearchBar && !self.isActive else { return }
 
@@ -94,10 +94,10 @@ open extension SearchableCollectionController: UICollectionViewDelegate {
     }
 }
 
-open extension SearchableCollectionController: UICollectionViewDelegateFlowLayout {
+extension SearchableCollectionController: UICollectionViewDelegateFlowLayout {
 }
 
-open extension SearchableCollectionController: UISearchControllerDelegate {
+extension SearchableCollectionController: UISearchControllerDelegate {
     /// Call super to keep the same animation behaviours
     ///
     open func willPresentSearchController(_: UISearchController) {
