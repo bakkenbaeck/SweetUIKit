@@ -55,7 +55,7 @@ open class SearchableCollectionController: SweetCollectionController {
     }
 }
 
-extension SearchableCollectionController: UICollectionViewDataSource {
+open extension SearchableCollectionController: UICollectionViewDataSource {
     open func collectionView(_: UICollectionView, cellForItemAt _: IndexPath) -> UICollectionViewCell {
         return UICollectionViewCell()
     }
@@ -65,7 +65,7 @@ extension SearchableCollectionController: UICollectionViewDataSource {
     }
 }
 
-extension SearchableCollectionController: UICollectionViewDelegate {
+open extension SearchableCollectionController: UICollectionViewDelegate {
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard !self.isAnimatingSearchBar && !self.isActive else { return }
 
@@ -94,24 +94,32 @@ extension SearchableCollectionController: UICollectionViewDelegate {
     }
 }
 
-extension SearchableCollectionController: UICollectionViewDelegateFlowLayout {
+open extension SearchableCollectionController: UICollectionViewDelegateFlowLayout {
 }
 
-extension SearchableCollectionController: UISearchControllerDelegate {
-    public func willPresentSearchController(_: UISearchController) {
+open extension SearchableCollectionController: UISearchControllerDelegate {
+    /// Call super to keep the same animation behaviours
+    ///
+    open func willPresentSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = true
     }
 
-    public func didPresentSearchController(_: UISearchController) {
+    /// Call super to keep the same animation behaviours
+    ///
+    open func didPresentSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = false
         self.isActive = true
     }
 
-    public func willDismissSearchController(_: UISearchController) {
+    /// Call super to keep the same animation behaviours
+    ///
+    open func willDismissSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = true
     }
 
-    public func didDismissSearchController(_: UISearchController) {
+    /// Call super to keep the same animation behaviours
+    ///
+    open func didDismissSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = false
         self.isActive = false
 
