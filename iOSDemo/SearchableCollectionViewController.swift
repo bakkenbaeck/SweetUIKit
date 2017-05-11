@@ -62,6 +62,7 @@ class SearchableCollectionViewController: SearchableCollectionController {
 
         self.collectionView.register(SearchCell.self)
         self.searchController.searchBar.delegate = self
+        self.searchController.searchBar.barTintColor = .purple
     }
 
     override func viewWillDisappear(_ animated: Bool) {

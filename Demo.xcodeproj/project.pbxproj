@@ -106,6 +106,7 @@
 		9F4C5B6D1DC0DE1A00F2A77B /* IndexPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */; };
 		9F589E771EAF42D200C1B294 /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F589E761EAF42D200C1B294 /* RevealServer.framework */; };
 		9F589E781EAF42DF00C1B294 /* RevealServer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F589E761EAF42D200C1B294 /* RevealServer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F6BE7121EC1B88700A954A1 /* SearchBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BE7111EC1B88700A954A1 /* SearchBarContainerView.swift */; };
 		9FBA0C7D1DBFBC6D0007D239 /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; };
 		9FBA0C801DBFBC880007D239 /* SweetUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FC8B9EA1DC74D0A00A68185 /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
@@ -223,6 +224,7 @@
 		9F2BDE1C1E092B0C00E32CAD /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPathTests.swift; sourceTree = "<group>"; };
 		9F589E761EAF42D200C1B294 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevealServer.framework; sourceTree = "<group>"; };
+		9F6BE7111EC1B88700A954A1 /* SearchBarContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarContainerView.swift; sourceTree = "<group>"; };
 		9FC8B9E81DC74D0500A68185 /* Jiggly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Jiggly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -413,6 +415,7 @@
 				140124691DBF57BA00EA92FB /* UIImage+Sweet.swift */,
 				1401246A1DBF57BA00EA92FB /* UILabel+Sweet.swift */,
 				14951C671EAF92A3008FB871 /* SearchableCollectionController.swift */,
+				9F6BE7111EC1B88700A954A1 /* SearchBarContainerView.swift */,
 				1401246B1DBF57BA00EA92FB /* UIScrollView+Sweet.swift */,
 				1401246C1DBF57BA00EA92FB /* UIView+Sweet.swift */,
 				1401246D1DBF57BA00EA92FB /* UIViewController+Sweet.swift */,
@@ -810,6 +813,7 @@
 				9FC8B9EA1DC74D0A00A68185 /* Jiggly.swift in Sources */,
 				4479760F1DC0A42100A1F577 /* UITableView+Sweet.swift in Sources */,
 				140124A21DBF57BA00EA92FB /* UIView+Sweet.swift in Sources */,
+				9F6BE7121EC1B88700A954A1 /* SearchBarContainerView.swift in Sources */,
 				140124981DBF57BA00EA92FB /* UILabel+Sweet.swift in Sources */,
 				1401247F1DBF57BA00EA92FB /* String+Sweet.swift in Sources */,
 				447976141DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */,

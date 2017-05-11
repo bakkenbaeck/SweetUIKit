@@ -33,20 +33,14 @@ open class SearchableCollectionController: SweetCollectionController {
         return controller
     }()
 
-    private lazy var searchBarContainerView: UIView = {
-        let view = UIView(withAutoLayout: true)
-        view.backgroundColor = .clear
-
-        return view
+    private lazy var searchBarContainerView: SearchBarContainerView = {
+        return SearchBarContainerView(searchBar: self.searchBar)
     }()
 
     open override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.automaticallyAdjustsScrollViewInsets = true
-
         self.view.addSubview(self.searchBarContainerView)
-        self.searchBarContainerView.addSubview(self.searchBar)
 
         self.searchBarContainerView.attachToTop(viewController: self)
         self.searchBarContainerView.set(height: self.searchBar.frame.height)
@@ -104,21 +98,31 @@ extension SearchableCollectionController: UICollectionViewDelegateFlowLayout {
 }
 
 extension SearchableCollectionController: UISearchControllerDelegate {
-    public func willPresentSearchController(_: UISearchController) {
+    /// Call super to keep the same animation behaviours
+    ///
+    open func willPresentSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = true
     }
 
-    public func didPresentSearchController(_: UISearchController) {
+    /// Call super to keep the same animation behaviours
+    ///
+    open func didPresentSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = false
         self.isActive = true
     }
 
-    public func willDismissSearchController(_: UISearchController) {
+    /// Call super to keep the same animation behaviours
+    ///
+    open func willDismissSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = true
     }
 
-    public func didDismissSearchController(_: UISearchController) {
+    /// Call super to keep the same animation behaviours
+    ///
+    open func didDismissSearchController(_: UISearchController) {
         self.isAnimatingSearchBar = false
         self.isActive = false
+
+        self.scrollViewDidEndDragging(self.collectionView, willDecelerate: false)
     }
 }
