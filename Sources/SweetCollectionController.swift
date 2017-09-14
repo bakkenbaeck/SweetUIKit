@@ -26,7 +26,7 @@ open class SweetCollectionController: UIViewController {
     func addConstraints() {
         let anchors = [self.collectionView.topAnchor.constraint(equalTo: self.view.topAnchor), self.collectionView.leftAnchor.constraint(equalTo: self.view.leftAnchor), self.collectionView.rightAnchor.constraint(equalTo: self.view.rightAnchor), self.collectionView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)]
         for anchor in anchors {
-            anchor.priority = UILayoutPriorityDefaultLow
+            anchor.priority = UILayoutPriority.defaultLow
             anchor.isActive = true
         }
     }

@@ -40,7 +40,7 @@ public extension UIView {
         ]
 
         constants.forEach { constant in
-            constant.priority = 999
+            constant.priority = UILayoutPriority(rawValue: 999)
             constant.isActive = true
         }
     }

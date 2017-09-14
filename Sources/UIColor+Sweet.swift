@@ -48,10 +48,13 @@ public extension UIColor {
 
     /// Get the red, green, blue and alpha values.
     private var RGBA: [CGFloat] {
-        var RGBA: [CGFloat] = [0, 0, 0, 0]
-        self.getRed(&RGBA[0], green: &RGBA[1], blue: &RGBA[2], alpha: &RGBA[3])
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var a: CGFloat = 0
+        self.getRed(&r, green: &g, blue: &b, alpha: &a)
 
-        return RGBA
+        return [r, g, b, a]
     }
 
     private func compareColorComponents(a: CGFloat, b: CGFloat) -> Bool {
