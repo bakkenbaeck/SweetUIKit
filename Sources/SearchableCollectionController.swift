@@ -27,8 +27,12 @@ open class SearchableCollectionController: SweetCollectionController {
             controller.dimsBackgroundDuringPresentation = false
         #endif
 
-        controller.searchBar.autoresizingMask = [.flexibleWidth]
         controller.delegate = self
+
+        guard #available(iOS 11.0, *) else {
+            controller.searchBar.autoresizingMask = [.flexibleWidth]
+            return controller
+        }
 
         return controller
     }()
