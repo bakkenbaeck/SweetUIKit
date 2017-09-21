@@ -60,7 +60,6 @@ open class SearchableCollectionController: SweetCollectionController {
         self.title = "Searchable"
 
         if #available(iOS 11.0, *) {
-            self.searchBar.set(height: self.searchBar.frame.height)
             self.navigationController?.navigationBar.prefersLargeTitles = prefersLargeTitles
             self.navigationItem.searchController = searchController
             self.navigationItem.hidesSearchBarWhenScrolling = hidesSearchBarWhenScrolling
