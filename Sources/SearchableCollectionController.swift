@@ -22,16 +22,16 @@ open class SearchableCollectionController: SweetCollectionController {
     /// The installed UISearchController. Override the delegate methods (call super) if necessary.
     open lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
-        controller.hidesNavigationBarDuringPresentation = true
+        controller.hidesNavigationBarDuringPresentation = false
         #if os(iOS)
             controller.dimsBackgroundDuringPresentation = false
         #endif
 
         controller.delegate = self
 
-        guard #available(iOS 11.0, *) else {
+        if #available(iOS 11.0, *) {
+        } else {
             controller.searchBar.autoresizingMask = [.flexibleWidth]
-            return controller
         }
 
         return controller
@@ -41,17 +41,36 @@ open class SearchableCollectionController: SweetCollectionController {
         return SearchBarContainerView(searchBar: self.searchBar)
     }()
 
+    open var largeTitleDisplayMode: UINavigationItem.LargeTitleDisplayMode {
+        return UINavigationItem.LargeTitleDisplayMode.always
+    }
+    open var hidesSearchBarWhenScrolling: Bool {
+        return false
+    }
+
+    open var prefersLargeTitles: Bool {
+        return true
+    }
+
     open override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.addSubview(self.searchBarContainerView)
+        self.title = "Searchable"
 
-        self.searchBarContainerView.attachToTop(viewController: self)
-        self.searchBarContainerView.set(height: self.searchBar.frame.height)
+        if #available(iOS 11.0, *) {
+            self.searchBar.set(height: self.searchBar.frame.height)
+            self.navigationController?.navigationBar.prefersLargeTitles = prefersLargeTitles
+            self.navigationItem.searchController = searchController
+            self.navigationItem.hidesSearchBarWhenScrolling = hidesSearchBarWhenScrolling
+            self.navigationItem.largeTitleDisplayMode = largeTitleDisplayMode
+        } else {
+            self.view.addSubview(self.searchBarContainerView)
+            self.searchBarContainerView.attachToTop(viewController: self)
+            self.searchBarContainerView.set(height: self.searchBar.frame.height)
+            self.definesPresentationContext = true
+        }
 
         self.searchBar.sizeToFit()
-
-        self.definesPresentationContext = true
 
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
@@ -73,9 +92,12 @@ extension SearchableCollectionController: UICollectionViewDelegate {
     open func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard !self.isAnimatingSearchBar && !self.isActive else { return }
 
-        let verticalOffset = scrollView.contentOffset.y + scrollView.contentInset.top
+        guard #available(iOS 11.0, *) else {
+            let verticalOffset = scrollView.contentOffset.y + scrollView.contentInset.top
+            self.searchBar.frame.origin.y = max(-self.searchBar.frame.height, -verticalOffset)
 
-        self.searchBar.frame.origin.y = max(-self.searchBar.frame.height, -verticalOffset)
+            return
+        }
     }
 
     open func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate _: Bool) {
@@ -105,28 +127,41 @@ extension SearchableCollectionController: UISearchControllerDelegate {
     /// Call super to keep the same animation behaviours
     ///
     open func willPresentSearchController(_: UISearchController) {
-        self.isAnimatingSearchBar = true
+        guard #available(iOS 11.0, *) else {
+            self.isAnimatingSearchBar = true
+            return
+        }
     }
 
     /// Call super to keep the same animation behaviours
     ///
     open func didPresentSearchController(_: UISearchController) {
-        self.isAnimatingSearchBar = false
-        self.isActive = true
+        guard #available(iOS 11.0, *) else {
+            self.isAnimatingSearchBar = false
+            self.isActive = true
+            return
+        }
     }
 
     /// Call super to keep the same animation behaviours
     ///
     open func willDismissSearchController(_: UISearchController) {
-        self.isAnimatingSearchBar = true
+        guard #available(iOS 11.0, *) else {
+            self.isAnimatingSearchBar = true
+            return
+        }
     }
 
     /// Call super to keep the same animation behaviours
     ///
     open func didDismissSearchController(_: UISearchController) {
-        self.isAnimatingSearchBar = false
-        self.isActive = false
+        guard #available(iOS 11.0, *) else {
+            self.isAnimatingSearchBar = false
+            self.isActive = false
+            self.scrollViewDidEndDragging(self.collectionView, willDecelerate: false)
 
-        self.scrollViewDidEndDragging(self.collectionView, willDecelerate: false)
+            return
+        }
     }
 }
+
