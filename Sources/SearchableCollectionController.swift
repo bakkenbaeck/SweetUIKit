@@ -22,7 +22,7 @@ open class SearchableCollectionController: SweetCollectionController {
     /// The installed UISearchController. Override the delegate methods (call super) if necessary.
     open lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
-        controller.hidesNavigationBarDuringPresentation = false
+
         #if os(iOS)
             controller.dimsBackgroundDuringPresentation = false
         #endif
@@ -30,7 +30,9 @@ open class SearchableCollectionController: SweetCollectionController {
         controller.delegate = self
 
         if #available(iOS 11.0, *) {
+            controller.hidesNavigationBarDuringPresentation = false
         } else {
+            controller.hidesNavigationBarDuringPresentation = true
             controller.searchBar.autoresizingMask = [.flexibleWidth]
         }
 
