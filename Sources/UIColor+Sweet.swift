@@ -29,7 +29,7 @@ public extension UIColor {
     ///   - blue: The blue part, ranging from 0 to 255.
     ///   - alpha: The alpha part, ranging from 0 to 100.
     public convenience init(r red: Double, g green: Double, b blue: Double, a alpha: Double = 100) {
-        self.init(red: CGFloat(red) / CGFloat(255.0), green: CGFloat(green) / CGFloat(255.0), blue: CGFloat(blue) / CGFloat(255.0), alpha: CGFloat(alpha) / CGFloat(100.0))
+        self.init(red: CGFloat(red / 255.0), green: CGFloat(green / 255.0), blue: CGFloat(blue / 255.0), alpha: CGFloat(alpha / 100.0))
     }
 
     /// Compares if two colors are equal.
@@ -48,13 +48,13 @@ public extension UIColor {
 
     /// Get the red, green, blue and alpha values.
     private var RGBA: [CGFloat] {
-        var r: CGFloat = 0
-        var g: CGFloat = 0
-        var b: CGFloat = 0
-        var a: CGFloat = 0
-        self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+        self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
 
-        return [r, g, b, a]
+        return [red, green, blue, alpha]
     }
 
     private func compareColorComponents(a: CGFloat, b: CGFloat) -> Bool {
