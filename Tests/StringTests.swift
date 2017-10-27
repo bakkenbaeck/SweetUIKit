@@ -18,6 +18,6 @@ class StringTests: XCTestCase {
 
         string = "aa"
         XCTAssertEqual(floor(string.width(for: smallFont)), 16)
-        XCTAssertEqual(floor(string.width(for: bigFont)), 33)
+        XCTAssertEqual(floor(string.width(for: bigFont)), 32)
     }
 }
