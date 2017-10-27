@@ -12,10 +12,10 @@ class CollectionController: SweetCollectionController {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
 
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(share))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(self.share))
     }
 
-    func share() {
+    @objc func share() {
         let url = URL(string: "https://google.com")!
         let activityController = UIActivityViewController(activityItems: [url], applicationActivities: [OpenInSafariActivity()])
         self.present(activityController, animated: true)

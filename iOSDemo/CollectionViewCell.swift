@@ -20,7 +20,7 @@ class CollectionViewCell: UICollectionViewCell, Jiggly {
         self.label.rightAnchor.constraint(equalTo: self.contentView.rightAnchor).isActive = true
         self.label.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
 
-        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(toggleBouncing))
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(self.toggleBouncing))
         self.contentView.addGestureRecognizer(longPress)
     }
 
@@ -28,7 +28,7 @@ class CollectionViewCell: UICollectionViewCell, Jiggly {
         fatalError("The method `init?(coder)` is not implemented for this class.")
     }
 
-    func toggleBouncing() {
+    @objc func toggleBouncing() {
         if self.isBouncing {
             self.isBouncing = false
             self.stopBouncing()

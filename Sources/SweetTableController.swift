@@ -38,7 +38,7 @@ open class SweetTableController: UIViewController {
     func addConstraints() {
         let anchors = [self.tableView.topAnchor.constraint(equalTo: self.view.topAnchor), self.tableView.leftAnchor.constraint(equalTo: self.view.leftAnchor), self.tableView.rightAnchor.constraint(equalTo: self.view.rightAnchor), self.tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)]
         for anchor in anchors {
-            anchor.priority = UILayoutPriorityDefaultLow
+            anchor.priority = UILayoutPriority.defaultLow
             anchor.isActive = true
         }
     }
