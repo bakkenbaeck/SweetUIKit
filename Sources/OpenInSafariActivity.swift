@@ -6,18 +6,18 @@ import UIKit
         fileprivate var url: URL?
 
         public override var activityType: UIActivityType? {
-            return UIActivityType(String(describing: self.classForCoder))
+            return UIActivityType(String(describing: classForCoder))
         }
 
         public override var activityTitle: String? {
-            let defaultTitle = Bundle(for: self.classForCoder).localizedString(forKey: "Open in Safari", value: "Open in Safari Default", table: "OpenInSafariActivity")
+            let defaultTitle = Bundle(for: classForCoder).localizedString(forKey: "Open in Safari", value: "Open in Safari Default", table: "OpenInSafariActivity")
             let title = Bundle.main.localizedString(forKey: "Open in Safari", value: defaultTitle, table: nil)
 
             return title
         }
 
         public override var activityImage: UIImage? {
-            return UIImage(named: "Safari", in: Bundle(for: self.classForCoder), compatibleWith: nil)
+            return UIImage(named: "Safari", in: Bundle(for: classForCoder), compatibleWith: nil)
         }
 
         public override func canPerform(withActivityItems activityItems: [Any]) -> Bool {
@@ -33,7 +33,7 @@ import UIKit
         public override func prepare(withActivityItems activityItems: [Any]) {
             for item in activityItems {
                 if let item = item as? URL {
-                    self.url = item
+                    url = item
                     break
                 }
             }
@@ -47,10 +47,10 @@ import UIKit
                     }
                 } else {
                     let completed = UIApplication.shared.openURL(url)
-                    self.activityDidFinish(completed)
+                    activityDidFinish(completed)
                 }
             } else {
-                self.activityDidFinish(false)
+                activityDidFinish(false)
             }
         }
     }

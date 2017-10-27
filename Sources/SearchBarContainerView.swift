@@ -6,10 +6,9 @@ open class SearchBarContainerView: UIView {
 
     open override var backgroundColor: UIColor? {
         get {
-            return self.searchBar.barTintColor
+            return searchBar.barTintColor
         }
         set {
-            
         }
     }
 
@@ -18,9 +17,9 @@ open class SearchBarContainerView: UIView {
 
         super.init(frame: .zero)
 
-        self.translatesAutoresizingMaskIntoConstraints = false
+        translatesAutoresizingMaskIntoConstraints = false
 
-        self.addSubview(self.searchBar)
+        addSubview(self.searchBar)
     }
 
     public required init?(coder aDecoder: NSCoder) {

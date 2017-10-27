@@ -25,7 +25,7 @@ class EditViewController: UIViewController, KeyboardAwareAccessoryViewDelegate {
 
     // TODO: Find a way to make this work implicitly.
     override var inputAccessoryView: UIView? {
-        return self.keyboardAwareInputView
+        return keyboardAwareInputView
     }
 
     var textInputBottomConstraint: NSLayoutConstraint!
@@ -33,32 +33,32 @@ class EditViewController: UIViewController, KeyboardAwareAccessoryViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = .white
-        self.scrollView.backgroundColor = .white
-        self.scrollView.alwaysBounceVertical = true
-        self.scrollView.isScrollEnabled = true
-        self.scrollView.keyboardDismissMode = .interactive
+        view.backgroundColor = .white
+        scrollView.backgroundColor = .white
+        scrollView.alwaysBounceVertical = true
+        scrollView.isScrollEnabled = true
+        scrollView.keyboardDismissMode = .interactive
 
-        self.view.addSubview(self.scrollView)
-        self.view.addSubview(self.textInputView)
-        self.scrollView.addSubview(self.textField)
+        view.addSubview(scrollView)
+        view.addSubview(textInputView)
+        scrollView.addSubview(textField)
 
-        self.scrollView.fillSuperview()
+        scrollView.fillSuperview()
 
-        self.textField.set(height: 38)
-        self.textField.topAnchor.constraint(equalTo: self.scrollView.topAnchor, constant: 80).isActive = true
-        self.textField.centerXAnchor.constraint(equalTo: self.scrollView.centerXAnchor).isActive = true
-        self.textField.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor, multiplier: 0.9).isActive = true
+        textField.set(height: 38)
+        textField.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 80).isActive = true
+        textField.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor).isActive = true
+        textField.widthAnchor.constraint(equalTo: scrollView.widthAnchor, multiplier: 0.9).isActive = true
 
-        self.textInputView.set(height: 48)
-        self.textInputView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-        self.textInputView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
-        self.textInputBottomConstraint = self.textInputView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
-        self.textInputBottomConstraint.isActive = true
+        textInputView.set(height: 48)
+        textInputView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        textInputView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        textInputBottomConstraint = textInputView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        textInputBottomConstraint.isActive = true
     }
 
     func inputView(_ inputView: KeyboardAwareInputAccessoryView, shouldUpdatePosition keyboardOriginYDistance: CGFloat) {
-        self.textInputBottomConstraint.constant = keyboardOriginYDistance
-        self.view.layoutIfNeeded()
+        textInputBottomConstraint.constant = keyboardOriginYDistance
+        view.layoutIfNeeded()
     }
 }
