@@ -26,3 +26,4 @@ open class SearchBarContainerView: UIView {
         fatalError()
     }
 }
+

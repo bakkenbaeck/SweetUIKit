@@ -23,10 +23,7 @@ open class SearchableCollectionController: SweetCollectionController {
     open lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
 
-        #if os(iOS)
-            controller.dimsBackgroundDuringPresentation = false
-        #endif
-
+        controller.dimsBackgroundDuringPresentation = false
         controller.delegate = self
 
         if #available(iOS 11.0, *) {
@@ -71,7 +68,6 @@ open class SearchableCollectionController: SweetCollectionController {
             searchBarContainerView.set(height: searchBar.frame.height)
             definesPresentationContext = true
         }
-
         searchBar.sizeToFit()
 
         collectionView.delegate = self
@@ -166,3 +162,4 @@ extension SearchableCollectionController: UISearchControllerDelegate {
         }
     }
 }
+
