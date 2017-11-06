@@ -68,10 +68,12 @@ public extension UIView {
     ///
     /// - Parameter nibName: The name of the nib to be loaded. If none is passed, it uses the class name. Defaults to nil.
     /// - Parameter bundle: The bundle where the nib is located, by default we'll use the main bundle.
+    /// - Parameter owner: The file owner for the nib. Same as when using UINib(nibName:bundle).instantiate(withOwner:options:).
+    /// - Parameter options: The nib options. Same as when using UINib(nibName:bundle).instantiate(withOwner:options:).
     ///
     /// - Returns: Returns an instance of the nib as a UIView.
-    public class func instanceFromNib<T: UIView>(nibName: String? = nil, bundle: Bundle = .main) -> T? {
+    public class func instanceFromNib<T: UIView>(nibName: String? = nil, bundle: Bundle = .main, owner: Any? = nil, options: [AnyHashable: Any]? = nil) -> T? {
         let name = nibName ?? String(describing: T.self)
-        return UINib(nibName: name, bundle: bundle).instantiate(withOwner: nil, options: nil)[0] as? T
+        return UINib(nibName: name, bundle: bundle).instantiate(withOwner: owner, options: options)[0] as? T
     }
 }
