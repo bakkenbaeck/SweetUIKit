@@ -70,8 +70,8 @@ public extension UIView {
     /// - Parameter bundle: The bundle where the nib is located, by default we'll use the main bundle.
     ///
     /// - Returns: Returns an instance of the nib as a UIView.
-    public class func instanceFromNib<T: UIView>(nibName: String? = nil, bundle: Bundle = .main) -> T {
+    public class func instanceFromNib<T: UIView>(nibName: String? = nil, bundle: Bundle = .main) -> T? {
         let name = nibName ?? String(describing: T.self)
-        return UINib(nibName: name, bundle: bundle).instantiate(withOwner: nil, options: nil)[0] as! T
+        return UINib(nibName: name, bundle: bundle).instantiate(withOwner: nil, options: nil)[0] as? T
     }
 }
