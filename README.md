@@ -127,7 +127,7 @@ let width = self.usernameLabel.width()
 
 Helper class method to create a view from a nib file directly. Supports overriding the bundle and the name of the nib.
 ```swift
-let myView = MyView.instanceFromNib(nibName: nil, bundle:  .main)
+let myView = MyView.instanceFromNib(nibName: "ViewXibName", bundle:  .main)
 ```
 
 ### Autolayout
