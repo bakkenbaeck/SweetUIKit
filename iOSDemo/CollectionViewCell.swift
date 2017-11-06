@@ -14,14 +14,14 @@ class CollectionViewCell: UICollectionViewCell, Jiggly {
     override init(frame: CGRect) {
         super.init(frame: .zero)
 
-        self.contentView.addSubview(self.label)
-        self.label.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
-        self.label.leftAnchor.constraint(equalTo: self.contentView.leftAnchor).isActive = true
-        self.label.rightAnchor.constraint(equalTo: self.contentView.rightAnchor).isActive = true
-        self.label.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
+        contentView.addSubview(label)
+        label.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        label.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+        label.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
+        label.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
 
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(self.toggleBouncing))
-        self.contentView.addGestureRecognizer(longPress)
+        contentView.addGestureRecognizer(longPress)
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -29,12 +29,12 @@ class CollectionViewCell: UICollectionViewCell, Jiggly {
     }
 
     @objc func toggleBouncing() {
-        if self.isBouncing {
-            self.isBouncing = false
-            self.stopBouncing()
+        if isBouncing {
+            isBouncing = false
+            stopBouncing()
         } else {
-            self.isBouncing = true
-            self.startBouncing()
+            isBouncing = true
+            startBouncing()
         }
     }
 }

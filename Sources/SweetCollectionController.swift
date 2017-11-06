@@ -6,7 +6,7 @@ open class SweetCollectionController: UIViewController {
     public init(collectionViewLayout layout: UICollectionViewLayout = UICollectionViewFlowLayout()) {
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
         view.translatesAutoresizingMaskIntoConstraints = false
-        self.collectionView = view
+        collectionView = view
 
         super.init(nibName: nil, bundle: nil)
     }
@@ -18,9 +18,9 @@ open class SweetCollectionController: UIViewController {
     open override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.addSubview(self.collectionView)
+        view.addSubview(collectionView)
 
-        self.addConstraints()
+        addConstraints()
     }
 
     func addConstraints() {

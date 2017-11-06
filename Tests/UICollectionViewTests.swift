@@ -12,11 +12,11 @@ class DataSource: NSObject, UICollectionViewDataSource {
     }
 
     func numberOfSections(in _: UICollectionView) -> Int {
-        return self.numberOfSections
+        return numberOfSections
     }
 
     func collectionView(_: UICollectionView, numberOfItemsInSection _: Int) -> Int {
-        return self.numberOfRowsInEachSection
+        return numberOfRowsInEachSection
     }
 
     func collectionView(_: UICollectionView, cellForItemAt _: IndexPath) -> UICollectionViewCell {
