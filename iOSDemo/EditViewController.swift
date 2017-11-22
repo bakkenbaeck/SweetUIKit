@@ -53,7 +53,11 @@ class EditViewController: UIViewController, KeyboardAwareAccessoryViewDelegate {
         textInputView.set(height: 48)
         textInputView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         textInputView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        textInputBottomConstraint = textInputView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        if #available(iOS 11.0, *) {
+            self.textInputBottomConstraint = self.textInputView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor)
+        } else {
+            textInputBottomConstraint = textInputView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        }
         textInputBottomConstraint.isActive = true
     }
 

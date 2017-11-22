@@ -25,7 +25,7 @@ class SearchCell: UICollectionViewCell {
 class SearchableCollectionViewController: SearchableCollectionController {
 
     var isSearching: Bool {
-        return searchTerm.characters.count > 0
+        return searchTerm.count > 0
     }
 
     var searchTerm: String = ""

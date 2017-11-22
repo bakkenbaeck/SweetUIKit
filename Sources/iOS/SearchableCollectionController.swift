@@ -162,4 +162,3 @@ extension SearchableCollectionController: UISearchControllerDelegate {
         }
     }
 }
-
