@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "SweetUIKit"
   s.summary          = "Helpers and sugar for the UIKit framework."
-  s.version          = "2.0.0"
+  s.version          = "1.13"
   s.homepage         = "https://github.com/UseSweet/SweetUIKit"
   s.license          = 'MIT'
   s.author           = { "Use Sweet" => "usesweet.contact@gmail.com" }
@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.requires_arc = true
   s.source_files = 'Sources/**/*.swift'
+  s.tvos.exclude_files   = 'Sources/**/iOS/*.swift'
   s.frameworks = 'UIKit'
   s.resources = 'Resources/**/*'
   s.resource_bundles = { 'SweetUIKitResources' => ['Resources/**/*'] }

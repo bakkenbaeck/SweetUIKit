@@ -13,8 +13,8 @@ class SearchCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        self.contentView.addSubview(self.titleLabel)
-        self.titleLabel.fillSuperview()
+        contentView.addSubview(titleLabel)
+        titleLabel.fillSuperview()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -25,7 +25,7 @@ class SearchCell: UICollectionViewCell {
 class SearchableCollectionViewController: SearchableCollectionController {
 
     var isSearching: Bool {
-        return self.searchTerm.count > 0
+        return searchTerm.count > 0
     }
 
     var searchTerm: String = ""
@@ -39,7 +39,7 @@ class SearchableCollectionViewController: SearchableCollectionController {
         "0, 5",
         "0, 6",
         "0, 7",
-        "0, 8"
+        "0, 8",
     ]
 
     var secondSection: [String] = [
@@ -54,22 +54,22 @@ class SearchableCollectionViewController: SearchableCollectionController {
         "1, 8",
         "1, 9",
         "1, 10",
-        "1, 11"
+        "1, 11",
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.collectionView.register(SearchCell.self)
-        self.searchController.searchBar.delegate = self
-        self.searchController.searchBar.barTintColor = .purple
+        collectionView.register(SearchCell.self)
+        searchController.searchBar.delegate = self
+        searchController.searchBar.barTintColor = .purple
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
-        self.navigationController?.navigationBar.barTintColor = nil
-        self.navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.barTintColor = nil
+        navigationController?.navigationBar.isTranslucent = true
     }
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -79,21 +79,21 @@ class SearchableCollectionViewController: SearchableCollectionController {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
         case 0:
-            if self.isSearching {
-                return self.firstSection.filter({ item -> Bool in
+            if isSearching {
+                return firstSection.filter({ item -> Bool in
                     item.contains(self.searchTerm)
                 }).count
             }
 
-            return self.firstSection.count
+            return firstSection.count
         case 1:
-            if self.isSearching {
-                return self.secondSection.filter({ item -> Bool in
+            if isSearching {
+                return secondSection.filter({ item -> Bool in
                     item.contains(self.searchTerm)
                 }).count
             }
 
-            return self.secondSection.count
+            return secondSection.count
         default:
             return 0
         }
@@ -106,22 +106,22 @@ class SearchableCollectionViewController: SearchableCollectionController {
         case 0:
             cell.backgroundColor = .yellow
 
-            if self.isSearching {
-                cell.titleLabel.text = self.firstSection.filter({ item -> Bool in
+            if isSearching {
+                cell.titleLabel.text = firstSection.filter({ item -> Bool in
                     item.contains(self.searchTerm)
                 })[indexPath.row]
             } else {
-                cell.titleLabel.text = self.firstSection[indexPath.row]
+                cell.titleLabel.text = firstSection[indexPath.row]
             }
         case 1:
             cell.backgroundColor = .purple
 
-            if self.isSearching {
-                cell.titleLabel.text = self.secondSection.filter({ item -> Bool in
+            if isSearching {
+                cell.titleLabel.text = secondSection.filter({ item -> Bool in
                     item.contains(self.searchTerm)
                 })[indexPath.row]
             } else {
-                cell.titleLabel.text = self.secondSection[indexPath.row]
+                cell.titleLabel.text = secondSection[indexPath.row]
             }
         default:
             break
@@ -147,8 +147,7 @@ class SearchableCollectionViewController: SearchableCollectionController {
 
 extension SearchableCollectionViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.searchTerm = searchText
-        self.collectionView.reloadData()
+        searchTerm = searchText
+        collectionView.reloadData()
     }
 }
-

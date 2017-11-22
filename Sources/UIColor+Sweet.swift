@@ -37,13 +37,13 @@ public extension UIColor {
     /// - Parameter color: A UIColor to compare.
     /// - Returns: A boolean, true if same (or very similar) and false otherwise.
     public func isEqual(to color: UIColor) -> Bool {
-        let currentRGBA = self.RGBA
+        let currentRGBA = RGBA
         let comparedRGBA = color.RGBA
 
-        return self.compareColorComponents(a: currentRGBA[0], b: comparedRGBA[0]) &&
-            self.compareColorComponents(a: currentRGBA[1], b: comparedRGBA[1]) &&
-            self.compareColorComponents(a: currentRGBA[2], b: comparedRGBA[2]) &&
-            self.compareColorComponents(a: currentRGBA[3], b: comparedRGBA[3])
+        return compareColorComponents(a: currentRGBA[0], b: comparedRGBA[0]) &&
+            compareColorComponents(a: currentRGBA[1], b: comparedRGBA[1]) &&
+            compareColorComponents(a: currentRGBA[2], b: comparedRGBA[2]) &&
+            compareColorComponents(a: currentRGBA[3], b: comparedRGBA[3])
     }
 
     /// Get the red, green, blue and alpha values.
@@ -52,7 +52,7 @@ public extension UIColor {
         var green: CGFloat = 0
         var blue: CGFloat = 0
         var alpha: CGFloat = 0
-        self.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
 
         return [red, green, blue, alpha]
     }

@@ -11,8 +11,6 @@
 		140124721DBF57BA00EA92FB /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124621DBF57BA00EA92FB /* Identifiable.swift */; };
 		140124751DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124631DBF57BA00EA92FB /* IndexPath+Sweet.swift */; };
 		140124771DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124631DBF57BA00EA92FB /* IndexPath+Sweet.swift */; };
-		1401247A1DBF57BA00EA92FB /* OpenInSafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124641DBF57BA00EA92FB /* OpenInSafariActivity.swift */; };
-		1401247C1DBF57BA00EA92FB /* OpenInSafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124641DBF57BA00EA92FB /* OpenInSafariActivity.swift */; };
 		1401247F1DBF57BA00EA92FB /* String+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124651DBF57BA00EA92FB /* String+Sweet.swift */; };
 		140124811DBF57BA00EA92FB /* String+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124651DBF57BA00EA92FB /* String+Sweet.swift */; };
 		140124841DBF57BA00EA92FB /* SweetCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140124661DBF57BA00EA92FB /* SweetCollectionController.swift */; };
@@ -50,13 +48,16 @@
 		1425657F1E09643100184D47 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425657E1E09643100184D47 /* UIColorTests.swift */; };
 		142565801E09643100184D47 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1425657E1E09643100184D47 /* UIColorTests.swift */; };
 		1460417F1DDC6204005BEF7C /* Jiggly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; };
+		146436351FB1111D00E2E8AD /* SearchBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BE7111EC1B88700A954A1 /* SearchBarContainerView.swift */; };
+		1464363A1FB1122500E2E8AD /* OpenInSafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146436371FB1122500E2E8AD /* OpenInSafariActivity.swift */; };
+		1464363B1FB1122500E2E8AD /* SearchableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146436381FB1122500E2E8AD /* SearchableCollectionController.swift */; };
+		1464363C1FB1122500E2E8AD /* UILocalNotification+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146436391FB1122500E2E8AD /* UILocalNotification+Sweet.swift */; };
 		146F4AD61DDC6A2B007C9534 /* OpenInSafariActivity.strings in Resources */ = {isa = PBXBuildFile; fileRef = 146F4AD31DDC6A2B007C9534 /* OpenInSafariActivity.strings */; };
 		146F4AD81DDC6A2B007C9534 /* OpenInSafariActivity.strings in Resources */ = {isa = PBXBuildFile; fileRef = 146F4AD31DDC6A2B007C9534 /* OpenInSafariActivity.strings */; };
 		146F4AD91DDC6A2B007C9534 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146F4AD51DDC6A2B007C9534 /* Resources.xcassets */; };
 		146F4ADB1DDC6A2B007C9534 /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 146F4AD51DDC6A2B007C9534 /* Resources.xcassets */; };
 		1480D4BC1DBF600900507EE0 /* Identifiable.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124621DBF57BA00EA92FB /* Identifiable.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4BD1DBF600900507EE0 /* IndexPath+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124631DBF57BA00EA92FB /* IndexPath+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		1480D4BE1DBF600900507EE0 /* OpenInSafariActivity.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124641DBF57BA00EA92FB /* OpenInSafariActivity.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4BF1DBF600900507EE0 /* String+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124651DBF57BA00EA92FB /* String+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4C01DBF600900507EE0 /* SweetCollectionController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124661DBF57BA00EA92FB /* SweetCollectionController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4C11DBF600900507EE0 /* SweetTableController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124671DBF57BA00EA92FB /* SweetTableController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,7 +69,6 @@
 		1480D4C71DBF600900507EE0 /* UIViewController+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1401246D1DBF57BA00EA92FB /* UIViewController+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4D41DBF600E00507EE0 /* Identifiable.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124621DBF57BA00EA92FB /* Identifiable.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4D51DBF600E00507EE0 /* IndexPath+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124631DBF57BA00EA92FB /* IndexPath+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		1480D4D61DBF600E00507EE0 /* OpenInSafariActivity.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124641DBF57BA00EA92FB /* OpenInSafariActivity.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4D71DBF600E00507EE0 /* String+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124651DBF57BA00EA92FB /* String+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4D81DBF600E00507EE0 /* SweetCollectionController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124661DBF57BA00EA92FB /* SweetCollectionController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4D91DBF600E00507EE0 /* SweetTableController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 140124671DBF57BA00EA92FB /* SweetTableController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -78,8 +78,6 @@
 		1480D4DD1DBF600E00507EE0 /* UIScrollView+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1401246B1DBF57BA00EA92FB /* UIScrollView+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4DE1DBF600E00507EE0 /* UIView+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1401246C1DBF57BA00EA92FB /* UIView+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		1480D4DF1DBF600E00507EE0 /* UIViewController+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1401246D1DBF57BA00EA92FB /* UIViewController+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		14951C681EAF92A3008FB871 /* SearchableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14951C671EAF92A3008FB871 /* SearchableCollectionController.swift */; };
-		14951C6A1EAF92A3008FB871 /* SearchableCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14951C671EAF92A3008FB871 /* SearchableCollectionController.swift */; };
 		149D81821DBD2E8000A9EB1A /* SweetUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 149D81811DBD2E8000A9EB1A /* SweetUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		149D81841DBD2E8000A9EB1A /* SweetUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 149D81811DBD2E8000A9EB1A /* SweetUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14C47E0D1CD2AE5F004A48DF /* Info.plist */; };
@@ -98,8 +96,6 @@
 		447976111DC0A42100A1F577 /* UITableView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */; };
 		447976141DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */; };
 		447976161DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */; };
-		449822361E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; };
-		449822381E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; };
 		44CD98C01DC0E38300632C84 /* IndexPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */; };
 		9F2BDE1B1E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; };
 		9F2BDE1D1E092B0C00E32CAD /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BDE1C1E092B0C00E32CAD /* EditViewController.swift */; };
@@ -114,13 +110,11 @@
 		A92B12961E9BCCE300478C1F /* UITableView+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		A92B12971E9BCCE300478C1F /* UICollectionView+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		A92B12981E9BCCE300478C1F /* Jiggly.swift in Headers */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		A92B12991E9BCCE300478C1F /* UILocalNotification+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		A92B129A1E9BCCE300478C1F /* UIColor+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 142565771E09641400184D47 /* UIColor+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		A92B129B1E9BCCE300478C1F /* KeyboardAwareInputViewProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		A92B12A21E9CD00200478C1F /* UITableView+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		A92B12A31E9CD00200478C1F /* UICollectionView+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		A92B12A41E9CD00200478C1F /* Jiggly.swift in Headers */ = {isa = PBXBuildFile; fileRef = 9FC8B9E81DC74D0500A68185 /* Jiggly.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		A92B12A51E9CD00200478C1F /* UILocalNotification+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		A92B12A61E9CD00200478C1F /* UIColor+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 142565771E09641400184D47 /* UIColor+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		A92B12A71E9CD00200478C1F /* KeyboardAwareInputViewProtocol.swift in Headers */ = {isa = PBXBuildFile; fileRef = 9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		A92B12AC1E9CD5CB00478C1F /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */; };
@@ -163,7 +157,6 @@
 /* Begin PBXFileReference section */
 		140124621DBF57BA00EA92FB /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		140124631DBF57BA00EA92FB /* IndexPath+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IndexPath+Sweet.swift"; sourceTree = "<group>"; };
-		140124641DBF57BA00EA92FB /* OpenInSafariActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenInSafariActivity.swift; sourceTree = "<group>"; };
 		140124651DBF57BA00EA92FB /* String+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Sweet.swift"; sourceTree = "<group>"; };
 		140124661DBF57BA00EA92FB /* SweetCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetCollectionController.swift; sourceTree = "<group>"; };
 		140124671DBF57BA00EA92FB /* SweetTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SweetTableController.swift; sourceTree = "<group>"; };
@@ -192,11 +185,13 @@
 		14028E5B1E92888600EEE567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		142565771E09641400184D47 /* UIColor+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Sweet.swift"; sourceTree = "<group>"; };
 		1425657E1E09643100184D47 /* UIColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
+		146436371FB1122500E2E8AD /* OpenInSafariActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenInSafariActivity.swift; sourceTree = "<group>"; };
+		146436381FB1122500E2E8AD /* SearchableCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableCollectionController.swift; sourceTree = "<group>"; };
+		146436391FB1122500E2E8AD /* UILocalNotification+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILocalNotification+Sweet.swift"; sourceTree = "<group>"; };
 		146D72AC1AB782920058798C /* iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		146D72B11AB782920058798C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		146F4AD41DDC6A2B007C9534 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OpenInSafariActivity.strings; sourceTree = "<group>"; };
 		146F4AD51DDC6A2B007C9534 /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
-		14951C671EAF92A3008FB871 /* SearchableCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableCollectionController.swift; sourceTree = "<group>"; };
 		149D81391DBD2A5E00A9EB1A /* tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		149D81521DBD2ADD00A9EB1A /* SweetUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		149D816C1DBD2AFB00A9EB1A /* SweetUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SweetUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,7 +214,6 @@
 		440E05861DC0B07D0044F59F /* UITableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
 		4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Sweet.swift"; sourceTree = "<group>"; };
 		447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Sweet.swift"; sourceTree = "<group>"; };
-		449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILocalNotification+Sweet.swift"; sourceTree = "<group>"; };
 		9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAwareInputViewProtocol.swift; sourceTree = "<group>"; };
 		9F2BDE1C1E092B0C00E32CAD /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPathTests.swift; sourceTree = "<group>"; };
@@ -325,6 +319,16 @@
 			path = "UITests-Tests";
 			sourceTree = "<group>";
 		};
+		146436361FB1122500E2E8AD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				146436371FB1122500E2E8AD /* OpenInSafariActivity.swift */,
+				146436381FB1122500E2E8AD /* SearchableCollectionController.swift */,
+				146436391FB1122500E2E8AD /* UILocalNotification+Sweet.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		146D728A1AB782920058798C = {
 			isa = PBXGroup;
 			children = (
@@ -404,17 +408,16 @@
 		14C31A8C1CD294C70056A33F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				146436361FB1122500E2E8AD /* iOS */,
 				149D81811DBD2E8000A9EB1A /* SweetUIKit.h */,
 				140124621DBF57BA00EA92FB /* Identifiable.swift */,
 				140124631DBF57BA00EA92FB /* IndexPath+Sweet.swift */,
-				140124641DBF57BA00EA92FB /* OpenInSafariActivity.swift */,
 				140124651DBF57BA00EA92FB /* String+Sweet.swift */,
 				140124661DBF57BA00EA92FB /* SweetCollectionController.swift */,
 				140124671DBF57BA00EA92FB /* SweetTableController.swift */,
 				140124681DBF57BA00EA92FB /* UIAlertController+Sweet.swift */,
 				140124691DBF57BA00EA92FB /* UIImage+Sweet.swift */,
 				1401246A1DBF57BA00EA92FB /* UILabel+Sweet.swift */,
-				14951C671EAF92A3008FB871 /* SearchableCollectionController.swift */,
 				9F6BE7111EC1B88700A954A1 /* SearchBarContainerView.swift */,
 				1401246B1DBF57BA00EA92FB /* UIScrollView+Sweet.swift */,
 				1401246C1DBF57BA00EA92FB /* UIView+Sweet.swift */,
@@ -422,7 +425,6 @@
 				4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */,
 				447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */,
 				9FC8B9E81DC74D0500A68185 /* Jiggly.swift */,
-				449822331E091D350008BE7C /* UILocalNotification+Sweet.swift */,
 				142565771E09641400184D47 /* UIColor+Sweet.swift */,
 				9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */,
 			);
@@ -439,7 +441,6 @@
 				149D81821DBD2E8000A9EB1A /* SweetUIKit.h in Headers */,
 				1480D4BC1DBF600900507EE0 /* Identifiable.swift in Headers */,
 				1480D4BD1DBF600900507EE0 /* IndexPath+Sweet.swift in Headers */,
-				1480D4BE1DBF600900507EE0 /* OpenInSafariActivity.swift in Headers */,
 				1480D4BF1DBF600900507EE0 /* String+Sweet.swift in Headers */,
 				1480D4C01DBF600900507EE0 /* SweetCollectionController.swift in Headers */,
 				1480D4C11DBF600900507EE0 /* SweetTableController.swift in Headers */,
@@ -452,7 +453,6 @@
 				A92B12961E9BCCE300478C1F /* UITableView+Sweet.swift in Headers */,
 				A92B12971E9BCCE300478C1F /* UICollectionView+Sweet.swift in Headers */,
 				A92B12981E9BCCE300478C1F /* Jiggly.swift in Headers */,
-				A92B12991E9BCCE300478C1F /* UILocalNotification+Sweet.swift in Headers */,
 				A92B129A1E9BCCE300478C1F /* UIColor+Sweet.swift in Headers */,
 				A92B129B1E9BCCE300478C1F /* KeyboardAwareInputViewProtocol.swift in Headers */,
 			);
@@ -465,7 +465,6 @@
 				149D81841DBD2E8000A9EB1A /* SweetUIKit.h in Headers */,
 				1480D4D41DBF600E00507EE0 /* Identifiable.swift in Headers */,
 				1480D4D51DBF600E00507EE0 /* IndexPath+Sweet.swift in Headers */,
-				1480D4D61DBF600E00507EE0 /* OpenInSafariActivity.swift in Headers */,
 				1480D4D71DBF600E00507EE0 /* String+Sweet.swift in Headers */,
 				1480D4D81DBF600E00507EE0 /* SweetCollectionController.swift in Headers */,
 				1480D4D91DBF600E00507EE0 /* SweetTableController.swift in Headers */,
@@ -477,7 +476,6 @@
 				A92B12A21E9CD00200478C1F /* UITableView+Sweet.swift in Headers */,
 				A92B12A31E9CD00200478C1F /* UICollectionView+Sweet.swift in Headers */,
 				A92B12A41E9CD00200478C1F /* Jiggly.swift in Headers */,
-				A92B12A51E9CD00200478C1F /* UILocalNotification+Sweet.swift in Headers */,
 				A92B12A61E9CD00200478C1F /* UIColor+Sweet.swift in Headers */,
 				A92B12A71E9CD00200478C1F /* KeyboardAwareInputViewProtocol.swift in Headers */,
 				1480D4DF1DBF600E00507EE0 /* UIViewController+Sweet.swift in Headers */,
@@ -495,6 +493,7 @@
 				140124BE1DBF582900EA92FB /* Frameworks */,
 				140124BF1DBF582900EA92FB /* Resources */,
 				9FBA0C7F1DBFBC730007D239 /* Embed Frameworks */,
+				14C738351FA3BB6D0071854F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -512,6 +511,7 @@
 				14028E231E9285BE00EEE567 /* Sources */,
 				14028E241E9285BE00EEE567 /* Frameworks */,
 				14028E251E9285BE00EEE567 /* Resources */,
+				14C738361FA3BB730071854F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -529,6 +529,7 @@
 				14028E531E92888600EEE567 /* Sources */,
 				14028E541E92888600EEE567 /* Frameworks */,
 				14028E551E92888600EEE567 /* Resources */,
+				14C738371FA3BB780071854F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -548,6 +549,7 @@
 				146D72A91AB782920058798C /* Frameworks */,
 				146D72AA1AB782920058798C /* Resources */,
 				141001141CD298F200C01F60 /* CopyFiles */,
+				14C738331FA3BB4D0071854F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -565,6 +567,7 @@
 				149D81351DBD2A5E00A9EB1A /* Sources */,
 				149D81361DBD2A5E00A9EB1A /* Frameworks */,
 				149D81371DBD2A5E00A9EB1A /* Resources */,
+				14C738341FA3BB610071854F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -744,6 +747,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14C738331FA3BB4D0071854F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"${SRCROOT}/Others/format.sh\"";
+		};
+		14C738341FA3BB610071854F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"${SRCROOT}/Others/format.sh\"";
+		};
+		14C738351FA3BB6D0071854F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"${SRCROOT}/Others/format.sh\"";
+		};
+		14C738361FA3BB730071854F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"${SRCROOT}/Others/format.sh\"";
+		};
+		14C738371FA3BB780071854F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"${SRCROOT}/Others/format.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		140124BD1DBF582900EA92FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -818,17 +889,17 @@
 				1401247F1DBF57BA00EA92FB /* String+Sweet.swift in Sources */,
 				447976141DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */,
 				140124841DBF57BA00EA92FB /* SweetCollectionController.swift in Sources */,
+				1464363A1FB1122500E2E8AD /* OpenInSafariActivity.swift in Sources */,
 				1425657A1E09641400184D47 /* UIColor+Sweet.swift in Sources */,
 				1401248E1DBF57BA00EA92FB /* UIAlertController+Sweet.swift in Sources */,
-				1401247A1DBF57BA00EA92FB /* OpenInSafariActivity.swift in Sources */,
 				140124891DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				140124701DBF57BA00EA92FB /* Identifiable.swift in Sources */,
 				140124751DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
-				449822361E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
 				9F2BDE1B1E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift in Sources */,
 				140124931DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
+				1464363C1FB1122500E2E8AD /* UILocalNotification+Sweet.swift in Sources */,
 				1401249D1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
-				14951C681EAF92A3008FB871 /* SearchableCollectionController.swift in Sources */,
+				1464363B1FB1122500E2E8AD /* SearchableCollectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,18 +914,16 @@
 				1401249A1DBF57BA00EA92FB /* UILabel+Sweet.swift in Sources */,
 				140124811DBF57BA00EA92FB /* String+Sweet.swift in Sources */,
 				447976161DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */,
+				146436351FB1111D00E2E8AD /* SearchBarContainerView.swift in Sources */,
 				140124861DBF57BA00EA92FB /* SweetCollectionController.swift in Sources */,
 				1425657C1E09641400184D47 /* UIColor+Sweet.swift in Sources */,
 				140124901DBF57BA00EA92FB /* UIAlertController+Sweet.swift in Sources */,
-				1401247C1DBF57BA00EA92FB /* OpenInSafariActivity.swift in Sources */,
 				1401248B1DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				140124721DBF57BA00EA92FB /* Identifiable.swift in Sources */,
 				140124771DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
-				449822381E091D350008BE7C /* UILocalNotification+Sweet.swift in Sources */,
 				A92B12951E9BCA7400478C1F /* KeyboardAwareInputViewProtocol.swift in Sources */,
 				140124951DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				1401249F1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
-				14951C6A1EAF92A3008FB871 /* SearchableCollectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -954,7 +1023,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 29X3GG489T;
 				INFOPLIST_FILE = "UITests-App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -975,7 +1044,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 29X3GG489T;
 				INFOPLIST_FILE = "UITests-App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bakkenbaeck.UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
