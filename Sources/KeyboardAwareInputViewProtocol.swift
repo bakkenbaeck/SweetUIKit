@@ -108,7 +108,7 @@ open class KeyboardAwareInputAccessoryView: UIView {
             let constant = -(superview.frame.intersection(window.bounds).height)
 
             var offset: CGFloat = 0.0
-            if #available(iOS 11, *) {
+            if #available(iOS 11.0, tvOS 11.0, *) {
                 offset = constant == 0.0 ? 0.0 : superview.safeAreaInsets.bottom
             }
 
