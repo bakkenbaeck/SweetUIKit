@@ -90,6 +90,8 @@
 		2B440A6B1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */; };
 		338FEBBD2085EB240024366A /* CompoundDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338FEBBC2085EB240024366A /* CompoundDataSource.swift */; };
 		338FEBBE2085EB240024366A /* CompoundDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338FEBBC2085EB240024366A /* CompoundDataSource.swift */; };
+		338FEBC02085F2DA0024366A /* SingleTypeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338FEBBF2085F2DA0024366A /* SingleTypeDataSource.swift */; };
+		338FEBC12085F2DA0024366A /* SingleTypeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338FEBBF2085F2DA0024366A /* SingleTypeDataSource.swift */; };
 		440998811DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		440998821DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		440E05871DC0B07D0044F59F /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E05861DC0B07D0044F59F /* UITableViewTests.swift */; };
@@ -212,6 +214,7 @@
 		2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableCollectionViewController.swift; sourceTree = "<group>"; };
 		338FEBBC2085EB240024366A /* CompoundDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundDataSource.swift; sourceTree = "<group>"; };
+		338FEBBF2085F2DA0024366A /* SingleTypeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTypeDataSource.swift; sourceTree = "<group>"; };
 		440998801DC0B1C600C11852 /* UICollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
 		440E05861DC0B07D0044F59F /* UITableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
 		4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Sweet.swift"; sourceTree = "<group>"; };
@@ -417,6 +420,7 @@
 				140124661DBF57BA00EA92FB /* SweetCollectionController.swift */,
 				140124671DBF57BA00EA92FB /* SweetTableController.swift */,
 				338FEBBC2085EB240024366A /* CompoundDataSource.swift */,
+				338FEBBF2085F2DA0024366A /* SingleTypeDataSource.swift */,
 				140124681DBF57BA00EA92FB /* UIAlertController+Sweet.swift */,
 				140124691DBF57BA00EA92FB /* UIImage+Sweet.swift */,
 				1401246A1DBF57BA00EA92FB /* UILabel+Sweet.swift */,
@@ -884,6 +888,7 @@
 			files = (
 				140124A71DBF57BA00EA92FB /* UIViewController+Sweet.swift in Sources */,
 				9FC8B9EA1DC74D0A00A68185 /* Jiggly.swift in Sources */,
+				338FEBC02085F2DA0024366A /* SingleTypeDataSource.swift in Sources */,
 				4479760F1DC0A42100A1F577 /* UITableView+Sweet.swift in Sources */,
 				140124A21DBF57BA00EA92FB /* UIView+Sweet.swift in Sources */,
 				9F6BE7121EC1B88700A954A1 /* SearchBarContainerView.swift in Sources */,
@@ -925,6 +930,7 @@
 				1401248B1DBF57BA00EA92FB /* SweetTableController.swift in Sources */,
 				140124721DBF57BA00EA92FB /* Identifiable.swift in Sources */,
 				140124771DBF57BA00EA92FB /* IndexPath+Sweet.swift in Sources */,
+				338FEBC12085F2DA0024366A /* SingleTypeDataSource.swift in Sources */,
 				A92B12951E9BCA7400478C1F /* KeyboardAwareInputViewProtocol.swift in Sources */,
 				140124951DBF57BA00EA92FB /* UIImage+Sweet.swift in Sources */,
 				1401249F1DBF57BA00EA92FB /* UIScrollView+Sweet.swift in Sources */,
