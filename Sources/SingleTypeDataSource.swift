@@ -6,14 +6,12 @@ import UIKit
 /// Generic Types:
 ///  - `CellType` must be some kind of `UITableViewCell` subclass, which will be used to set up registration and dequeueing.
 ///  - `ItemType` must be an `Equatable`-conforming type.
-class SingleTypeDataSource<CellType: UITableViewCell, ItemType: Equatable>: NSObject, SweetTableViewHandling {
+open class SingleTypeDataSource<CellType: UITableViewCell, ItemType: Equatable>: CompoundableDataSource {
 
     /// The array of items you are displaying with this datasource
     private var items: [ItemType]
 
-    /// The data source being used to display the items.
-    /// NOTE: This is weak to avoid creating a retain cycle by holding on to the tableview.
-    private weak var tableView: UITableView?
+    private let selectionAction: (ItemType) -> Void
 
     // MARK: - Public API
 
@@ -23,14 +21,20 @@ class SingleTypeDataSource<CellType: UITableViewCell, ItemType: Equatable>: NSOb
     /// - Parameters:
     ///   - items: The items to display
     ///   - tableView: The table view you wish to display them in
-    public init(items: [ItemType], tableView: UITableView) {
+    ///   - selectionAction: The action to fire when a cell is selected
+    ///                      - Parameter is the item selected
+    public init(items: [ItemType], tableView: UITableView, selectionAction: @escaping (ItemType) -> Void) {
         self.items = items
-        self.tableView = tableView
-        super.init()
+        self.selectionAction = selectionAction
+        super.init(tableView: tableView)
+    }
 
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(CellType.self)
+    public func item(at indexPath: IndexPath) -> ItemType {
+        return items[indexPath.row]
+    }
+
+    public var itemCount: Int {
+        return items.count
     }
 
     // MARK: Updating the underlying data
@@ -83,33 +87,28 @@ class SingleTypeDataSource<CellType: UITableViewCell, ItemType: Equatable>: NSOb
         fatalError("Subclasses must override and not call super")
     }
 
-    /// Selection handling. You must either override this method to handle selections
-    /// or set your cell's`selectionStyle` to `.none` to avoid having this called.
-    ///
-    /// - Parameter item: The selected item.
-    open func selected(item: ItemType) {
-        fatalError("Subclasses must override and not call super")
+    // MARK: - CompoundDataSource overrides
+
+    open override func registerCells(in tableView: UITableView) {
+        tableView.register(CellType.self)
     }
 
-    // MARK: - UITableViewDataSource
-
-    open func numberOfSections(in tableView: UITableView) -> Int {
+    open override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    open override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
 
-    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    open override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeue(CellType.self, for: indexPath)
-        let item = items[indexPath.row]
-        configureCell(cell: cell, for: item)
+        let itemForRow = item(at: indexPath)
+        configureCell(cell: cell, for: itemForRow)
         return cell
     }
 
-    open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item = items[indexPath.row]
-        selected(item: item)
+    open override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectionAction(item(at: indexPath))
     }
 }
