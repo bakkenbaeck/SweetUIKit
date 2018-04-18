@@ -57,11 +57,17 @@ open class SingleTypeDataSource<CellType: UITableViewCell, ItemType: Equatable>:
         insertRowsAtIndexPaths([IndexPath(row: index, section: 0)])
     }
 
+    /// Removes the actual item passed in
+    ///
+    /// - Parameter item: The item to remove
     public func remove(item: ItemType) {
         guard let index = items.index(of: item) else { /* item is not in the array */ return }
         removeItem(from: index)
     }
 
+    /// Removes the item at the given row in this data source.
+    ///
+    /// - Parameter row: The row index to remove
     public func removeItem(from row: Int) {
         guard items.indices.contains(row) else { /* row will be out of bounds */ return }
 
