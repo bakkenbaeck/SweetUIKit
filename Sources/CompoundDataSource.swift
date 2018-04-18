@@ -136,30 +136,32 @@ public class CompoundDataSource: NSObject, UITableViewDataSource, UITableViewDel
             .tableView(tableView, viewForFooterInSection: 0)
     }
 
-    public func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-        return dataSource(for: indexPath)
-            .tableView(tableView, editActionsForRowAt: dataSourceIndexPath(for: indexPath))
-    }
+    #if os(iOS)
+        public func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+            return dataSource(for: indexPath)
+                .tableView(tableView, editActionsForRowAt: dataSourceIndexPath(for: indexPath))
+        }
 
-    @available(iOS 11, *)
-    public func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        return dataSource(for: indexPath)
-            .tableView(tableView, leadingSwipeActionsConfigurationForRowAt: dataSourceIndexPath(for: indexPath))
-    }
+        @available(iOS 11, *)
+        public func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+            return dataSource(for: indexPath)
+                .tableView(tableView, leadingSwipeActionsConfigurationForRowAt: dataSourceIndexPath(for: indexPath))
+        }
 
-    @available(iOS 11, *)
-    public func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        return dataSource(for: indexPath)
-            .tableView(tableView, trailingSwipeActionsConfigurationForRowAt: dataSourceIndexPath(for: indexPath))
-    }
+        @available(iOS 11, *)
+        public func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+            return dataSource(for: indexPath)
+                .tableView(tableView, trailingSwipeActionsConfigurationForRowAt: dataSourceIndexPath(for: indexPath))
+        }
 
-    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
-        return dataSource(for: indexPath)
-            .tableView(tableView, editingStyleForRowAt: dataSourceIndexPath(for: indexPath))
-    }
+        public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+            return dataSource(for: indexPath)
+                .tableView(tableView, editingStyleForRowAt: dataSourceIndexPath(for: indexPath))
+        }
 
-    public func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
-        return dataSource(for: indexPath)
-            .tableView(tableView, titleForDeleteConfirmationButtonForRowAt: dataSourceIndexPath(for: indexPath))
-    }
+        public func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+            return dataSource(for: indexPath)
+                .tableView(tableView, titleForDeleteConfirmationButtonForRowAt: dataSourceIndexPath(for: indexPath))
+        }
+    #endif
 }
