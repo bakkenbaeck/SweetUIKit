@@ -19,6 +19,9 @@ public extension UITableView {
     }
 
     public func dequeue<T: UITableViewCell>(_ cellClass: T.Type) -> T {
-        return dequeueReusableCell(withIdentifier: cellClass.reuseIdentifier) as! T
+        guard let existingCell = dequeueReusableCell(withIdentifier: cellClass.reuseIdentifier) as? T else {
+            return cellClass.init()
+        }
+        return existingCell
     }
 }
