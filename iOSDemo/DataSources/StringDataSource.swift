@@ -37,4 +37,24 @@ class StringDataSource: SingleTypeDataSource<TableViewCell, String> {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return title
     }
+
+    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "I'm a custom footer!"
+    }
+
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let label = UILabel()
+        label.text = self.tableView(tableView, titleForFooterInSection: section)
+        label.textColor = .red
+        label.backgroundColor = .green
+        return label
+    }
+
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if title != nil {
+            return UITableViewAutomaticDimension
+        } else {
+            return super.tableView(tableView, heightForFooterInSection: section)
+        }
+    }
 }

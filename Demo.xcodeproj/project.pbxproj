@@ -88,6 +88,7 @@
 		14D9866C1DBF58A900D7842C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D986671DBF58A900D7842C /* TableViewCell.swift */; };
 		2B3FEEE91EAA04BB00EF8D20 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */; };
 		2B440A6B1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */; };
+		334F248820876A980048EC4F /* CompoundDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F248720876A980048EC4F /* CompoundDataSourceTests.swift */; };
 		338FEBBD2085EB240024366A /* CompoundDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338FEBBC2085EB240024366A /* CompoundDataSource.swift */; };
 		338FEBBE2085EB240024366A /* CompoundDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338FEBBC2085EB240024366A /* CompoundDataSource.swift */; };
 		338FEBC02085F2DA0024366A /* SingleTypeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338FEBBF2085F2DA0024366A /* SingleTypeDataSource.swift */; };
@@ -227,6 +228,7 @@
 		14F393961CC6517E00616696 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableCollectionViewController.swift; sourceTree = "<group>"; };
+		334F248720876A980048EC4F /* CompoundDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundDataSourceTests.swift; sourceTree = "<group>"; };
 		338FEBBC2085EB240024366A /* CompoundDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundDataSource.swift; sourceTree = "<group>"; };
 		338FEBBF2085F2DA0024366A /* SingleTypeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTypeDataSource.swift; sourceTree = "<group>"; };
 		338FEBC2208615630024366A /* StringDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDataSource.swift; sourceTree = "<group>"; };
@@ -380,6 +382,7 @@
 		146D72AF1AB782920058798C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				334F248720876A980048EC4F /* CompoundDataSourceTests.swift */,
 				9F4C5B6C1DC0DE1A00F2A77B /* IndexPathTests.swift */,
 				140124B41DBF57FC00EA92FB /* StringTests.swift */,
 				440998801DC0B1C600C11852 /* UICollectionViewTests.swift */,
@@ -923,6 +926,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140124B91DBF57FC00EA92FB /* UILabelTests.swift in Sources */,
+				334F248820876A980048EC4F /* CompoundDataSourceTests.swift in Sources */,
 				1425657F1E09643100184D47 /* UIColorTests.swift in Sources */,
 				9F4C5B6D1DC0DE1A00F2A77B /* IndexPathTests.swift in Sources */,
 				140124B71DBF57FC00EA92FB /* StringTests.swift in Sources */,

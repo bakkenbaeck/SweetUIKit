@@ -64,4 +64,15 @@ class IntDataSource: SingleTypeDataSource<IntCell, Int> {
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
         return .delete
     }
+
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .delete:
+            removeItem(from: indexPath.row)
+        case .none,
+             .insert:
+            /* Do nothing */
+            break
+        }
+    }
 }
