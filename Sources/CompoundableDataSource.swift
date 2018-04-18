@@ -13,6 +13,10 @@ open class CompoundableDataSource: NSObject, UITableViewDataSource, UITableViewD
     /// NOTE: This is weak to avoid creating a retain cycle by holding on to the tableview.
     open weak var tableView: UITableView?
 
+    /// The parent compound data source of this compoundable source
+    /// NOTE: This is weak to avoid creating a retain cycle
+    open weak var parent: CompoundDataSource?
+
     public init(tableView: UITableView) {
         self.tableView = tableView
         super.init()
@@ -21,6 +25,44 @@ open class CompoundableDataSource: NSObject, UITableViewDataSource, UITableViewD
 
         tableView.delegate = self
         tableView.dataSource = self
+    }
+
+    open func reloadData(animation: UITableViewRowAnimation = .automatic) {
+        if let parent = parent {
+            parent.reloadData(forChild: self, animation: animation)
+        } else {
+            tableView?.reloadSections([0], with: animation)
+        }
+    }
+
+    open func insertRowsAtIndexPaths(_ indexPaths: [IndexPath], with animation: UITableViewRowAnimation = .automatic) {
+        if let parent = parent {
+            parent.insertRowsAtIndexPaths(indexPaths,
+                                          inChild: self,
+                                          animation: animation)
+        } else {
+            tableView?.insertRows(at: indexPaths, with: animation)
+        }
+    }
+
+    open func deleteRowsAtIndexPaths(_ indexPaths: [IndexPath], with animation: UITableViewRowAnimation = .automatic) {
+        if let parent = parent {
+            parent.deleteRowsAtIndexPaths(indexPaths,
+                                          inChild: self,
+                                          animation: animation)
+        } else {
+            tableView?.deleteRows(at: indexPaths, with: animation)
+        }
+    }
+
+    open func reloadRowsAtIndexPaths(_ indexPaths: [IndexPath], with animation: UITableViewRowAnimation = .automatic) {
+        if let parent = parent {
+            parent.reloadFromIndexPaths(indexPaths,
+                                        inChild: self,
+                                        animation: animation)
+        } else {
+            tableView?.reloadRows(at: indexPaths, with: animation)
+        }
     }
 
     /// Default implementation does nothing, subclasses should register whatever cells they need to

@@ -17,7 +17,10 @@ public class CompoundDataSource: NSObject, UITableViewDataSource, UITableViewDel
         self.tableView = tableView
         super.init()
 
-        dataSources.forEach { $0.registerCells(in: tableView) }
+        dataSources.forEach {
+            $0.registerCells(in: tableView)
+            $0.parent = self
+        }
 
         tableView.dataSource = self
         tableView.delegate = self
@@ -48,6 +51,10 @@ public class CompoundDataSource: NSObject, UITableViewDataSource, UITableViewDel
         return dataSources[section]
     }
 
+    private func sectionIndex(for dataSource: CompoundableDataSource) -> Int? {
+        return dataSources.index(of: dataSource)
+    }
+
     private func dataSource(for compoundIndexPath: IndexPath) -> CompoundableDataSource {
         return dataSource(for: compoundIndexPath.section)
     }
@@ -60,6 +67,34 @@ public class CompoundDataSource: NSObject, UITableViewDataSource, UITableViewDel
         guard let sectionIndex = dataSources.indices.first(where: { dataSources[$0] === dataSource }) else { return nil }
 
         return IndexPath(row: dataSourceIndexPath.row, section: sectionIndex)
+    }
+
+    // MARK: - Doing things for child sources
+
+    public func reloadData(forChild dataSource: CompoundableDataSource, animation: UITableViewRowAnimation = .automatic) {
+        guard let section = sectionIndex(for: dataSource) else { return }
+        tableView?.reloadSections([section], with: animation)
+    }
+
+    public func reloadFromIndexPaths(_ dataSourceIndexPaths: [IndexPath], inChild dataSource: CompoundableDataSource, animation: UITableViewRowAnimation = .automatic) {
+        let compoundIndexPaths = dataSourceIndexPaths.compactMap { compoundIndexPath(for: dataSource, at: $0) }
+        guard compoundIndexPaths.count > 0 else { return }
+
+        tableView?.reloadRows(at: compoundIndexPaths, with: animation)
+    }
+
+    public func deleteRowsAtIndexPaths(_ dataSourceIndexPaths: [IndexPath], inChild dataSource: CompoundableDataSource, animation: UITableViewRowAnimation = .automatic) {
+        let compoundIndexPaths = dataSourceIndexPaths.compactMap { compoundIndexPath(for: dataSource, at: $0) }
+        guard compoundIndexPaths.count > 0 else { return }
+
+        tableView?.deleteRows(at: compoundIndexPaths, with: animation)
+    }
+
+    public func insertRowsAtIndexPaths(_ dataSourceIndexPaths: [IndexPath], inChild dataSource: CompoundableDataSource, animation: UITableViewRowAnimation = .automatic) {
+        let compoundIndexPaths = dataSourceIndexPaths.compactMap { compoundIndexPath(for: dataSource, at: $0) }
+        guard compoundIndexPaths.count > 0 else { return }
+
+        tableView?.insertRows(at: compoundIndexPaths, with: animation)
     }
 
     // MARK: - UITableViewDataSource

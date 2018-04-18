@@ -41,17 +41,20 @@ open class SingleTypeDataSource<CellType: UITableViewCell, ItemType: Equatable>:
 
     public func replaceAllItems(with items: [ItemType]) {
         self.items = items
-        tableView?.reloadData()
+        reloadData()
     }
 
     public func append(item: ItemType) {
         items.append(item)
-        tableView?.reloadData()
+
+        // We can force unwrap since we definitely just added an item
+        let lastIndex = items.indices.last!
+        insertRowsAtIndexPaths([IndexPath(row: lastIndex, section: 0)])
     }
 
     public func insert(item: ItemType, at index: Int) {
         items.insert(item, at: index)
-        tableView?.reloadData()
+        insertRowsAtIndexPaths([IndexPath(row: index, section: 0)])
     }
 
     public func remove(item: ItemType) {
@@ -63,10 +66,11 @@ open class SingleTypeDataSource<CellType: UITableViewCell, ItemType: Equatable>:
         guard items.indices.contains(row) else { /* row will be out of bounds */ return }
 
         items.remove(at: row)
-        tableView?.reloadData()
+        let removedIndexPath = IndexPath(row: row, section: 0)
+        deleteRowsAtIndexPaths([removedIndexPath])
     }
 
-    public func replaceItem(at index: Int, with otherItem: ItemType, animation: UITableViewRowAnimation = .fade) {
+    public func replaceItem(at index: Int, with otherItem: ItemType, animation: UITableViewRowAnimation = .automatic) {
         guard items.indices.contains(index) else { /* row will be out of bounds */ return }
 
         items.insert(otherItem, at: index)
@@ -75,7 +79,7 @@ open class SingleTypeDataSource<CellType: UITableViewCell, ItemType: Equatable>:
         items.remove(at: index + 1)
 
         let indexPath = IndexPath(row: index, section: 0)
-        tableView?.reloadRows(at: [indexPath], with: animation)
+        reloadRowsAtIndexPaths([indexPath], with: animation)
     }
 
     /// Actual cell configuration. This should be overridden by all subclasses.
