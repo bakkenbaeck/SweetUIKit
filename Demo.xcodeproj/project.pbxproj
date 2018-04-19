@@ -89,6 +89,7 @@
 		2B3FEEE91EAA04BB00EF8D20 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */; };
 		2B440A6B1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */; };
 		334F248820876A980048EC4F /* CompoundDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334F248720876A980048EC4F /* CompoundDataSourceTests.swift */; };
+		334F248E20889A330048EC4F /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D816C1DBD2AFB00A9EB1A /* SweetUIKit.framework */; };
 		338FEBBD2085EB240024366A /* CompoundDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338FEBBC2085EB240024366A /* CompoundDataSource.swift */; };
 		338FEBBE2085EB240024366A /* CompoundDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338FEBBC2085EB240024366A /* CompoundDataSource.swift */; };
 		338FEBC02085F2DA0024366A /* SingleTypeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338FEBBF2085F2DA0024366A /* SingleTypeDataSource.swift */; };
@@ -146,6 +147,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 140124C01DBF582900EA92FB;
 			remoteInfo = iOSDemo;
+		};
+		334F248B208895E00048EC4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146D728B1AB782920058798C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 149D81511DBD2ADD00A9EB1A;
+			remoteInfo = "SweetUIKit-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -285,6 +293,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334F248E20889A330048EC4F /* SweetUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +369,7 @@
 				14028E471E92881D00EEE567 /* UITests-App */,
 				14028E581E92888600EEE567 /* UITests-Tests */,
 				146D72941AB782920058798C /* Products */,
+				334F248D20889A330048EC4F /* Frameworks */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -452,6 +462,13 @@
 				9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		334F248D20889A330048EC4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		338FEBC8208616BC0024366A /* ViewControllers */ = {
@@ -565,6 +582,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				334F248C208895E00048EC4F /* PBXTargetDependency */,
 			);
 			name = iOSDemo;
 			productName = iOSDemo;
@@ -1019,6 +1037,11 @@
 			isa = PBXTargetDependency;
 			target = 140124C01DBF582900EA92FB /* iOSDemo */;
 			targetProxy = 334F248920876FE30048EC4F /* PBXContainerItemProxy */;
+		};
+		334F248C208895E00048EC4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 149D81511DBD2ADD00A9EB1A /* SweetUIKit-iOS */;
+			targetProxy = 334F248B208895E00048EC4F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
