@@ -3,10 +3,22 @@ import UIKit
 import SweetUIKit
 
 enum DemoItem: Int {
-    case edit, collection, searchableCollection
+    case
+        edit,
+        collection,
+        searchableCollection,
+        singleTypeDataSource,
+        compoundDataSource
 
     static var titles: [String] {
-        let allItems: [DemoItem] = [.edit, .collection, .searchableCollection]
+        let allItems: [DemoItem] = [
+            .edit,
+            .collection,
+            .searchableCollection,
+            .singleTypeDataSource,
+            .compoundDataSource,
+        ]
+
         return allItems.map { $0.title }
     }
 
@@ -15,6 +27,8 @@ enum DemoItem: Int {
         case .edit: return "Edit Controller"
         case .collection: return "Collection Controller"
         case .searchableCollection: return "Searchable Collection Controller"
+        case .singleTypeDataSource: return "Single Type Data Source"
+        case .compoundDataSource: return "Compound Data Source"
         }
     }
 
@@ -23,6 +37,8 @@ enum DemoItem: Int {
         case .edit: return EditViewController()
         case .collection: return CollectionController()
         case .searchableCollection: return SearchableCollectionViewController()
+        case .singleTypeDataSource: return SingleTypeDataSourceDemoViewController()
+        case .compoundDataSource: return CompoundDataSourceViewController()
         }
     }
 }

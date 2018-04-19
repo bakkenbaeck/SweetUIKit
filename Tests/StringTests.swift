@@ -18,6 +18,16 @@ class StringTests: XCTestCase {
 
         string = "aa"
         XCTAssertEqual(floor(string.width(for: smallFont)), 16)
-        XCTAssertEqual(floor(string.width(for: bigFont)), 32)
+
+        switch bigFont.fontName {
+        case ".SFUIDisplay-Semibold":
+            // Used on iOS
+            XCTAssertEqual(floor(string.width(for: bigFont)), 32)
+        case ".SFUIText-Bold":
+            // Used on tvOS, is a bit fatter
+            XCTAssertEqual(floor(string.width(for: bigFont)), 33)
+        default:
+            XCTFail("Unexpected default large font: \(bigFont.fontName)")
+        }
     }
 }
