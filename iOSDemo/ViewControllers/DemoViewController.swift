@@ -3,10 +3,7 @@ import UIKit
 import SweetUIKit
 
 enum DemoItem: Int {
-    case
-        edit,
-        collection,
-        searchableCollection
+    case edit, collection, searchableCollection
 
     static var titles: [String] {
         let allItems: [DemoItem] = [
