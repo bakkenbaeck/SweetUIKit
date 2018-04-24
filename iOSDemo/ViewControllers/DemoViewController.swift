@@ -6,11 +6,7 @@ enum DemoItem: Int {
     case edit, collection, searchableCollection
 
     static var titles: [String] {
-        let allItems: [DemoItem] = [
-            .edit,
-            .collection,
-            .searchableCollection,
-        ]
+        let allItems: [DemoItem] = [.edit, .collection, .searchableCollection]
 
         return allItems.map { $0.title }
     }
