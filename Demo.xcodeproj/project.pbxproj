@@ -80,7 +80,6 @@
 		1480D4DF1DBF600E00507EE0 /* UIViewController+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1401246D1DBF57BA00EA92FB /* UIViewController+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		149D81821DBD2E8000A9EB1A /* SweetUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 149D81811DBD2E8000A9EB1A /* SweetUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		149D81841DBD2E8000A9EB1A /* SweetUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 149D81811DBD2E8000A9EB1A /* SweetUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14C47E0D1CD2AE5F004A48DF /* Info.plist */; };
 		14D986681DBF58A900D7842C /* CollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D986631DBF58A900D7842C /* CollectionController.swift */; };
 		14D986691DBF58A900D7842C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D986641DBF58A900D7842C /* CollectionViewCell.swift */; };
 		14D9866A1DBF58A900D7842C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14D986651DBF58A900D7842C /* Localizable.strings */; };
@@ -764,7 +763,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
