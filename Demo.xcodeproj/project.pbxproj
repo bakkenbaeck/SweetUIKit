@@ -223,6 +223,7 @@
 		14F393961CC6517E00616696 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableCollectionViewController.swift; sourceTree = "<group>"; };
+		33CCF0F8215521CB0015417E /* SweetUIKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SweetUIKit.podspec; sourceTree = "<group>"; };
 		440998801DC0B1C600C11852 /* UICollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
 		440E05861DC0B07D0044F59F /* UITableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
 		4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Sweet.swift"; sourceTree = "<group>"; };
@@ -405,6 +406,7 @@
 				14C0AF811BD6D4230009ECBE /* CHANGELOG.md */,
 				14C0AF821BD6D4230009ECBE /* CONTRIBUTING.md */,
 				14F393961CC6517E00616696 /* LICENSE.md */,
+				33CCF0F8215521CB0015417E /* SweetUIKit.podspec */,
 				14F393951CC6512400616696 /* Package.swift */,
 				14C0AF831BD6D4230009ECBE /* README.md */,
 			);
