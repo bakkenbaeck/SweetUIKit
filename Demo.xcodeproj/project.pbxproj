@@ -90,8 +90,6 @@
 		334F248E20889A330048EC4F /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D816C1DBD2AFB00A9EB1A /* SweetUIKit.framework */; };
 		440998811DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		440998821DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
-		440E05871DC0B07D0044F59F /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E05861DC0B07D0044F59F /* UITableViewTests.swift */; };
-		440E05881DC0B07D0044F59F /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E05861DC0B07D0044F59F /* UITableViewTests.swift */; };
 		4479760F1DC0A42100A1F577 /* UITableView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */; };
 		447976111DC0A42100A1F577 /* UITableView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */; };
 		447976141DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */; };
@@ -226,7 +224,6 @@
 		33CCF0F8215521CB0015417E /* SweetUIKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SweetUIKit.podspec; sourceTree = "<group>"; };
 		33CCF0F9215522530015417E /* config.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = config.yml; path = .circleci/config.yml; sourceTree = "<group>"; };
 		440998801DC0B1C600C11852 /* UICollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
-		440E05861DC0B07D0044F59F /* UITableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
 		4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Sweet.swift"; sourceTree = "<group>"; };
 		447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Sweet.swift"; sourceTree = "<group>"; };
 		9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAwareInputViewProtocol.swift; sourceTree = "<group>"; };
@@ -377,7 +374,6 @@
 				1425657E1E09643100184D47 /* UIColorTests.swift */,
 				140124B51DBF57FC00EA92FB /* UILabelTests.swift */,
 				140124B61DBF57FC00EA92FB /* UIScrollViewTests.swift */,
-				440E05861DC0B07D0044F59F /* UITableViewTests.swift */,
 				146D72B01AB782920058798C /* Supporting Files */,
 			);
 			path = Tests;
@@ -909,7 +905,6 @@
 				140124B71DBF57FC00EA92FB /* StringTests.swift in Sources */,
 				140124BB1DBF57FC00EA92FB /* UIScrollViewTests.swift in Sources */,
 				440998811DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */,
-				440E05871DC0B07D0044F59F /* UITableViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -921,7 +916,6 @@
 				44CD98C01DC0E38300632C84 /* IndexPathTests.swift in Sources */,
 				140124B81DBF57FC00EA92FB /* StringTests.swift in Sources */,
 				140124BA1DBF57FC00EA92FB /* UILabelTests.swift in Sources */,
-				440E05881DC0B07D0044F59F /* UITableViewTests.swift in Sources */,
 				440998821DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */,
 				142565801E09643100184D47 /* UIColorTests.swift in Sources */,
 			);
