@@ -80,7 +80,6 @@
 		1480D4DF1DBF600E00507EE0 /* UIViewController+Sweet.swift in Headers */ = {isa = PBXBuildFile; fileRef = 1401246D1DBF57BA00EA92FB /* UIViewController+Sweet.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		149D81821DBD2E8000A9EB1A /* SweetUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 149D81811DBD2E8000A9EB1A /* SweetUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		149D81841DBD2E8000A9EB1A /* SweetUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 149D81811DBD2E8000A9EB1A /* SweetUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14C47E0D1CD2AE5F004A48DF /* Info.plist */; };
 		14D986681DBF58A900D7842C /* CollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D986631DBF58A900D7842C /* CollectionController.swift */; };
 		14D986691DBF58A900D7842C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D986641DBF58A900D7842C /* CollectionViewCell.swift */; };
 		14D9866A1DBF58A900D7842C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14D986651DBF58A900D7842C /* Localizable.strings */; };
@@ -91,8 +90,6 @@
 		334F248E20889A330048EC4F /* SweetUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D816C1DBD2AFB00A9EB1A /* SweetUIKit.framework */; };
 		440998811DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		440998821DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
-		440E05871DC0B07D0044F59F /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E05861DC0B07D0044F59F /* UITableViewTests.swift */; };
-		440E05881DC0B07D0044F59F /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E05861DC0B07D0044F59F /* UITableViewTests.swift */; };
 		4479760F1DC0A42100A1F577 /* UITableView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */; };
 		447976111DC0A42100A1F577 /* UITableView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */; };
 		447976141DC0A42C00A1F577 /* UICollectionView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */; };
@@ -224,8 +221,9 @@
 		14F393961CC6517E00616696 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		2B3FEEE81EAA04BB00EF8D20 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableCollectionViewController.swift; sourceTree = "<group>"; };
+		33CCF0F8215521CB0015417E /* SweetUIKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SweetUIKit.podspec; sourceTree = "<group>"; };
+		33CCF0F9215522530015417E /* config.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = config.yml; path = .circleci/config.yml; sourceTree = "<group>"; };
 		440998801DC0B1C600C11852 /* UICollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
-		440E05861DC0B07D0044F59F /* UITableViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
 		4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Sweet.swift"; sourceTree = "<group>"; };
 		447976131DC0A42C00A1F577 /* UICollectionView+Sweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Sweet.swift"; sourceTree = "<group>"; };
 		9F2BDE191E09286500E32CAD /* KeyboardAwareInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAwareInputViewProtocol.swift; sourceTree = "<group>"; };
@@ -376,7 +374,6 @@
 				1425657E1E09643100184D47 /* UIColorTests.swift */,
 				140124B51DBF57FC00EA92FB /* UILabelTests.swift */,
 				140124B61DBF57FC00EA92FB /* UIScrollViewTests.swift */,
-				440E05861DC0B07D0044F59F /* UITableViewTests.swift */,
 				146D72B01AB782920058798C /* Supporting Files */,
 			);
 			path = Tests;
@@ -406,6 +403,8 @@
 				14C0AF811BD6D4230009ECBE /* CHANGELOG.md */,
 				14C0AF821BD6D4230009ECBE /* CONTRIBUTING.md */,
 				14F393961CC6517E00616696 /* LICENSE.md */,
+				33CCF0F9215522530015417E /* config.yml */,
+				33CCF0F8215521CB0015417E /* SweetUIKit.podspec */,
 				14F393951CC6512400616696 /* Package.swift */,
 				14C0AF831BD6D4230009ECBE /* README.md */,
 			);
@@ -676,6 +675,7 @@
 					140124C01DBF582900EA92FB = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 29X3GG489T;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					14028E261E9285BE00EEE567 = {
@@ -690,16 +690,16 @@
 					};
 					146D72AB1AB782920058798C = {
 						CreatedOnToolsVersion = 6.2;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 					};
 					149D81381DBD2A5E00A9EB1A = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					149D81511DBD2ADD00A9EB1A = {
 						CreatedOnToolsVersion = 8.0;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					149D816B1DBD2AFB00A9EB1A = {
@@ -764,7 +764,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C47E0E1CD2AE5F004A48DF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,7 +905,6 @@
 				140124B71DBF57FC00EA92FB /* StringTests.swift in Sources */,
 				140124BB1DBF57FC00EA92FB /* UIScrollViewTests.swift in Sources */,
 				440998811DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */,
-				440E05871DC0B07D0044F59F /* UITableViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -918,7 +916,6 @@
 				44CD98C01DC0E38300632C84 /* IndexPathTests.swift in Sources */,
 				140124B81DBF57FC00EA92FB /* StringTests.swift in Sources */,
 				140124BA1DBF57FC00EA92FB /* UILabelTests.swift in Sources */,
-				440E05881DC0B07D0044F59F /* UITableViewTests.swift in Sources */,
 				440998821DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */,
 				142565801E09643100184D47 /* UIColorTests.swift in Sources */,
 			);
@@ -1044,8 +1041,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1068,8 +1064,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.usesweet.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1267,8 +1262,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSDemo.app/iOSDemo";
 			};
 			name = Debug;
@@ -1284,8 +1278,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSDemo.app/iOSDemo";
 			};
 			name = Release;
@@ -1306,8 +1299,7 @@
 				SDKROOT = appletvos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
@@ -1326,8 +1318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
@@ -1355,8 +1346,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1384,8 +1374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.SweetUIKit;
 				PRODUCT_NAME = SweetUIKit;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1416,7 +1405,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1446,7 +1435,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";

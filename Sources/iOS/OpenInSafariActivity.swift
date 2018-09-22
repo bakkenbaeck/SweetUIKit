@@ -3,8 +3,8 @@ import UIKit
 public class OpenInSafariActivity: UIActivity {
     fileprivate var url: URL?
 
-    public override var activityType: UIActivityType? {
-        return UIActivityType(String(describing: classForCoder))
+    public override var activityType: UIActivity.ActivityType? {
+        return UIActivity.ActivityType(String(describing: classForCoder))
     }
 
     public override var activityTitle: String? {
