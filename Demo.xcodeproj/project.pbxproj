@@ -92,6 +92,7 @@
 		33BFD2A52155538500963663 /* CaseIterable+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFD2A32155538500963663 /* CaseIterable+Sweet.swift */; };
 		33BFD2A92155540300963663 /* CaseIterableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFD2A6215553F800963663 /* CaseIterableTests.swift */; };
 		33BFD2AA2155540400963663 /* CaseIterableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFD2A6215553F800963663 /* CaseIterableTests.swift */; };
+		33BFD2AC215564F900963663 /* CaseIterableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BFD2AB215564F900963663 /* CaseIterableViewController.swift */; };
 		440998811DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		440998821DC0B1C600C11852 /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440998801DC0B1C600C11852 /* UICollectionViewTests.swift */; };
 		4479760F1DC0A42100A1F577 /* UITableView+Sweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4479760E1DC0A42100A1F577 /* UITableView+Sweet.swift */; };
@@ -227,6 +228,7 @@
 		2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableCollectionViewController.swift; sourceTree = "<group>"; };
 		33BFD2A32155538500963663 /* CaseIterable+Sweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CaseIterable+Sweet.swift"; sourceTree = "<group>"; };
 		33BFD2A6215553F800963663 /* CaseIterableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseIterableTests.swift; sourceTree = "<group>"; };
+		33BFD2AB215564F900963663 /* CaseIterableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseIterableViewController.swift; sourceTree = "<group>"; };
 		33CCF0F8215521CB0015417E /* SweetUIKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SweetUIKit.podspec; sourceTree = "<group>"; };
 		33CCF0F9215522530015417E /* config.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = config.yml; path = .circleci/config.yml; sourceTree = "<group>"; };
 		440998801DC0B1C600C11852 /* UICollectionViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
@@ -460,6 +462,7 @@
 				9F2BDE1C1E092B0C00E32CAD /* EditViewController.swift */,
 				2B440A6A1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift */,
 				14D986661DBF58A900D7842C /* TableController.swift */,
+				33BFD2AB215564F900963663 /* CaseIterableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -882,6 +885,7 @@
 				2B3FEEE91EAA04BB00EF8D20 /* DemoViewController.swift in Sources */,
 				14D986691DBF58A900D7842C /* CollectionViewCell.swift in Sources */,
 				2B440A6B1EA9EB0A00AC33F8 /* SearchableCollectionViewController.swift in Sources */,
+				33BFD2AC215564F900963663 /* CaseIterableViewController.swift in Sources */,
 				9F2BDE1D1E092B0C00E32CAD /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
