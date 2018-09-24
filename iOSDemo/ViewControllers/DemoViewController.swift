@@ -47,7 +47,7 @@ extension DemoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeue(TableViewCell.self, for: indexPath)
         cell.accessoryType = .disclosureIndicator
-        let itemTitle = DemoItem.forRow(in: indexPath).title
+        let itemTitle = DemoItem.forRow(at: indexPath).title
         cell.titleLabel.text = itemTitle
 
         return cell
@@ -59,7 +59,7 @@ extension DemoViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
 
-        if let item = DemoItem.optionalForRow(in: indexPath) {
+        if let item = DemoItem.optionalForRow(at: indexPath) {
             navigationController?.pushViewController(item.viewController, animated: true)
         }
     }

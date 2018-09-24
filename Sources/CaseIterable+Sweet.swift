@@ -42,7 +42,7 @@ public extension CaseIterable {
     ///
     /// - Parameter index: The indexPath for which you want the `section` property to be used to retrieve the enum value from `allCases`.
     /// - Returns: The enum value at the given index.
-    public static func forSection(in indexPath: IndexPath) -> Self {
+    public static func forSection(at indexPath: IndexPath) -> Self {
         return forIndex(indexPath.section)
     }
 
@@ -55,7 +55,7 @@ public extension CaseIterable {
     ///
     /// - Parameter index: The indexPath for which you want the `section` property to be used to retrieve the enum value from `allCases`.
     /// - Returns: The enum value at the given index.
-    public static func forRow(in indexPath: IndexPath) -> Self {
+    public static func forRow(at indexPath: IndexPath) -> Self {
         return forIndex(indexPath.row)
     }
 
@@ -95,7 +95,7 @@ public extension CaseIterable {
     ///
     /// - Parameter index: The indexPath for which you want the `section` property to be used to retrieve the enum value from `allCases`.
     /// - Returns: The enum value at the given index, or nil if `allCases` does not contain the given index.
-    public static func optionalForSection(in indexPath: IndexPath) -> Self? {
+    public static func optionalForSection(at indexPath: IndexPath) -> Self? {
         return optionalForIndex(indexPath.section)
     }
 
@@ -103,7 +103,7 @@ public extension CaseIterable {
     ///
     /// - Parameter index: The indexPath for which you want the `section` property to be used to retrieve the enum value from `allCases`.
     /// - Returns: The enum value at the given index, or nil if `allCases` does not contain the given index.
-    public static func optionalForRow(in indexPath: IndexPath) -> Self? {
+    public static func optionalForRow(at indexPath: IndexPath) -> Self? {
         return optionalForIndex(indexPath.row)
     }
 
@@ -111,7 +111,7 @@ public extension CaseIterable {
     ///
     /// - Parameter index: The indexPath for which you want the `section` property to be used to retrieve the enum value from `allCases`.
     /// - Returns: The enum value at the given index, or nil if `allCases` does not contain the given index.
-    public static func optionalForItem(in indexPath: IndexPath) -> Self? {
+    public static func optionalForItem(at indexPath: IndexPath) -> Self? {
         return optionalForIndex(indexPath.item)
     }
 }

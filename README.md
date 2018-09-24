@@ -244,7 +244,7 @@ A bunch of syntactic sugar to help with using `CaseIterable` enums to manage sec
 This allows you to use something like
 
 ```swift
-let item = Item.forRow(in: indexPath)
+let item = Item.forRow(at: indexPath)
 ```
 
 in order to get a known item from a list. Please see the sample app's [`CaseIterableViewController`](iOSDemo/ViewControllers/CaseIterableViewController.swift) for an example.
@@ -264,9 +264,9 @@ These methods will `fatalError` if you try to access a case which does not exist
 
 ```swift
 public static func forIndex(_ index: Int) -> Self
-public static func forSection(in indexPath: IndexPath) -> Self
-public static func forRow(in indexPath: IndexPath) -> Self
-public static func forItem(in indexPath: IndexPath) -> Self
+public static func forSection(at indexPath: IndexPath) -> Self
+public static func forRow(at indexPath: IndexPath) -> Self
+public static func forItem(at indexPath: IndexPath) -> Self
 ```
 
 ### Optional Helpers
@@ -275,9 +275,9 @@ Should be used when the number of cases in `allCases` is variable - usually when
 
 ```swift
 public static func optionalForIndex(_ index: Int) -> Self?
-public static func optionalForSection(in indexPath: IndexPath) -> Self?
-public static func optionalForRow(in indexPath: IndexPath) -> Self?
-public static func optionalForItem(in indexPath: IndexPath) -> Self?
+public static func optionalForSection(at indexPath: IndexPath) -> Self?
+public static func optionalForRow(at indexPath: IndexPath) -> Self?
+public static func optionalForItem(at indexPath: IndexPath) -> Self?
 ```
 
 

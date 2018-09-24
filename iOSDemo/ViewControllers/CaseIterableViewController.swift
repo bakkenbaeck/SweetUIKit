@@ -104,8 +104,8 @@ class CaseIterableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "CaseIterable Example"
-        
+        title = "CaseIterable Example"
+
         view.addSubview(tableView)
 
         NSLayoutConstraint.activate([
@@ -139,17 +139,17 @@ extension CaseIterableViewController: UITableViewDataSource {
         cell.accessoryType = .none
         cell.textLabel?.textColor = .darkText
 
-        switch Section.forSection(in: indexPath) {
+        switch Section.forSection(at: indexPath) {
         case .user:
-            let row = UserRow.forRow(in: indexPath)
+            let row = UserRow.forRow(at: indexPath)
             cell.textLabel?.text = row.title
             cell.detailTextLabel?.text = row.value
         case .app:
-            let row = AppRow.forRow(in: indexPath)
+            let row = AppRow.forRow(at: indexPath)
             cell.textLabel?.text = row.title
             cell.accessoryType = row.accessoryType
         case .logout:
-            let row = LogoutRow.forRow(in: indexPath)
+            let row = LogoutRow.forRow(at: indexPath)
             cell.textLabel?.text = row.title
             cell.textLabel?.textColor = row.textColor
         }
@@ -162,16 +162,16 @@ extension CaseIterableViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        switch Section.forSection(in: indexPath) {
+        switch Section.forSection(at: indexPath) {
         case .user:
-            switch UserRow.forRow(in: indexPath) {
+            switch UserRow.forRow(at: indexPath) {
             case .username:
                 showAlert(with: "Show username edit")
             case .emailAddress:
                 showAlert(with: "Show email address edit")
             }
         case .app:
-            switch AppRow.forRow(in: indexPath) {
+            switch AppRow.forRow(at: indexPath) {
             case .currentVersion:
                 showAlert(with: "Tapped Current Version")
             case .contactDeveloper:
@@ -180,7 +180,7 @@ extension CaseIterableViewController: UITableViewDelegate {
                 showAlert(with: "Send user to app store to leave a review")
             }
         case .logout:
-            switch LogoutRow.forRow(in: indexPath) {
+            switch LogoutRow.forRow(at: indexPath) {
             case .reset:
                 showAlert(with: "Reset user settings but don't log them out")
             case .logout:

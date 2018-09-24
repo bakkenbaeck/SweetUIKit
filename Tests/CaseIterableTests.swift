@@ -68,25 +68,25 @@ class CaseIterableTests: XCTestCase {
     }
 
     func testRequiredValueForSection() {
-        XCTAssertEqual(OneOption.forSection(in: IndexPath(row: 0, section: 0)), OneOption.first)
+        XCTAssertEqual(OneOption.forSection(at: IndexPath(row: 0, section: 0)), OneOption.first)
 
-        XCTAssertEqual(TwoOptions.forSection(in: IndexPath(row: 0, section: 0)), TwoOptions.first)
-        XCTAssertEqual(TwoOptions.forSection(in: IndexPath(row: 0, section: 1)), TwoOptions.second)
+        XCTAssertEqual(TwoOptions.forSection(at: IndexPath(row: 0, section: 0)), TwoOptions.first)
+        XCTAssertEqual(TwoOptions.forSection(at: IndexPath(row: 0, section: 1)), TwoOptions.second)
 
-        XCTAssertEqual(ThreeOptions.forSection(in: IndexPath(row: 0, section: 0)), ThreeOptions.first)
-        XCTAssertEqual(ThreeOptions.forSection(in: IndexPath(row: 0, section: 1)), ThreeOptions.second)
-        XCTAssertEqual(ThreeOptions.forSection(in: IndexPath(row: 0, section: 2)), ThreeOptions.third)
+        XCTAssertEqual(ThreeOptions.forSection(at: IndexPath(row: 0, section: 0)), ThreeOptions.first)
+        XCTAssertEqual(ThreeOptions.forSection(at: IndexPath(row: 0, section: 1)), ThreeOptions.second)
+        XCTAssertEqual(ThreeOptions.forSection(at: IndexPath(row: 0, section: 2)), ThreeOptions.third)
     }
 
     func testRequiredValueForRow() {
-        XCTAssertEqual(OneOption.forRow(in: IndexPath(row: 0, section: 0)), OneOption.first)
+        XCTAssertEqual(OneOption.forRow(at: IndexPath(row: 0, section: 0)), OneOption.first)
 
-        XCTAssertEqual(TwoOptions.forRow(in: IndexPath(row: 0, section: 0)), TwoOptions.first)
-        XCTAssertEqual(TwoOptions.forRow(in: IndexPath(row: 1, section: 0)), TwoOptions.second)
+        XCTAssertEqual(TwoOptions.forRow(at: IndexPath(row: 0, section: 0)), TwoOptions.first)
+        XCTAssertEqual(TwoOptions.forRow(at: IndexPath(row: 1, section: 0)), TwoOptions.second)
 
-        XCTAssertEqual(ThreeOptions.forRow(in: IndexPath(row: 0, section: 0)), ThreeOptions.first)
-        XCTAssertEqual(ThreeOptions.forRow(in: IndexPath(row: 1, section: 0)), ThreeOptions.second)
-        XCTAssertEqual(ThreeOptions.forRow(in: IndexPath(row: 2, section: 0)), ThreeOptions.third)
+        XCTAssertEqual(ThreeOptions.forRow(at: IndexPath(row: 0, section: 0)), ThreeOptions.first)
+        XCTAssertEqual(ThreeOptions.forRow(at: IndexPath(row: 1, section: 0)), ThreeOptions.second)
+        XCTAssertEqual(ThreeOptions.forRow(at: IndexPath(row: 2, section: 0)), ThreeOptions.third)
     }
 
     func testRequiredValueForItem() {
@@ -117,50 +117,50 @@ class CaseIterableTests: XCTestCase {
     }
 
     func testOptionalValueForSection() {
-        XCTAssertNil(ZeroOptions.optionalForSection(in: IndexPath(row: 0, section: 0)))
+        XCTAssertNil(ZeroOptions.optionalForSection(at: IndexPath(row: 0, section: 0)))
 
-        XCTAssertEqual(OneOption.optionalForSection(in: IndexPath(row: 0, section: 0)), OneOption.first)
-        XCTAssertNil(OneOption.optionalForSection(in: IndexPath(row: 0, section: 1)))
+        XCTAssertEqual(OneOption.optionalForSection(at: IndexPath(row: 0, section: 0)), OneOption.first)
+        XCTAssertNil(OneOption.optionalForSection(at: IndexPath(row: 0, section: 1)))
 
-        XCTAssertEqual(TwoOptions.optionalForSection(in: IndexPath(row: 0, section: 0)), TwoOptions.first)
-        XCTAssertEqual(TwoOptions.optionalForSection(in: IndexPath(row: 0, section: 1)), TwoOptions.second)
-        XCTAssertNil(TwoOptions.optionalForSection(in: IndexPath(row: 0, section: 2)))
+        XCTAssertEqual(TwoOptions.optionalForSection(at: IndexPath(row: 0, section: 0)), TwoOptions.first)
+        XCTAssertEqual(TwoOptions.optionalForSection(at: IndexPath(row: 0, section: 1)), TwoOptions.second)
+        XCTAssertNil(TwoOptions.optionalForSection(at: IndexPath(row: 0, section: 2)))
 
-        XCTAssertEqual(ThreeOptions.optionalForSection(in: IndexPath(row: 0, section: 0)), ThreeOptions.first)
-        XCTAssertEqual(ThreeOptions.optionalForSection(in: IndexPath(row: 0, section: 1)), ThreeOptions.second)
-        XCTAssertEqual(ThreeOptions.optionalForSection(in: IndexPath(row: 0, section: 2)), ThreeOptions.third)
-        XCTAssertNil(ThreeOptions.optionalForSection(in: IndexPath(row: 0, section: 3)))
+        XCTAssertEqual(ThreeOptions.optionalForSection(at: IndexPath(row: 0, section: 0)), ThreeOptions.first)
+        XCTAssertEqual(ThreeOptions.optionalForSection(at: IndexPath(row: 0, section: 1)), ThreeOptions.second)
+        XCTAssertEqual(ThreeOptions.optionalForSection(at: IndexPath(row: 0, section: 2)), ThreeOptions.third)
+        XCTAssertNil(ThreeOptions.optionalForSection(at: IndexPath(row: 0, section: 3)))
     }
 
     func testOptionalValueForRow() {
-        XCTAssertNil(ZeroOptions.optionalForRow(in: IndexPath(row: 0, section: 0)))
+        XCTAssertNil(ZeroOptions.optionalForRow(at: IndexPath(row: 0, section: 0)))
 
-        XCTAssertEqual(OneOption.optionalForRow(in: IndexPath(row: 0, section: 0)), OneOption.first)
-        XCTAssertNil(OneOption.optionalForRow(in: IndexPath(row: 1, section: 0)))
+        XCTAssertEqual(OneOption.optionalForRow(at: IndexPath(row: 0, section: 0)), OneOption.first)
+        XCTAssertNil(OneOption.optionalForRow(at: IndexPath(row: 1, section: 0)))
 
-        XCTAssertEqual(TwoOptions.optionalForRow(in: IndexPath(row: 0, section: 0)), TwoOptions.first)
-        XCTAssertEqual(TwoOptions.optionalForRow(in: IndexPath(row: 1, section: 0)), TwoOptions.second)
-        XCTAssertNil(TwoOptions.optionalForRow(in: IndexPath(row: 2, section: 0)))
+        XCTAssertEqual(TwoOptions.optionalForRow(at: IndexPath(row: 0, section: 0)), TwoOptions.first)
+        XCTAssertEqual(TwoOptions.optionalForRow(at: IndexPath(row: 1, section: 0)), TwoOptions.second)
+        XCTAssertNil(TwoOptions.optionalForRow(at: IndexPath(row: 2, section: 0)))
 
-        XCTAssertEqual(ThreeOptions.optionalForRow(in: IndexPath(row: 0, section: 0)), ThreeOptions.first)
-        XCTAssertEqual(ThreeOptions.optionalForRow(in: IndexPath(row: 1, section: 0)), ThreeOptions.second)
-        XCTAssertEqual(ThreeOptions.optionalForRow(in: IndexPath(row: 2, section: 0)), ThreeOptions.third)
-        XCTAssertNil(ThreeOptions.optionalForRow(in: IndexPath(row: 3, section: 0)))
+        XCTAssertEqual(ThreeOptions.optionalForRow(at: IndexPath(row: 0, section: 0)), ThreeOptions.first)
+        XCTAssertEqual(ThreeOptions.optionalForRow(at: IndexPath(row: 1, section: 0)), ThreeOptions.second)
+        XCTAssertEqual(ThreeOptions.optionalForRow(at: IndexPath(row: 2, section: 0)), ThreeOptions.third)
+        XCTAssertNil(ThreeOptions.optionalForRow(at: IndexPath(row: 3, section: 0)))
     }
 
     func testOptionalValueForItem() {
-        XCTAssertNil(ZeroOptions.optionalForItem(in: IndexPath(item: 0, section: 0)))
+        XCTAssertNil(ZeroOptions.optionalForItem(at: IndexPath(item: 0, section: 0)))
 
-        XCTAssertEqual(OneOption.optionalForItem(in: IndexPath(item: 0, section: 0)), OneOption.first)
-        XCTAssertNil(OneOption.optionalForItem(in: IndexPath(item: 1, section: 0)))
+        XCTAssertEqual(OneOption.optionalForItem(at: IndexPath(item: 0, section: 0)), OneOption.first)
+        XCTAssertNil(OneOption.optionalForItem(at: IndexPath(item: 1, section: 0)))
 
-        XCTAssertEqual(TwoOptions.optionalForItem(in: IndexPath(item: 0, section: 0)), TwoOptions.first)
-        XCTAssertEqual(TwoOptions.optionalForItem(in: IndexPath(item: 1, section: 0)), TwoOptions.second)
-        XCTAssertNil(TwoOptions.optionalForItem(in: IndexPath(item: 2, section: 0)))
+        XCTAssertEqual(TwoOptions.optionalForItem(at: IndexPath(item: 0, section: 0)), TwoOptions.first)
+        XCTAssertEqual(TwoOptions.optionalForItem(at: IndexPath(item: 1, section: 0)), TwoOptions.second)
+        XCTAssertNil(TwoOptions.optionalForItem(at: IndexPath(item: 2, section: 0)))
 
-        XCTAssertEqual(ThreeOptions.optionalForItem(in: IndexPath(item: 0, section: 0)), ThreeOptions.first)
-        XCTAssertEqual(ThreeOptions.optionalForItem(in: IndexPath(item: 1, section: 0)), ThreeOptions.second)
-        XCTAssertEqual(ThreeOptions.optionalForItem(in: IndexPath(item: 2, section: 0)), ThreeOptions.third)
-        XCTAssertNil(ThreeOptions.optionalForItem(in: IndexPath(item: 3, section: 0)))
+        XCTAssertEqual(ThreeOptions.optionalForItem(at: IndexPath(item: 0, section: 0)), ThreeOptions.first)
+        XCTAssertEqual(ThreeOptions.optionalForItem(at: IndexPath(item: 1, section: 0)), ThreeOptions.second)
+        XCTAssertEqual(ThreeOptions.optionalForItem(at: IndexPath(item: 2, section: 0)), ThreeOptions.third)
+        XCTAssertNil(ThreeOptions.optionalForItem(at: IndexPath(item: 3, section: 0)))
     }
 }
