@@ -14,7 +14,7 @@ public extension Jiggly {
         return Double.pi * degrees / 180.0
     }
 
-    public func startBouncing() {
+    func startBouncing() {
         let animationRotationDegrees = 1.25
         let random = Double(arc4random_uniform(500))
         let r = (random / 500.0) + 0.5
@@ -33,7 +33,7 @@ public extension Jiggly {
         })
     }
 
-    public func stopBouncing() {
+    func stopBouncing() {
         layer.removeAllAnimations()
         transform = .identity
     }

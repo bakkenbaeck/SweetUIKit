@@ -3,7 +3,7 @@ import Foundation
 public extension CaseIterable {
 
     /// Returns the `allCases` static var as an array so it can be accessed based on index.
-    public static var allCasesArray: [Self] {
+    static var allCasesArray: [Self] {
         if let asArray = self.allCases as? [Self] {
             return asArray
         } else {
@@ -25,7 +25,7 @@ public extension CaseIterable {
     ///
     /// - Parameter index: The index in the list of cases for which an enum value is desired.
     /// - Returns: The enum value at the given index.
-    public static func forIndex(_ index: Int) -> Self {
+    static func forIndex(_ index: Int) -> Self {
         guard let item = self.optionalForIndex(index) else {
             fatalError("SweetUIKit: Enum \(Self.self) does not contain index \(index)")
         }
@@ -42,7 +42,7 @@ public extension CaseIterable {
     ///
     /// - Parameter index: The indexPath for which you want the `section` property to be used to retrieve the enum value from `allCases`.
     /// - Returns: The enum value at the given index.
-    public static func forSection(at indexPath: IndexPath) -> Self {
+    static func forSection(at indexPath: IndexPath) -> Self {
         return forIndex(indexPath.section)
     }
 
@@ -55,7 +55,7 @@ public extension CaseIterable {
     ///
     /// - Parameter index: The indexPath for which you want the `section` property to be used to retrieve the enum value from `allCases`.
     /// - Returns: The enum value at the given index.
-    public static func forRow(at indexPath: IndexPath) -> Self {
+    static func forRow(at indexPath: IndexPath) -> Self {
         return forIndex(indexPath.row)
     }
 
@@ -68,7 +68,7 @@ public extension CaseIterable {
     ///
     /// - Parameter index: The indexPath for which you want the `section` property to be used to retrieve the enum value from `allCases`.
     /// - Returns: The enum value at the given index.
-    public static func forItem(in indexPath: IndexPath) -> Self {
+    static func forItem(in indexPath: IndexPath) -> Self {
         return forIndex(indexPath.item)
     }
 
@@ -78,7 +78,7 @@ public extension CaseIterable {
     ///
     /// - Parameter index: The index in the list of cases for which an enum value is desired.
     /// - Returns: The enum value at the given index, or nil if `allCases` does not contain the given index.
-    public static func optionalForIndex(_ index: Int) -> Self? {
+    static func optionalForIndex(_ index: Int) -> Self? {
         guard allCasesArray.indices.contains(index) else {
             return nil
         }
@@ -95,7 +95,7 @@ public extension CaseIterable {
     ///
     /// - Parameter index: The indexPath for which you want the `section` property to be used to retrieve the enum value from `allCases`.
     /// - Returns: The enum value at the given index, or nil if `allCases` does not contain the given index.
-    public static func optionalForSection(at indexPath: IndexPath) -> Self? {
+    static func optionalForSection(at indexPath: IndexPath) -> Self? {
         return optionalForIndex(indexPath.section)
     }
 
@@ -103,7 +103,7 @@ public extension CaseIterable {
     ///
     /// - Parameter index: The indexPath for which you want the `section` property to be used to retrieve the enum value from `allCases`.
     /// - Returns: The enum value at the given index, or nil if `allCases` does not contain the given index.
-    public static func optionalForRow(at indexPath: IndexPath) -> Self? {
+    static func optionalForRow(at indexPath: IndexPath) -> Self? {
         return optionalForIndex(indexPath.row)
     }
 
@@ -111,7 +111,7 @@ public extension CaseIterable {
     ///
     /// - Parameter index: The indexPath for which you want the `section` property to be used to retrieve the enum value from `allCases`.
     /// - Returns: The enum value at the given index, or nil if `allCases` does not contain the given index.
-    public static func optionalForItem(at indexPath: IndexPath) -> Self? {
+    static func optionalForItem(at indexPath: IndexPath) -> Self? {
         return optionalForIndex(indexPath.item)
     }
 }

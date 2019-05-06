@@ -2,7 +2,7 @@ import UIKit
 
 public extension IndexPath {
 
-    public enum Direction {
+    enum Direction {
         case same
         case before
         case ahead
@@ -18,7 +18,7 @@ public extension IndexPath {
         }
     }
 
-    public func comparePosition(to indexPath: IndexPath) -> Direction {
+    func comparePosition(to indexPath: IndexPath) -> Direction {
         if section == indexPath.section {
             return comparePosition(row, otherRow: indexPath.row)
         } else if section < indexPath.section {
@@ -28,7 +28,7 @@ public extension IndexPath {
         }
     }
 
-    public static func firstIndexPathForIndex(collectionView: UICollectionView, index: Int) -> IndexPath? {
+    static func firstIndexPathForIndex(collectionView: UICollectionView, index: Int) -> IndexPath? {
         var count = 0
         let sections = collectionView.numberOfSections
         for section in 0 ..< sections {
@@ -43,7 +43,7 @@ public extension IndexPath {
         return nil
     }
 
-    public func totalRowCount(collectionView: UICollectionView) -> Int {
+    func totalRowCount(collectionView: UICollectionView) -> Int {
         var count = 0
         let sections = collectionView.numberOfSections
         for section in 0 ..< sections {
