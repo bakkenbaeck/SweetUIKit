@@ -3,7 +3,7 @@ version: 2
 jobs:
     build-and-test:
         macos:
-            xcode: "10.0.0"
+            xcode: "10.2.0"
         # Use custom shell per https://circleci.com/docs/2.0/testing-ios/#using-custom-versions-of-cocoapods-and-other-ruby-gems
         shell: /bin/bash --login -o pipefail
         steps:
