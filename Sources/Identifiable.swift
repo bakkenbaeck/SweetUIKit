@@ -5,7 +5,7 @@ public protocol Identifiable {
 }
 
 public extension Identifiable {
-    public static var reuseIdentifier: String {
+    static var reuseIdentifier: String {
         return String(describing: self)
     }
 }

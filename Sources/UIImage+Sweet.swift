@@ -8,7 +8,7 @@ public extension UIImage {
     /// - Parameter string: Text to be the QR Code content
     /// - Parameter resizeRate: The resizing rate. Positive for enlarging and negative for shrinking. Defaults to 15.0.
     /// - Returns: image QR Code image
-    public static func imageQRCode(for string: String, resizeRate: CGFloat = 15.0) -> UIImage {
+    static func imageQRCode(for string: String, resizeRate: CGFloat = 15.0) -> UIImage {
         let data = string.data(using: .isoLatin1, allowLossyConversion: false)
 
         let filter = CIFilter(name: "CIQRCodeGenerator")!
@@ -27,7 +27,7 @@ public extension UIImage {
     /**
      Returns the perfect frame to center a UIImage in the screen.
      */
-    public func centeredFrame() -> CGRect {
+    func centeredFrame() -> CGRect {
         let screenBounds = UIScreen.main.bounds
         let widthScaleFactor = size.width / screenBounds.size.width
         let heightScaleFactor = size.height / screenBounds.size.height
@@ -45,7 +45,7 @@ public extension UIImage {
         return centeredFrame
     }
 
-    public convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
+    convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
         let rect = CGRect(origin: .zero, size: size)
         UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
         color.setFill()
@@ -63,7 +63,7 @@ public extension UIImage {
     ///   - rate: The resize rate. Positive to enlarge, negative to shrink. Defaults to medium.
     ///   - quality: The interpolation quality.
     /// - Returns: The resized image.
-    public func resized(by rate: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
+    func resized(by rate: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
         let width = self.size.width * rate
         let height = self.size.height * rate
         let size = CGSize(width: width, height: height)
@@ -82,7 +82,7 @@ public extension UIImage {
     ///
     /// - Parameter width: The new scaled width
     /// - Returns: A scaled image
-    public func resized(toWidth width: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
+    func resized(toWidth width: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
         let scale = width / size.width
         let height = size.height * scale
 
@@ -102,7 +102,7 @@ public extension UIImage {
     ///
     /// - Parameter height: The new scaled height
     /// - Returns: A scaled image
-    public func resized(toHeight height: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
+    func resized(toHeight height: CGFloat, quality: CGInterpolationQuality = .medium) -> UIImage {
         let scale = height / size.height
         let width = size.width * scale
 
@@ -121,7 +121,7 @@ public extension UIImage {
     /// Normalizes image orientation by rotating an image so that it's orientation is UIImageOrientation.up
     ///
     /// - Returns: The normalized image.
-    public func imageByNormalizingOrientation() -> UIImage? {
+    func imageByNormalizingOrientation() -> UIImage? {
         if imageOrientation == .up {
             return self
         }

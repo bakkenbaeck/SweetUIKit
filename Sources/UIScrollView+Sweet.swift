@@ -2,12 +2,12 @@ import UIKit
 
 public extension UIScrollView {
     /// A Boolean value that indicates whether the scrollView's contentOffset is located at the top.
-    public var isAtTheTop: Bool {
+    var isAtTheTop: Bool {
         return contentOffset.y <= topVerticalContentOffset
     }
 
     /// A Boolean value that indicates whether the scrollView's contentOffset is located at the bottom.
-    public var isAtTheBottom: Bool {
+    var isAtTheBottom: Bool {
         return contentOffset.y >= bottomVerticalContentOffset
     }
 
