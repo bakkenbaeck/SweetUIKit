@@ -1,3 +1,5 @@
+// swift-tools-version:5.3
+
 // Licensed under the **MIT** license
 // Copyright (c) 2016 UseSweet
 //
@@ -23,5 +25,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "SweetUIKit"
+    name: "SweetUIKit",
+    products: [
+        .library(name: "SweetUIKit", targets: ["SweetUIKit"]),
+    ],
+    targets: [
+        .target(name: "SweetUIKit"),
+    ]
 )
