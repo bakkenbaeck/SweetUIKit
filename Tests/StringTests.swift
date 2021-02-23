@@ -20,7 +20,7 @@ class StringTests: XCTestCase {
         XCTAssertEqual(floor(string.width(for: smallFont)), 16)
 
         switch bigFont.fontName {
-        case ".SFUIDisplay-Semibold":
+        case ".SFUI-Semibold":
             // Used on iOS
             XCTAssertEqual(floor(string.width(for: bigFont)), 32)
         case ".SFUIText-Bold":

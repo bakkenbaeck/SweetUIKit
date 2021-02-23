@@ -27,9 +27,9 @@ import PackageDescription
 let package = Package(
     name: "SweetUIKit",
     products: [
-      .library(name: "SwiftUIKit", targets: ["iOS"])
+        .library(name: "SweetUIKit", targets: ["iOS"]),
     ],
     targets: [
-      .target(name: "iOS")
+        .target(name: "iOS"),
     ]
 )
